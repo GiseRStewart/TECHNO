@@ -68,3 +68,20 @@ p{
     text-align: center;
     border-radius: 10%;
 }
+
+footer{
+    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    color: var(--color-texto-header);
+}
+.pie-pagina{
+    color: var(--color-texto-header);
+    text-decoration: none;
+    text-align: right;
+    margin: 75px;
+}
+.redes{
+    color: var(--color-texto-header);
+    text-align: center;
+    vertical-align:bottom;
+
+}
