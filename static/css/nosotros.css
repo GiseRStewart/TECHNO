@@ -14,6 +14,10 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
 header{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
