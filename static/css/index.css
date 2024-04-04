@@ -1,7 +1,8 @@
 /* Posibles paleta de colores,a modificar */
 :root{
-    --color-primario: #574695;
-    --color-secundario: #28359A;
+    --color-primario: #1f2979;
+    --color-secundario: #3d478e;
+    --color-terciario: #574695;
     --color-fondo-header: #b9a7e3;
     --color-texto-header:#fffdfd;
     --color-fondo-body: #ffffff;
@@ -14,32 +15,57 @@
 *{
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
 }
-a {
-    text-decoration: none;
-}
+
 header{
-    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    background:linear-gradient(150deg, var(--color-primario), var(--color-secundario), var(--color-terciario), var(--color-fondo-header));
     color: var(--color-texto-header);
     text-align: center;
 }
 #logo{
-    width: 90px;
-    height: 90px;
-    box-sizing: var(--color-fondo-body);
-    margin-right: 400px;
+    width: 150px;
+    height: 150px;
+    margin-right: 350px;
 }
 .hipervinculo{
 
     color: var(--color-texto-header);
     text-decoration: none;
-    margin-left: 75px;
+    margin-left: 50px;
 }
 
 .menu{
     display:inline-block;
     vertical-align: middle;
     
+}
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li {
+    display: inline-block;
+    line-height: 150px;
+    margin: 0 5px;
+}
+
+.menu ul li:hover{
+    transform: scale(1.1)
+}
+.menu ul li a{
+    color:var(--color-texto-header);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .3s linear;
+}
+.menu ul li a:hover{
+    color: #baa3e3;
+    transform: scale(1.1);
+
 }
 #banner{
     background-image: url('../img/9146  9268-conjunto-de-elementos-de-infografía-futurista-de-la-tecnología-banner-de-plantilla-de-fondo.jpg');
