@@ -1,14 +1,12 @@
 /* Posibles colores,a modificar */
 :root{
-    --color-primario: #574695;
-    --color-secundario: #28359A;
-    --color-fondo-header: #b9a7e3;
+    --color-primario: #574695ea;
+    --color-secundario: #28359ae7;
+    --color-fondo-header: #b9a7e3e7;
     --color-texto-header:#fffdfd;
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
-
 }
-
 
 *{
     margin: 0;
@@ -18,10 +16,12 @@
 a {
     text-decoration: none;
 }
+/*CARLOS: Desde acá hasta body inclusive lo puse yo para que queden todos headers iguales*/
 header{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
     text-align: center;
+    
 }
 #logo{
     width: 90px;
@@ -30,7 +30,6 @@ header{
     margin-right: 400px;
 }
 .hipervinculo{
-
     color: var(--color-texto-header);
     text-decoration: none;
     margin-left: 75px;
@@ -40,17 +39,9 @@ header{
     display:inline-block;
     vertical-align: middle;
 }
-
-body, main, footer{
-    border: 3px; color: black;
-    min-height: 50px;
-    margin: 0.5rem;
-
-
-}
-main{
-    min-height: 80px;
-    border: 40px;
+body{
+    background-image: url(); /*CAMBIAR IMAGEN*/
+    background-size: cover;
 }
 
 aside{
@@ -73,19 +64,48 @@ p{
     border-radius: 10%;
 }
 
+/*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
 footer{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 .pie-pagina{
     color: var(--color-texto-header);
     text-decoration: none;
     text-align: right;
-    margin: 75px;
+    padding-top: 10px;
+}
+.terminos{
+    margin-right: 150px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 150px;
+    padding-bottom: 20px;
 }
 .redes{
     color: var(--color-texto-header);
     text-align: center;
     vertical-align:bottom;
+    padding-bottom: 5px;
+}
 
+.redes-img{
+    height: 15px;
+}
+
+.terminos-s1{
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copy{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

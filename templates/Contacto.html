@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icono -->
-    <link rel="shortcut icon" href="../static/img/images.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/contacto.css">
-    <title>Contacto</title>
-</head>
-<body>
-      <!-- Encabezado -->
-      <header>
-        <!-- Logo -->
-        <div class="menu">
-            <img id=logo src="../static/img/IdearepresentativadeLogo-removebg-preview.png" alt="">
-
-        </div >
-        <!-- Hipervínculos del menú -->
-        <nav class="menu">
-
-              <a class="hipervinculo"  href="../index.html">Home</a>     
-              <a class="hipervinculo"  href="Nosotros.html">Nosotros</a>
-              <a class="hipervinculo"  href="Contacto.html">Contacto</a>
-              <a class="hipervinculo"  href="Producto.html">Producto</a>
-            
-        </nav>
-    </header>
-    <!-- Contenido  Formulario y mapa-->
-    <main>
-        <section>
-            
-
-
-        </section>
-
-        <section>
-
-            
-        </section>
-
-        <section>
-
-            
-        </section>
-
-
-    </main>
-<!-- Pie de página -->
-<footer class=" pie-pagina">
-    <div>
-       <ul><a href="">Términos y condiciones</a></ul>
-       <ul><a href="">Preguntas Frecuentes</a></ul>
-       <ul><a href="">Ayuda</a></ul>
-    </div>
-    <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fa-solid fa-hashtag"></i></a>
-        <br>
-        <ul> Derechos reservados @2024</ul>
-    </div>
-</footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icono -->
+        <link rel="shortcut icon" href="../static/img/images.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../static/css/contacto.css">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <!-- Logo -->
+            <div class="menu">
+                <img id=logo src="../static/img/IdearepresentativadeLogo-removebg-preview.png" alt="">
+            </div >
+            <!-- Hipervínculos del menú -->
+            <nav class="menu">
+                <a class="hipervinculo"  href="../index.html">Home</a>     
+                <a class="hipervinculo"  href="Nosotros.html">Nosotros</a>
+                <a class="hipervinculo"  href="Contacto.html">Contacto</a>
+                <a class="hipervinculo"  href="Producto.html">Producto</a>            
+            </nav>
+        </header>
+        <!-- Contenido  Formulario y mapa-->
+        <main>
+            <div class="contact">
+                <h1 class="titulo-form">Formulario de contacto</h1>
+                    <hr>               
+                    <h3>Escribanos su consulta y nos pondremos en contacto a la brevedad</h3>
+                    <hr>
+                    <form class="formulario" action="">
+                        <p>
+                            <label class="etiqueta" for="nombre">Nombre
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escriba su nombre">
+                        </p>
+                        <p>
+                            <label class="etiqueta" for="nombre">Email
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_email" id="email" required="obligatorio" placeholder="Escriba su email">
+                        </p>
+                        <p>
+                            <label class="etiqueta" for="nombre">Asunto
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="asunto" required="obligatorio" placeholder="Escriba el motivo de su consulta">
+                        </p>
+                        <p>
+                            <label class="etiqueta" for="nombre">Consulta
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="etiqueta" id="mensaje" required="obligatorio" placeholder="Deje aquí su consulta..."></textarea>
+                        </p>
+                        <p>
+                            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                        </p>
+                        <p class="leyenda">
+                            <label class="etiqueta" for="nombre">
+                            <span class="obligatorio">*</span> Campos obligatorios
+                            </label>
+                        </p>
+                    </form>
+            </div>
+            <div class="mapa">
+            </div>
+        </main>
+    <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <div class="terminos">
+            <a class="terminos-s1" href="">Términos y condiciones</a>
+            <a class="terminos-s1" href="">Preguntas Frecuentes</a>
+            <a class="terminos-s1" href="">Ayuda</a></ul>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img class="redes-img" src="../static/img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="redes-img" src="../static/img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png" alt=""></a>
+                <p class="copy"> &#9400 Derechos reservados 2024</p>
+            </div>
+        </footer>
+    </body>
 </html>
