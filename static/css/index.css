@@ -42,29 +42,51 @@ header{
 }
 
 body{
-    background-image: url();  /*COLOCAR IMAGEN PARA EL FONDO*/
+    background-image: url(../img/pexels-karolina-grabowska-5632381.png);  /*COLOCAR IMAGEN PARA EL FONDO*/
     background-size: cover;
+    background-color: var(--color-fondo-header);
 }
-
-
+/* Estilo que se usrá desde js para que al recorrer la página 
+el encabezado cambie de color */
+.scrolled{
+    background-color: var(--color-secundario);
+}
 #banner{
-    background-image: url('../img/9146  9268-conjunto-de-elementos-de-infografía-futurista-de-la-tecnología-banner-de-plantilla-de-fondo.jpg');
+    background-image: url(../img/banner-plantilla-de-fondo.png);
     background-size: cover;
     background-position: center;
-    height: 600px;
-    box-shadow:inset 0 0 0 2000px var(--color-fondo-header);
-    color: var(--color-secundario);
+    height: 300px;
+    box-shadow: transparent 0 0 0 2000px var(--color-fondo-header);
+    padding-top: 100px;
 }
-.img-container-banner h1{
-    color: var(--color-texto-header);
-    font-size: 4vw;
+.img-container-banner{
+    width: 100vw;
+    height: 75vh;
+} 
+
+h1{
+
+    font-size: 5vw;
 }
-.img-container-banner h2{
-    margin-bottom: 20px;
+h2{
+    
+    font-size: 3vw;
 }
-.search-title{
+h1,h2 {
+    padding: 10px;
+    color: var(--color-texto-body);
+    text-align: center;
+}
+h3{
+    padding: 10px;
     color: var(--color-primario);
-    font-size: 2vw;
+    text-align: center;
+    font-size: 3vw;
+}
+
+#search{
+    color: var(--color-primario);
+    text-align: center;
 }
 .input-search{
     background-color: var(--barra-input-color);
@@ -73,14 +95,11 @@ body{
     color: white;
     font-size: 16px;
     height: 50px;
-    margin: 20px 0px;
+    margin: 22px 190px;
     outline: none;
     padding: 0px 20px;
     width: 70%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* display:inline-block; */
-   background-position: center;
-   background-size: cover;
 }
 
 main{
@@ -89,16 +108,82 @@ main{
 }
 
 aside{
-    border: 30px; color: orange;
-    min-height: 50px;
-    min-width: 30%;
+    float: right;
+    background-color: var(--color-fondo-header);
+    width: 27vw;
+    margin: 5px 5px 5px;
+    height: max-content;
+    box-sizing: border-box;
+    border: 30px; color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--color-primario);
+
+}
+#aside-container{
+    width: 250px;
+    max-width: 80%;
+    height: auto;
+    border: 5px solid var(--color-fondo-header);
+    padding: 13px;
+    margin: 13px;
+    position: unset;
+    text-align: center;
+
+}
+#aside-list{
+    text-decoration: none;
+    margin-left: 1vw;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-texto-header);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+        
+}
+    
+#texto-aside {
+    background-color: var(--color-fondo-header);
+    width: 230px;
+    max-width: 90%;
+    margin-left: 20px;
+    height: auto;
+    text-align: justify;
+    color: var(--color-texto-body);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid var(--color-secundario);
+    border-radius: 20px;
+    padding: 5%;
+    margin: 5%;
+    position:relative;
+    display: inline-block;
+    
+
+
+
+}
+h4{
+    
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-texto-body);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1,h2,h3{
-    padding: 10px;
-    color: var(--color-primario);
+.subtitle{
+    text-align: center;
+    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    color: var(--color-texto-body);
+    border-radius: 4px;
+    font-size: 2vw;
 }
+#title-animation{
+    
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-align: center;
 
+}
 p{
     background-color: rgb(252, 251, 250);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -119,6 +204,7 @@ p{
     position: relative;
     text-align: center;
     display: inline-block;
+    justify-content: center;
 
 }
 .card{
@@ -171,6 +257,8 @@ footer{
     text-align: center;
     vertical-align:bottom;
     padding-bottom: 5px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .redes-img{
@@ -182,10 +270,10 @@ footer{
     color: #ffffff;
     text-decoration: none;
 }
-
-.copy{
+/* Agregué al copyright la opcion para q no se traduzca en todos los html. No modificar. */
+/* .copy{
     background-color: transparent;
     color: #ffffff;
     font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
