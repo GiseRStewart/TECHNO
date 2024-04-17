@@ -6,8 +6,8 @@
     --color-texto-header:#fffdfd;
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
+    --color-fondo-form: rgba(0, 0, 0, 0.622);
 }
-
 
 *{
     margin: 0;
@@ -16,8 +16,7 @@
 header{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
-    text-align: center;
-    
+    text-align: center;    
 }
 #logo{
     width: 90px;
@@ -40,7 +39,9 @@ body{
     background-size: cover;
 }
 
-
+.contain{
+    display: flex;
+}
 .titulo-form{
     text-align: center;
     font-size: 20px;
@@ -82,7 +83,7 @@ span{
     height: auto;
     border-radius: 1px;
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.622);
+    background-color: var(--color-fondo-form);
 }
 
 input{
@@ -95,6 +96,12 @@ input{
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.prioridad{
+    margin: 20px;
 }
 
 textarea{
@@ -108,7 +115,11 @@ textarea{
     padding-left: 10px;
     margin-bottom: 20px;
     padding-top: 15px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 13px;
 }
+
 
 #enviar{
     height: 30px;
@@ -136,6 +147,57 @@ textarea{
 .leyenda{
     padding: 15px;
 }
+
+.contain-s1{
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 10vw;
+    height: auto;
+}
+
+.mapa{
+    height: 50vh;
+    width: 38vw;
+    background-color: var(--color-fondo-form);
+    text-align: center;
+    border-radius: 5px;      
+}
+.mapa-a1{
+    height: 43vh;
+    width: 35vw;
+    margin-top: 10px;
+}
+
+.info{
+    height: 20vh;
+    width: 25vw;
+    background-color: var(--color-fondo-form);
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 50px;   
+}
+
+.info-a1{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
 
 footer{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
