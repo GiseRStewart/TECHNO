@@ -7,40 +7,6 @@
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
 }
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-}
-
-/*CARLOS: Desde acá hasta body inclusive lo puse yo para que queden todos headers iguales*/
-header{
-    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
-    color: var(--color-texto-header);
-    text-align: center;
-
-}
-#logo{
-    width: 90px;
-    height: 90px;
-    box-sizing: var(--color-fondo-body);
-    margin-right: 400px;
-}
-.hipervinculo{
-    color: var(--color-texto-header);
-    text-decoration: none;
-    margin-left: 75px;
-}
-
-.menu{
-    display:inline-block;
-    vertical-align: middle;
-}
-
 body{
     background-image: url(../img/pexels-eli-sommer-3992776.png);  /*COLOCAR IMAGEN PARA EL FONDO*/
     background-size: cover;
@@ -113,75 +79,6 @@ main{
     border: 40px;
 }
 
-aside{
-    float: right;
-    background-color: var(--color-fondo-header);
-    width: 22vw;
-    margin: 4px 4px 5px 5px;
-    height: max-content;
-    box-sizing: border-box;
-    border: 30px; color: var(--color-secundario);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px var(--color-primario);
-
-
-}
-#aside-container{
-    width: 230px;
-    max-width: 75%;
-    height: auto;
-    border: 5px solid var(--color-fondo-header);
-    padding: 13px;
-    margin: 13px;
-    position: unset;
-    text-align: center;
-
-}
-#aside-list{
-    /* text-decoration: none; */
-    list-style-type: square var(--color-texto-body);
-    margin-left: 1vw;
-    text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--color-texto-header);
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-}
-/* hiper-aside {
-    color: aquamarine;
-}
-ul:link{ color: yellowgreen;
-} */
-#texto-aside {
-    background-color: var(--color-fondo-header);
-    width: 233px;
-    max-width: 95%;
-    margin-left: 20px;
-    height: auto;
-    text-align: justify;
-    color: var(--color-texto-body);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid var(--color-secundario);
-    border-radius: 20px;
-    padding: 5%;
-    margin: 0%;
-    position:relative;
-    display: inline-block;
-
-
-
-
-}
-h4{
-    margin-bottom: 10px;
-    font-weight: 800;
-    text-align: center;
-    color: var(--color-texto-body);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vw;
-}
-
 .subtitle{
     text-align: center;
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
@@ -224,23 +121,39 @@ p{
     flex-direction: row;
 
 }
+.imagen1{
+    width: 18vw;
+    height: 20vh;
+    margin-left: 2vw;
+
+}
+.imagen2{
+    width: 18vw;
+    height: 20vh;   
+    margin-left: 2vw;
+}
+.imagen3{
+    width: 18vw;
+    height: 20vh;
+    margin-left: 2vw;
+}
 .card{
     display: grid;
     align-content: center;
     justify-content: space-around;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center; */
+    /* justify-items: center; */
     position: relative;
     max-width: 276px;
     width: 100%;
     height: auto;
-    box-shadow: 2px 2px 2px 2px rgb(91, 90, 90);
+    box-shadow: 3px 3px 3px 3px rgb(91, 90, 90);
     text-align:center;
     border-radius: 0.5%;
     overflow:hidden;
     margin-right: 10px;
     margin-top: 15px;
-    background: repeating-radial-gradient(black, transparent 100px);
+    background-color: repeating-radial-gradient(black, transparent 80px);
 
 }
 .article{
@@ -266,53 +179,31 @@ video{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     transform: rotate(5deg) scale(2,2) translate(20px, 40px);
-    
+
 }
 @keyframes cambiarImagen {
     0% {background-image:  red; width: 200px;}
     50% {background: yellow; width: 400px;}
     100% {background: green; width: 600px;}
 }
-/*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
-footer{
-    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
-    color: var(--color-texto-header);
-}
-.pie-pagina{
-    color: var(--color-texto-header);
-    text-decoration: none;
-    text-align: right;
-    padding-top: 10px;
-}
-.terminos{
-    margin-right: 150px;
-    font-size: 15px;
-    text-align: center;
-    padding-left: 150px;
-    padding-bottom: 20px;
-}
-.redes{
-    color: var(--color-texto-header);
-    text-align: center;
-    vertical-align:bottom;
-    padding-bottom: 5px;
-    font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.redes-img{
-    height: 15px;
-}
 
-.terminos-s1{
-    padding: 10px;
-    color: #ffffff;
-    text-decoration: none;
+
+@media screen and (max-width: 320px) and (max-width: 1280px) {
+
+    #banner{
+        width: 68vw;
+    }
+    .input-search{
+        justify-content: center;
+    }
+    h3{
+        justify-content: center;
+    }
+    
+    .texto{
+        width: 30vw;
+        height: auto;
+
+    }
 }
-/* Agregué al copyright la opcion para q no se traduzca en todos los html. No modificar. */
-/* .copy{
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */

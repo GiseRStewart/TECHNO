@@ -14,6 +14,9 @@
     <meta name="keywords" content="laptop, portatil, computadora, tecnología, tienda, electronica">
     <!-- Descripción de la página -->
     <meta name="description" content="Presentamos las portatiles con mejor tecnología y de buen precio en el mercado.">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <link rel="stylesheet" href="./static/css/aside.css">
     <title>Home</title>
 </head>
 
@@ -58,9 +61,6 @@
                 pruebas en el mundo real, así como a comparativas de rendimiento y duración de la batería.</p>
         </div>
     </aside>
-
-
-
     <main>
         <!-- banner -->
         <section id="banner">
@@ -70,23 +70,17 @@
                 <a href="register.html">Registrate</a>
             </div>
         </section>
-
-
         <section id="search">
             <h3 class="search-title">¿Qué tipo de laptop buscas?</h3>
             <input type="text" class="input-search" placeholder="Buscar...">
         </section>
-
-
-        <article class="article">
-            <h4>La más económica entre las mejores</h4>
-            <h5 class="subtitle">Asus ZenBook 14 OLED</h5>
+        <article class="article">  
             <!-- img = card  class="article1"-->
             <div class="card">
-                <br><br>
-                <img src="./static/img/asus-zenbook-14-oled.png" width="200" alt="Portatil Azus asus-zenbook-14-oled ">
+                <h4>La más económica entre las mejores</h4>
+                <h5 class="subtitle">Asus ZenBook 14 OLED</h5>
+                <img class="imagen1 borde" src="./static/img/asus-zenbook-14-oled.png" width="200" alt="Portatil Azus asus-zenbook-14-oled ">
                 <div>
-                    <br>
                     <p class="texto">A veces, las empresas tienen que tomar atajos para adaptar una computadora portátil
                         a un precio de $700 dólares. La pantalla suele ser una de las víctimas, con un panel que podría
                         verse afectado en términos de calidad de color y contraste. La ZenBook 14 OLED es una excepción,
@@ -103,19 +97,13 @@
             </div>
         </article>
         <article class="article">
-            <h4 id="title-animation">La mejor de todas</h4>
-            <h5 class="subtitle">Apple MacBook Air M2</h5>
-            <!-- img = card -->
+        <!-- img = card -->
             <div class="card">
-                <br><br>
-                <img src="./static/img/macbook-air-m2-1.png" width="200" alt="Portatil macbook-air-m2-1">
-                <br>
-                <br>
-                <span>Cuando Apple actualizó la MacBook Air a su último procesador M2, no se quedó ahí. La computadora
-                    portátil se rediseñó por completo, comenzando con el chasis que adoptó el mismo diseño general que
-                    la MacBook Pro más grande. Se eliminó el icónico cono de la MacBook y se recortó el chasis, lo que
-                    dio como resultado una computadora portátil minimalista y elegante que se encuentra entre las más
-                    delgadas jamás fabricadas con solo 0.44 pulgadas de grosor.</span>
+                <h4 id="title-animation">La mejor de todas</h4>
+                <h5 class="subtitle">Apple MacBook Air M2</h5>
+                <img class="imagen2 borde" src="./static/img/macbook-air-m2-1.png" width="200" alt="Portatil macbook-air-m2-1">
+                
+               
                 <!-- <div id="cambiarImagen">
                     <img src="./static/img/surface-pro-9-01-1.webp" alt="">
                     <img src="./static/img/pexels-mikhail-nilov-6893376.jpg" alt="">
@@ -123,16 +111,14 @@
                     <img src="./static/img/pexels-anna-shvets-3987013.jpg" alt=""> -->
                     
                     <video iframe width="560" height="315" src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video>
-                </div>
             </div>
         </article>
         <article class="article">
-            <h4>La mejor laptop Windows</h4>
-            <h5 class="subtitle">Dell XPS 13 (9315)</h5>
-            <!-- img = card -->
+           <!-- img = card -->
             <div class="card">
-                <br><br>
-                <img src="./static/img/del-xps-13.png" width="200" alt="Portatil Dell">
+                <h4>La mejor laptop Windows</h4>
+                <h5 class="subtitle">Dell XPS 13 (9315)</h5>
+                <img class="imagen3 borde" src="./static/img/del-xps-13.png" width="200" alt="Portatil Dell">
                 <div>
                     <p class="texto"> Ninguna laptop en años recientes ha tenido un impacto mayor que la XPS 13. Esta
                         fue la que comenzó la carrera por los biseles delgados en 2015, cosa que influyó sobre
@@ -147,18 +133,15 @@
 
                         Claro, es tan poderosa y duradera como siempre, sin sacrificar funcionalidad por el diseño. Ya
                         no es tan barata como antes, pero sin duda se ha ganado su lugar dentro de las opciones premium.
-                        Definitivamente, esta es la mejor laptop que puedes comprar.</p>
+                        Definitivamente, esta es la mejor laptop que puedes comprar.
+                    </p>
                 </div>
             </div>
         </article>
-        </section>
     </main>
 
-
-
-
     <!-- Pie de página -->
-    <footer class="pie-pagina">
+<footer class="pie-pagina">
         <div class="terminos">
             <a class="terminos-s1" href="">Términos y condiciones</a>
             <a class="terminos-s1" href="">Preguntas Frecuentes</a>
@@ -171,9 +154,10 @@
                     src="../static/img/instagram.png" alt=""></a>
             <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
                     alt=""></a>
-            <big>© 2020 <code translate="no"></span></code>
         </div>
-    </footer>
+        <div class="copy" big> © 2020 <code translate="no"></span></code>
+        </div>
+</footer>
 </body>
 
 </html>

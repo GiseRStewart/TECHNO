@@ -1,0 +1,58 @@
+:root{
+    --color-primario: #574695ea;
+    --color-secundario: #28359ae7;
+    --color-fondo-header: #b9a7e3e7;
+    --color-texto-header:#fffdfd;
+    --color-fondo-body: #ffffff;
+    --color-texto-body: #010101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/*CARLOS: Desde acá hasta body inclusive lo puse yo para que queden todos headers iguales*/
+
+header{
+    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    color: var(--color-texto-header);
+    text-align: center;
+
+}
+#logo{
+    width: 90px;
+    height: 90px;
+    box-sizing: var(--color-fondo-body);
+    margin-right: 400px;
+}
+.hipervinculo{
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin-left: 75px;
+}
+
+.menu{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 320px) and (max-width: 1280px) {
+    header{
+        justify-content: 100%;
+    }
+    .menu{
+        text-align: center;
+    }
+    .hipervinculo{
+        text-align: center;
+        /* justify-content: center; */
+        margin: 40px 10px 20px 10px;
+    }
+    #logo{
+        margin-right: 200px;
+    }
+
+}
