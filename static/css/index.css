@@ -15,6 +15,10 @@ body{
     background-color: var(--color-fondo-header);
     background-position: center;
 }
+main{
+    min-height: 200px;
+    border: 40px;
+}
 /* Estilo que se usrá desde js para que al recorrer la página
 el encabezado cambie de color */
 .scrolled{
@@ -71,7 +75,7 @@ h3{
 h4{
     font-size: 20px;
         margin-bottom: 10px;
-        font-weight: 800;
+        font-weight: 500;
         text-align: center;
         color: var(--color-texto-body);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -97,10 +101,6 @@ h4{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main{
-    min-height: 80px;
-    border: 40px;
-}
 
 .subtitle{
     text-align: center;
@@ -118,6 +118,13 @@ main{
     font-size: 20px;
 
 }
+/* #ppal-animation{
+    width: 3vw;
+    height: auto;
+    text-align: center;
+    margin:25px 5px 5px 5px;
+
+} */
 p{
     background-color: rgb(252, 251, 250);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -186,7 +193,7 @@ p{
     transform: scale(1.2);
 }
 
-.article{
+.ppal-content{
     display: inline-grid;
     justify-items: stretch;
     justify-content: center;
@@ -199,6 +206,18 @@ p{
     padding: 15px;
     margin: 5px;
     position: relative;
+}
+.ppal-content ppal-animation:hover{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 26vw;
+    height: 25vh;
+    max-width: 45vw;
+    max-height: 100vh;
+    margin: auto;
+    position: relative;
+
 }
 /* animacion */
 #cambiarImagen{

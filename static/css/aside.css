@@ -1,7 +1,7 @@
 
 
-aside{
-    float: right;
+main>aside {
+    /* float: right;
     background-color: var(--color-fondo-header);
     width: 22vw;
     margin: 4px 4px 5px 5px;
@@ -9,7 +9,13 @@ aside{
     box-sizing: border-box;
     border: 30px; color: var(--color-secundario);
     border-radius: 10px;
-    box-shadow: 2px 2px 5px var(--color-primario);
+    box-shadow: 2px 2px 5px var(--color-primario); */
+    border: 2px blue solid;
+    min-height: 180px;
+    min-width: 25%;
+    margin: 0.5rem;
+    float: right;
+    width: auto;
 
 
 }
@@ -18,7 +24,7 @@ aside{
     max-width: 75%;
     height: auto;
     border: 5px solid var(--color-fondo-header);
-    padding: 13px;
+    padding: 1px;
     margin: 13px;
     position: unset;
     text-align: center;
