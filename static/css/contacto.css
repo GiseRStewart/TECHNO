@@ -17,6 +17,10 @@ header{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
     text-align: center;    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 #logo{
     width: 90px;

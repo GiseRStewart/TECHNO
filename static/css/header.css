@@ -5,6 +5,9 @@
     --color-texto-header:#fffdfd;
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
+    --color-fondo-form: rgba(0, 0, 0, 0.622);
+    --color-fondo-texto: #5BA7CF;
+
 }
 
 *{
@@ -20,6 +23,10 @@ header{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
 }
 #logo{
@@ -32,6 +39,14 @@ header{
     color: var(--color-texto-header);
     text-decoration: none;
     margin-left: 75px;
+}
+.hipervinculo:hover{
+    color: aquamarine;
+}
+a:hover{
+    background-color:var(--color-fondo-texto);
+    color: var(--color-fondo-form);
+    font-weight: bold;
 }
 
 .menu{

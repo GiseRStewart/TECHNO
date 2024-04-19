@@ -24,8 +24,9 @@ aside{
     text-align: center;
 
 }
+
 #aside-list{
-    /* text-decoration: none; */
+    text-decoration: none;
     list-style-type: square var(--color-texto-body);
     margin-left: 1vw;
     text-align: justify;
@@ -35,11 +36,10 @@ aside{
     padding-bottom: 10px;
 
 }
-/* hiper-aside {
-    color: aquamarine;
+#aside-list hiper-aside {
+    color: var(--color-texto-header);
 }
-ul:link{ color: yellowgreen;
-} */
+
 #texto-aside {
     background-color: var(--color-fondo-header);
     width: 233px;
@@ -60,23 +60,18 @@ ul:link{ color: yellowgreen;
 
 
 }
-h2{
+h3{
 
     font-size: 3vw;
     padding: 10px;
     color: var(--color-texto-body);
     text-align: center;
     margin: 15px;
+    margin-top: 100px;
+    margin-left: 13px;
 }
 
-h4{
-    margin-bottom: 10px;
-    font-weight: 800;
-    text-align: center;
-    color: var(--color-texto-body);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vw;
-}
+
 
 @media screen and (max-width: 320px) and (max-width: 1280px){
 
