@@ -10,7 +10,7 @@
     --color-fondo-texto: #5BA7CF;
 }
 body{
-    background-image: url(../img/pexels-eli-sommer-3992776.png);  /*COLOCAR IMAGEN PARA EL FONDO*/
+    background-image: url("../img/fondo-pantalla-index.jpg");/*(Imagen de rawpixel*com en Freepik);  COLOCAR IMAGEN PARA EL FONDO */
     background-size: cover;
     background-color: var(--color-fondo-header);
     background-position: center;
