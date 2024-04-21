@@ -39,13 +39,13 @@
         </nav>
     </header>
     <!-- Contenido -->
-    
+
     <main>
         <aside>
             <!-- Noticias o novedades -->
-            <h3>Novedades</h3>
+            <h1>Novedades</h1>
             <div id="aside-container">
-                <h4>Las 10 mejores laptops que puedes regalar este 2024:</h4>
+                <h2 class="padre-h2">Las 10 mejores laptops que puedes regalar este 2024:</h2>
                 <ul id="aside-list">
                     <li><a class="hiper-aside" href="./templates/Producto.html">Apple MacBook Air M2</a></li>
                     <li><a class="hiper-aside" href="./templates/Producto.html">Dell XPS 13 (9315)</a></li>
@@ -68,91 +68,76 @@
             <div class="texto-banner">
                 <h1>Notebooks</h1>
                 <h2>Encuentra la ideal para vos</h2>
-                <a id="texto-banner" href="./templates/Contacto.html">Registrate</a>
+                <a class="texto-banner" href="./templates/Contacto.html">Registrate</a>
             </div>
         </section>
         <section id="search">
-            <h2 class="search-title">¿Qué tipo de laptop buscas?</h2>
-                <input type="text" class="input-search" placeholder="Buscar...">
+            <h2>¿Qué tipo de laptop buscas?</h2>
+            <input type="text" class="input-search" placeholder="Buscar...">
         </section>
         <section class="ppal-content">
+            <article>
+                <h3>COMPARACIÓN DE PRODUCTOS</h3>
                 <!-- img = card  class="article1"-->
                 <div class="card">
-                    <h4>La más económica entre las mejores</h4>
+                    <h4 id="title-animation">La mejor de todas</h4>
+                    <h5 class="subtitle">Apple MacBook Air M2</h5>
+                    <img class="imagen-borde" src="./static/img/macbook-air-m2-1.png" width="200"
+                        alt="Portatil macbook-air-m2-1">
+                        <div>
+                            <p class="texto">
+                                Cuando Apple actualizó la MacBook Air a su último procesador M2, no se quedó ahí. La computadora portátil se rediseñó por completo, comenzando con el chasis que adoptó el mismo diseño general que la MacBook Pro más grande. Se eliminó el icónico cono de la MacBook y se recortó el chasis, lo que dio como resultado una computadora portátil minimalista y elegante que se encuentra entre las más delgadas jamás fabricadas con solo 0.44 pulgadas de grosor.</p>
+                        </div>        
+                </div>
+                <div class="card">
+                    <h4 id="title-animation">La más económica entre las mejores</h4>
                     <h5 class="subtitle">Asus ZenBook 14 OLED</h5>
-                    <img class="imagen1 borde" src="./static/img/asus-zenbook-14-oled.png" width="200"
+                    <img class="imagen-borde" src="./static/img/asus-zenbook-14-oled.png" width="200"
                         alt="Portatil Azus asus-zenbook-14-oled ">
                     <div>
-                        <p class="texto">A veces, las empresas tienen que tomar atajos para adaptar una computadora
+                        <p class="texto">
+                            A veces, las empresas tienen que tomar atajos para adaptar una computadora
                             portátil
                             a un precio de $700 dólares. La pantalla suele ser una de las víctimas, con un panel que
                             podría
                             verse afectado en términos de calidad de color y contraste. La ZenBook 14 OLED es una
                             excepción,
                             ya que ofrece una espectacular pantalla OLED que es brillante, colorida y muestra negros
-                            como la
-                            tinta. Es equivalente a que las pantallas de las computadoras portátiles cuesten el doble.
-
-                            Pero eso no es todo. Las CPU AMD Ryzen 5 o 7 que se ofrecen brindan un rendimiento de
-                            productividad competente junto con una excelente duración de la batería. Y la calidad de
-                            construcción de la computadora portátil es excelente, con un muy buen teclado y panel táctil
-                            con
-                            un teclado numérico LED. Tiene un valor tremendo en todos los aspectos, lo que la también
-                            sitúa
-                            en nuestra lista de las mejores computadoras portátiles.</p>
+                            como la tinta.
+                        </p>
                     </div>
                 </div>
-        </section>
-                <!-- img = card -->
-            <section id="ppal-animation">
                 <div class="card">
-                    <h4 id="title-animation">La mejor de todas</h4>
-                    <h5 class="subtitle">Apple MacBook Air M2</h5>
-                    <img class="imagen2 borde" src="./static/img/macbook-air-m2-1.png" width="200"
-                        alt="Portatil macbook-air-m2-1">
-                </div>
-                <div id="cambiarImagen">
-                    <!-- <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt=""> -->
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </section>
-               <!-- img = card -->
-            <section class="ppal-content"> 
-               <div class="card">
-                    <h4>La mejor laptop Windows</h4>
+                    <h4 id="title-animation">La mejor laptop Windows</h4>
                     <h5 class="subtitle">Dell XPS 13 (9315)</h5>
-                    <img class="imagen3 borde" src="./static/img/del-xps-13.png" width="200" alt="Portatil Dell">
+                    <img class="imagen-borde" src="./static/img/del-xps-13.png" width="200" alt="Portatil Dell">
                     <div>
-                        <p class="texto"> Ninguna laptop en años recientes ha tenido un impacto mayor que la XPS 13.
-                            Esta
-                            fue la que comenzó la carrera por los biseles delgados en 2015, cosa que influyó sobre
+                        <p class="texto">
+                            Ninguna laptop en años recientes ha tenido un impacto mayor que la XPS 13.
+                            Esta fue la que comenzó la carrera por los biseles delgados en 2015, cosa que influyó sobre
                             absolutamente todos los dispositivos que cuentan con pantalla.
 
                             En su versión más reciente, Dell ha llevado las cosas aún más lejos. La XPS 13 de 2020 ha
                             ampliado su pantalla con una relación de aspecto de 16:10, encogiendo el bisel inferior.
-
-                            El resultado es una pantalla más grande en una laptop del mismo tamaño. La XPS 13 de este
-                            año
-                            también tiene un teclado y un touchpad más grandes, aprovechando así todas las superficies
-                            posibles del dispositivo.
-
-                            Claro, es tan poderosa y duradera como siempre, sin sacrificar funcionalidad por el diseño.
-                            Ya
-                            no es tan barata como antes, pero sin duda se ha ganado su lugar dentro de las opciones
-                            premium.
-                            Definitivamente, esta es la mejor laptop que puedes comprar.
                         </p>
                     </div>
                 </div>
-            </section>
+            </article>
+        </section>
+        <section>
+            <div id="cambiarImagen">
+                <!-- traslación de imagenes -->
+            </div>
+            <!-- video -->
+            <div id="ppal-animation">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- img = card -->
+
     </main>
 
     <!-- Pie de página -->
@@ -163,10 +148,12 @@
             <a class="terminos-s1" href="">Ayuda</a>
         </div>
         <div class="redes">
-            <a href="https://www.facebook.com/" target="_blank"><img class="redes-img" src="../static/img/facebook.png" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="redes-img" src="../static/img/facebook.png"
+                    alt=""></a>
             <a href="https://www.instagram.com/" target="_blank"><img class="redes-img"
                     src="../static/img/instagram.png" alt=""></a>
-            <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
+                    alt=""></a>
         </div>
         <div class="copy"> © 2020 <code translate="no"></code>
         </div>
