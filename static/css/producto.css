@@ -74,30 +74,143 @@ body, main, footer{
 
 
 }
-main{
-    min-height: 80px;
-    border: 40px;
+
+/* Eva:Contenido de productos*/
+
+#encabezado{
+    background-image: url(../img/283818.jpg);
+    height: 80vh; 
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center; 
+   
 }
 
-aside{
-    border: 30px; color: orange;
-    min-height: 50px;
-    min-width: 30%;
+.texto_encabezado {
+    width: 80%; 
+    max-width: 1200px; 
+    padding: 20px;
+    text-align: center; 
+    color: #fff;
 }
 
-h1,h2,h3{
-    padding: 10px;
-    color: blue;
+.texto_encabezado p {
+    font-size: 1.5em; 
+    margin-top: 20px;
+    text-align: left;
 }
 
-p{
-    background-color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    color: darkslategray;
+.texto_encabezado h1 {
+    font-size: 3em; 
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+
+.productos{
+    height: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background: #ffffff;
+}
+
+.box-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.productos .box-conteiner .box {
+    flex: 0.5 0.5 475px;
+    box-shadow: 0 8px 24px #010101;
+    border-radius: 30px;
+    border-radius: 16px solid #111111;
+    position: relative;
+
+}
+
+.productos .box-conteiner .box .descuentos{
+    position:absolute;
+    top: 10px; left: 10px;
+    padding: 8px 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: #fbfbfb;
+    background: #6150ff;
+    
+}
+
+.productos .box-conteiner .box .imagen{
+    position: relative;
     text-align: center;
-    border-radius: 10%;
+    padding-top: 16px;
+    overflow: hidden;
 }
+
+.productos .box-conteiner .box .imagen img{
+    height: 30vh;
+}
+
+.productos .box-conteiner .box:hover .imagen img{
+    transform: scale(1.1);
+}
+
+.boton-compra {
+    background-color: #6150ff; 
+    border: none;
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.boton-compra:hover {
+    background-color: #4735ea; 
+}
+
+.productos .box-conteiner .box .contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos .box-conteiner .box .contenido h3 {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+.productos .box-conteiner .box .contenido p {
+    font-size: 18px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333;
+}
+
+.precio {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.precio span {
+    color: #888;
+    text-decoration: line-through;
+}
+
+h1{
+    margin-top: 10vw;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+
+}
+
 
 footer{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
