@@ -1,10 +1,12 @@
 :root{
-    --color-primario: #574695ea;
-    --color-secundario: #28359ae7;
-    --color-fondo-header: #b9a7e3e7;
+    --color-primario: #1f2979;
+    --color-secundario: #3d478e;
+    --color-terciario: #574695;
+    --color-fondo-header: #b9a7e3;
     --color-texto-header:#fffdfd;
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
+    --barra-input-color: #4f31572c;
     --color-fondo-form: rgba(0, 0, 0, 0.622);
     --color-fondo-texto: #5BA7CF;
 
@@ -14,13 +16,10 @@
     margin: 0;
     padding: 0;
 }
-a {
-    text-decoration: none;
-}
 /*CARLOS: Desde acá hasta body inclusive lo puse yo para que queden todos headers iguales*/
 
 header{
-    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    background:linear-gradient(150deg, var(--color-primario), var(--color-secundario), var(--color-terciario),var(--color-fondo-header));
     color: var(--color-texto-header);
     text-align: center;
     position: fixed;
@@ -30,29 +29,50 @@ header{
 
 }
 #logo{
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     box-sizing: var(--color-fondo-body);
-    margin-right: 400px;
+    margin-right: 350px;
 }
 .hipervinculo{
     color: var(--color-texto-header);
     text-decoration: none;
-    margin-left: 75px;
-}
-.hipervinculo:hover{
-    color: aquamarine;
-}
-a:hover{
-    background-color:var(--color-fondo-texto);
-    color: var(--color-fondo-form);
-    font-weight: bold;
+    margin-left: 50px;
 }
 
 .menu{
     display:inline-block;
     vertical-align: middle;
 }
+
+.menu ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 150px;
+    margin: 0 5px;
+}
+.menu ul li:hover{
+    transform: scale(1.1);
+
+}
+.menu ul li a{
+    color: var(--color-texto-header);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .3s linear;
+}
+.menu ul li a:hover{
+    color: #9d92b2;
+    transform: scale(1.1);
+}
+
+
 
 @media screen and (max-width: 320px) and (max-width: 1280px) {
     header{

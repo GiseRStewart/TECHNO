@@ -1,15 +1,18 @@
 
 /* Posibles colores,a modificar */
 :root{
-
     --color-primario: #1f2979;
-    --color-secundario: #3f478e;
+    --color-secundario: #3d478e;
     --color-terciario: #574695;
-    --color-fondo-header: #947fc4;
+    --color-fondo-header: #b9a7e3;
     --color-texto-header:#fffdfd;
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
+    --barra-input-color: #4f31572c;
+    --color-fondo-form: rgba(0, 0, 0, 0.622);
+    --color-fondo-texto: #5BA7CF;
 }
+
 
 *{
     margin: 0;
@@ -18,144 +21,35 @@
     box-sizing: border-box;
 }
 
-
-a {
-    text-decoration: none;
-}
-/*CARLOS: Desde acá hasta body inclusive lo puse yo para que queden todos headers iguales*/
-
-header{
-    background:linear-gradient(152deg, var(--color-primario), var(--color-secundario), var(--color-terciario), var(--color-fondo-header));
-    color: var(--color-texto-header);
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    
-}
-#logo{
-    width: 150px;
-    height: 150px;
-    box-sizing: var(--color-fondo-body);
-    margin-right: 350px;
-}
-.hipervinculo{
-    color: var(--color-texto-header);
-    text-decoration: none;
-    margin-left: 50px;
-}
-
-.menu{
-    display:inline-block;
-    vertical-align: middle;
-}
-
-.menu ul{
-    float: right ;
-    margin-right: 20px;
-
-}
-.menu ul li{
-    display: inline-block;
-    line-height: 150px;
-    margin: 0 5px;
-}
-.menu ul li:hover{
-    transform: scale(1.1);
-
-}
-.menu ul li a{
-    color: var(--color-texto-header);
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 7px 13px;
-    border-radius: 3px;
-    transition: .3s linear;
-}
-.menu ul li a:hover{
-    color: #9292b2;
-    transform: scale(1.1);
-}
-body, main, footer{
-    border: 3px; color: black;
-    min-height: 50px;
-    margin: 0.5rem;
-
-
-}
-main{
-    min-height: 80px;
-    border: 40px;
-
 body{
-    background-image: url(); /*CAMBIAR IMAGEN*/
+    background-image: url(../img/istockphoto-1341630209-1024x1024.jpg); /*CAMBIAR IMAGEN*/
     background-size: cover;
 
 }
 
-aside{
-    border: 30px; color: orange;
+body, main, footer{
+    border: 3px; color: black;
     min-height: 50px;
-    min-width: 30%;
+    margin: 0.5rem;
 }
 
-h1,h2,h3{
-    padding: 10px;
-    color: blue;
+h3 {
+    margin-top: 10px;
+    padding: 10vw;
+    width: 85vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-texto-body);
+    text-align: center;
+    font-size: 2vw;
+
+
 }
 
-p{
-    background-color: bisque;
+p {
+    background-color: rgb(252, 251, 250);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
-    color: darkslategray;
+    color: var(--color-texto-body);
     text-align: center;
-    border-radius: 10%;
-}
-
-/*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
-footer{
-    background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
-    color: var(--color-texto-header);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-.pie-pagina{
-    color: var(--color-texto-header);
-    text-decoration: none;
-    text-align: right;
-    padding-top: 10px;
-}
-.terminos{
-    margin-right: 150px;
-    font-size: 15px;
-    text-align: center;
-    padding-left: 150px;
-    padding-bottom: 20px;
-}
-.redes{
-    color: var(--color-texto-header);
-    text-align: center;
-    vertical-align:bottom;
-    padding-bottom: 5px;
-}
-
-.redes-img{
-    height: 15px;
-}
-
-.terminos-s1{
-    padding: 10px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.copy{
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5%;
 }
