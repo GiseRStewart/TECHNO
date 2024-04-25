@@ -1,9 +1,12 @@
 /* Posibles paleta de colores,a modificar */
+
 :root {
     --color-primario: #574695ea;
     --color-secundario: #28359ae7;
+    --color-terciario: #574695;
     --color-fondo-header: #b9a7e3e7;
     --color-texto-header: #fffdfd;
+
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
     --color-fondo-form: rgba(0, 0, 0, 0.622);
@@ -25,6 +28,17 @@ main {
     border: 40px;
 }
 
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+header{
+    background:linear-gradient(150deg, var(--color-primario), var(--color-secundario), var(--color-terciario), var(--color-fondo-header));
+=======
 /* Estilo que se usrá desde js para que al recorrer la página
 el encabezado cambie de color */
 .scrolled {
@@ -45,6 +59,7 @@ el encabezado cambie de color */
 .texto-banner > h1 {
     
     text-align: left;
+
     color: var(--color-texto-header);
     display: flex;
     margin: 0px 40px;
@@ -52,6 +67,12 @@ el encabezado cambie de color */
     font-size: 5vw;
 
 }
+
+#logo{
+    width: 150px;
+    height: 150px;
+    margin-right: 350px;
+
 h1 ~ h2 {
     width: 18vw;
     height: 5vh;
@@ -59,16 +80,19 @@ h1 ~ h2 {
     color: var(--color-texto-header);
     margin: 1px 0px 33px  37px;
     padding: 10px;
+
 }
 
 
 .texto-banner a {
     color: var(--color-texto-header);
     text-decoration: none;
-    margin-left: 62vw;
+  
+    margin-left: 50px;
     font-size: 3vw;
     font-weight: 600;
     text-align: left;
+
 
 }
 
@@ -81,6 +105,41 @@ h1 {
     margin: 5px;
 }
 
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li {
+    display: inline-block;
+    line-height: 150px;
+    margin: 0 5px;
+}
+
+.menu ul li:hover{
+    transform: scale(1.1)
+}
+.menu ul li a{
+    color:var(--color-texto-header);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .3s linear;
+}
+.menu ul li a:hover{
+    color: #baa3e3;
+    transform: scale(1.1);
+
+}
+#banner{
+    background-image: url('../img/9146  9268-conjunto-de-elementos-de-infografía-futurista-de-la-tecnología-banner-de-plantilla-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    box-shadow:inset 0 0 0 2000px var(--color-fondo-header);
+    color: var(--color-secundario);
+
+
 h2, h3 {
     
     font-size: 3vw;
@@ -88,6 +147,7 @@ h2, h3 {
     color: var(--color-texto-body);
     text-align: center;
     width: 70vw;
+
 }
 h3 {
     margin-top: 10px;
