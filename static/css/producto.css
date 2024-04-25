@@ -8,6 +8,8 @@
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
     --barra-input-color: #4f31572c;
+    --color-fondo-form: rgba(0, 0, 0, 0.622);
+    --color-fondo-texto: #5BA7CF;
 }
 
 
@@ -17,11 +19,19 @@
     list-style: none;
     box-sizing: border-box;
 }
+/*CARLOS: Desde acá hasta body inclusive lo puse yo para que queden todos headers iguales*/
 header{
     background:linear-gradient(150deg, var(--color-primario), var(--color-secundario), var(--color-terciario),var(--color-fondo-header));
     color: var(--color-texto-header);
     text-align: center;
+
     
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
 }
 #logo{
     width: 150px;
@@ -30,7 +40,6 @@ header{
     margin-right: 350px;
 }
 .hipervinculo{
-
     color: var(--color-texto-header);
     text-decoration: none;
     margin-left: 50px;
@@ -67,6 +76,7 @@ header{
     transform: scale(1.1);
 }
 
+
 body, main, footer{
     border: 3px; color: black;
     min-height: 50px;
@@ -85,6 +95,11 @@ body, main, footer{
     display: flex;
     align-items: center; 
    
+
+body{
+    background-image: url();  /*COLOCAR IMAGEN PARA EL FONDO*/
+    background-size: cover;
+
 }
 
 .texto_encabezado {
@@ -215,16 +230,44 @@ h1{
 footer{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     color: var(--color-texto-header);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 .pie-pagina{
     color: var(--color-texto-header);
     text-decoration: none;
     text-align: right;
-    margin: 75px;
+    padding-top: 10px;
+}
+.terminos{
+    margin-right: 150px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 150px;
+    padding-bottom: 20px;
 }
 .redes{
     color: var(--color-texto-header);
     text-align: center;
     vertical-align:bottom;
+    padding-bottom: 5px;
+}
 
+.redes-img{
+    height: 15px;
+}
+
+.terminos-s1{
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copy{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

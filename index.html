@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8cd613cf0e.js" crossorigin="anonymous"></script>
+    <!-- no se traduzca la marca de la empresa en el pie de pagina -->
+    <!-- <meta http-equiv="Content-Language" content="es"> -->
     <!-- Icono -->
     <link rel="shortcut icon" href="./static/img/images.ico" type="image/x-icon">
-    <link rel="stylesheet" href="static/css/index.css" />
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <title>Trabajo practico</title>
+    <!-- estilo -->
+    <link rel="stylesheet" href="static/css/index.css">
+    <!-- palabras claves para el CEO  copiarlas en todos los HTML -->
+    <meta name="keywords" content="laptop, portatil, computadora, tecnología, tienda, electronica">
+    <!-- Descripción de la página -->
+    <meta name="description" content="Presentamos las portatiles con mejor tecnología y de buen precio en el mercado.">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <link rel="stylesheet" href="./static/css/aside.css">
+    <title>Home</title>
 </head>
 
 <body>
@@ -34,107 +41,125 @@
         </nav>
     </header>
     <!-- Contenido -->
+
     <main>
+        <aside>
+            <!-- Noticias o novedades -->
+            <h1>Novedades</h1>
+            <div id="aside-container">
+                <h2 class="padre-h2">Las 10 mejores laptops que puedes regalar este 2024:</h2>
+                <ul id="aside-list">
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Apple MacBook Air M2</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Dell XPS 13 (9315)</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Razer Blade 14</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Asus ZenBook 14 OLED</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Lenovo ThinkPad Z13</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Microsoft Surface Pro 9</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">HP Spectre x360 13.5</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Dell XPS 15 (9520)</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Lenovo Yoga 9i Gen 8</a></li>
+                    <li><a class="hiper-aside" href="./templates/Producto.html">Lenovo Chromebook Duet 3</a></li>
+                </ul>
+                <p id="texto-aside">Cada una de ellas han sido examinada minuciosamente. Ya sea una Chromebook de buen
+                    precio o una computadora portátil para juegos de primera línea, todas han sido sometidas a duras
+                    pruebas en el mundo real, así como a comparativas de rendimiento y duración de la batería.</p>
+            </div>
+        </aside>
         <!-- banner -->
         <section id="banner">
-            <div class="img-container-banner">
-                <h1>Notebooks a medida</h1>
-                <h2>Encuentra la Notebook ideal para vos</h2>
-                <a href="register.html">Registrate</a>
+            <div class="texto-banner">
+                <h1>Notebooks</h1>
+                <h2>Encuentra la ideal para vos</h2>
+                <a class="texto-banner" href="./templates/Contacto.html">Registrate</a>
             </div>
         </section>
-
-
-        <section id="search" class="container">
-            <h2 class="search-title">¿Qué clase de laptop buscas?</h2>
+        <section id="search">
+            <h2>¿Qué tipo de laptop buscas?</h2>
             <input type="text" class="input-search" placeholder="Buscar...">
         </section>
+        <section class="ppal-content">
+            <article>
+                <h3>COMPARACIÓN DE PRODUCTOS</h3>
+                <!-- img = card  class="article1"-->
+                <div class="card">
+                    <h4 id="title-animation">La mejor de todas</h4>
+                    <h5 class="subtitle">Apple MacBook Air M2</h5>
+                    <img class="imagen-borde" src="./static/img/macbook-air-m2-1.png" width="200"
+                        alt="Portatil macbook-air-m2-1">
+                        <div>
+                            <p class="texto">
+                                Cuando Apple actualizó la MacBook Air a su último procesador M2, no se quedó ahí. La computadora portátil se rediseñó por completo, comenzando con el chasis que adoptó el mismo diseño general que la MacBook Pro más grande. Se eliminó el icónico cono de la MacBook y se recortó el chasis, lo que dio como resultado una computadora portátil minimalista y elegante que se encuentra entre las más delgadas jamás fabricadas con solo 0.44 pulgadas de grosor.</p>
+                        </div>        
+                </div>
+                <div class="card">
+                    <h4 id="title-animation">La más económica entre las mejores</h4>
+                    <h5 class="subtitle">Asus ZenBook 14 OLED</h5>
+                    <img class="imagen-borde" src="./static/img/asus-zenbook-14-oled.png" width="200"
+                        alt="Portatil Azus asus-zenbook-14-oled ">
+                    <div>
+                        <p class="texto">
+                            A veces, las empresas tienen que tomar atajos para adaptar una computadora
+                            portátil
+                            a un precio de $700 dólares. La pantalla suele ser una de las víctimas, con un panel que
+                            podría
+                            verse afectado en términos de calidad de color y contraste. La ZenBook 14 OLED es una
+                            excepción,
+                            ya que ofrece una espectacular pantalla OLED que es brillante, colorida y muestra negros
+                            como la tinta.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 id="title-animation">La mejor laptop Windows</h4>
+                    <h5 class="subtitle">Dell XPS 13 (9315)</h5>
+                    <img class="imagen-borde" src="./static/img/del-xps-13.png" width="200" alt="Portatil Dell">
+                    <div>
+                        <p class="texto">
+                            Ninguna laptop en años recientes ha tenido un impacto mayor que la XPS 13.
+                            Esta fue la que comenzó la carrera por los biseles delgados en 2015, cosa que influyó sobre
+                            absolutamente todos los dispositivos que cuentan con pantalla.
 
-        <article class="article">
-            <h2>Primer articulo</h2>
-            <!-- img = card  class="article1"-->
-            <div class="card">
-                <br><br>
-                <img src="./static/img/asus-zenbook-14-oled.webp" width="300" alt="Portatil Azus asus-zenbook-14-oled ">
-                <div>
-                    <br>
-                    <p class="texto">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, dolores hic reprehenderit
-                        excepturi illo cupiditate labore odit ut eius reiciendis aperiam id porro animi iure maxime
-                        ratione, numquam a accusantium?
-                        Et veniam saepe necessitatibus, quos ea odit temporibus, sunt repellat aspernatur adipisci nihil
-                        dolorem inventore quae dolorum? Hic ipsam blanditiis doloremque fuga excepturi ea, aut eaque
-                        mollitia nostrum ullam praesentium!</p>
+                            En su versión más reciente, Dell ha llevado las cosas aún más lejos. La XPS 13 de 2020 ha
+                            ampliado su pantalla con una relación de aspecto de 16:10, encogiendo el bisel inferior.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class="article">
-            <h2 class="article1">Segundo articulo</h2>
-            <!-- img = card -->
-            <div class="card">
-                <br><br>
-                <img src="./static/img/macbook-air-m2-1.webp" width="300" alt="Portatil macbook-air-m2-1">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div>
-                    <!-- Animación -->
-                    <video></video>
-                </div>
-            </div>
-        </article>
-        <article class="article">
-            <h2 id="article3">Tercer articulo</h2>
-            <!-- img = card -->
-            <div class="card">
-                <br><br>
-                <img src="./static/img/del-xps-13.webp" width="300" alt="Portatil Dell">
-                <div>
-                    <p class="texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam? Culpa,
-                        optio, harum eaque
-                        neque eum, debitis perspiciatis ipsa similique porro dolor a blanditiis corporis reiciendis
-                        soluta? Porro, odit labore!
-                        Est minus quam mollitia voluptatem pariatur, beatae fugiat iusto? Dolores praesentium, cumque
-                        optio officiis eaque unde consectetur error molestiae voluptas, ipsam libero nam corrupti
-                        voluptates nisi at necessitatibus quos eligendi.</p>
-                </div>
-            </div>
-        </article>
+            </article>
         </section>
+        <section>
+            <div id="cambiarImagen">
+                <!-- traslación de imagenes -->
+            </div>
+            <!-- video -->
+            <div id="ppal-animation">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- img = card -->
+
     </main>
-    <aside>
-        <!-- Noticias o novedades -->
-        <h2> Noticias </h2>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium iusto aut reiciendis? Quis quas, omnis
-            voluptatem quaerat ad maiores error, laboriosam nostrum, vero obcaecati dolorum magnam ipsum accusamus sequi
-            corporis!
-
-        </p>
-        <a href="" </a>
-
-
-    </aside>
-
-
 
     <!-- Pie de página -->
-    <footer id=" footer">
-        <a href="">Términos y condiciones</a>
-        <a href="">Preguntas Frecuentes</a>
-        <a href="">Ayuda</a>
-        <br><br>
-        <a href="">&#169;</a>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fa-solid fa-hashtag"></i></a>
-
+    <footer class="pie-pagina">
+        <div class="terminos">
+            <a class="terminos-s1" href="">Términos y condiciones</a>
+            <a class="terminos-s1" href="">Preguntas Frecuentes</a>
+            <a class="terminos-s1" href="">Ayuda</a>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><img class="redes-img" src="../static/img/facebook.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="redes-img"
+                    src="../static/img/instagram.png" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
+                    alt=""></a>
+        </div>
+        <div class="copy"> © 2020 <code translate="no"></code>
+        </div>
     </footer>
-
 </body>
 
 </html>

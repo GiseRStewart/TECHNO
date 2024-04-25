@@ -1,67 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icono -->
-    <link rel="shortcut icon" href="../static/img/images.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/contacto.css">
-    <title>Contacto</title>
-</head>
-<body>
-      <!-- Encabezado -->
-      <header>
-        <!-- Logo -->
-        <div class="menu">
-            <img id=logo src="../static/img/IdearepresentativadeLogo-removebg-preview.png" alt="">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icono -->
+        <link rel="shortcut icon" href="../static/img/images.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../static/css/contacto.css">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <!-- Logo -->
+            <div class="menu">
+                <img id=logo src="../static/img/IdearepresentativadeLogo-removebg-preview.png" alt="">
+            </div >
+            <!-- Hipervínculos del menú -->
+            <nav class="menu">
+                <a class="hipervinculo"  href="../index.html">Home</a>     
+                <a class="hipervinculo"  href="Nosotros.html">Nosotros</a>
+                <a class="hipervinculo"  href="Contacto.html">Contacto</a>
+                <a class="hipervinculo"  href="Producto.html">Producto</a>            
+            </nav>
+        </header>
+        <!-- Contenido  Formulario y mapa-->
+        <main>
+            <div class="contain">
+                <div class="contact">
+                    <h1 class="titulo-form">Formulario de contacto</h1>
+                        <hr>               
+                        <h3>Escribanos su consulta y nos pondremos en contacto a la brevedad</h3>
+                        <hr>
+                        <form class="formulario" action=" https://formspree.io/f/mrgnrqlb" method="post">
+                            <p>
+                                <label class="etiqueta" for="nombre">Nombre
+                                <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escriba su nombre">
+                            </p>
+                            <p>
+                                <label class="etiqueta" for="email">Email
+                                <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escriba su email">
+                            </p>
+                            <p>
+                                <label class="etiqueta" for="asunto">Asunto
+                                <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="asunto" required="obligatorio" placeholder="Escriba el motivo de su consulta">
+                            </p>
+                            <p>
+                                <label class="etiqueta" for="prioridad">Prioridad
+                                    <span class="obligatorio">*</span>
+                                    </label>
+                                <select name="prioridad" class="prioridad">
+                                    <option value="1">Baja</option>
+                                    <option value="2">Media</option>
+                                    <option value="3">Alta</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label class="etiqueta" for="consulta">Consulta
+                                <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Deje aquí su consulta..."></textarea>
+                            </p>
+                            <p>
+                                <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                            </p>
+                            <p class="leyenda">
+                                <label class="etiqueta" for="nombre">
+                                <span class="obligatorio">*</span> Campos obligatorios
+                                </label>
+                            </p>
+                        </form>
+                </div>
+                <div class="contain-s1">
+                    <div class="mapa">
+                        <label class="titulo-form">Ubicación</label>
+                        <iframe class="mapa-a1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6137361254227!2d-71.40802302411876!3d-41.12112623020099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a70bfedb5e05d%3A0x6fdd98db8edfe75b!2sAv.%20de%20los%20Pioneros%2010553%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1713556652708!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt><a class="info-a1" href=""><img class="icon" src="../static/img/tienda.png" alt=""> Av. de los Pioneros 10553, Bariloche </a></dt>
+                            <dt><a class="info-a1" href=""><img class="icon" src="../static/img/llamada.png" alt=""> 455-4423</a></dt>
+                            <dt><a class="info-a1" href=""><img class="icon" src="../static/img/llamada-telefonica.png" alt=""> (0294)-154554423</a></dt>
+                            <dt><a class="info-a1" href=""><img class="icon" src="../static/img/email.png" alt=""> techno@techno.com.ar</a></dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <div class="terminos">
+            <a class="terminos-s1" href="">Términos y condiciones</a>
+            <a class="terminos-s1" href="">Preguntas Frecuentes</a>
+            <a class="terminos-s1" href="">Ayuda</a>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img class="redes-img" src="../static/img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="redes-img" src="../static/img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png" alt=""></a>
+                <p class="copy">&#9400 Derechos reservados 2024</p>
+            </div>
+        </footer>
+    </body>
 
-        </div >
-        <!-- Hipervínculos del menú -->
-        <nav class="menu">
-
-             <ul>
-                <li><a class="hipervinculo" href="../index.html">Home</a></li>
-                <li><a class="hipervinculo" href="Contacto.html">Contacto</a></li>
-                <li><a class="hipervinculo" href="Nosotros.html">Nosotros</a></li>
-                <li><a class="hipervinculo" href="Producto.html">Producto</a></li>
-             </ul>
-            
-        </nav>
-    </header>
-    <!-- Contenido  Formulario y mapa-->
-    <main>
-        <section>
-            
-
-
-        </section>
-
-        <section>
-
-            
-        </section>
-
-        <section>
-
-            
-        </section>
-
-
-    </main>
-<!-- Pie de página -->
-<footer class=" pie-pagina">
-    <div>
-       <ul><a href="">Términos y condiciones</a></ul>
-       <ul><a href="">Preguntas Frecuentes</a></ul>
-       <ul><a href="">Ayuda</a></ul>
-    </div>
-    <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fa-solid fa-hashtag"></i></a>
-        <br>
-        <ul> Derechos reservados @2024</ul>
-    </div>
-</footer>
-</body>
 </html>
