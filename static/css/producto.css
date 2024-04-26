@@ -10,11 +10,18 @@
     align-items: center; 
 }
 
-body{
-    background-image: url();  /*COLOCAR IMAGEN PARA EL FONDO*/
+/* body{
+    background-image: url();  /*COLOCAR IMAGEN PARA EL FONDO
     background-size: cover;
 
+}*/
+body, main{
+    border: 3px; color: black;
+    min-height: 50px;
+    margin: 0.5rem;
+
 }
+
 
 .texto_encabezado {
     width: 80%; 

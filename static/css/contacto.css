@@ -3,6 +3,12 @@ body{
     background-image: url(../img/pexels-pixabay-356056.jpg);
     background-size: cover;
 }
+body, main, footer{
+    border: 3px; color: black;
+    min-height: 50px;
+    margin: 0.5rem;
+
+}
 
 .contain{
     display: flex;

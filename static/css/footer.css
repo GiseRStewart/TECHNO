@@ -3,7 +3,9 @@
 /*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
 footer{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
-    color: var(--color-texto-header);
+    border: 3px; color: black;
+    min-height: 50px;
+    margin: 0.5rem;
 }
 .pie-pagina{
     color: var(--color-texto-header);

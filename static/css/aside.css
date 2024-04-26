@@ -1,88 +1,88 @@
 
 
-main > aside {
+/* main > aside {
     float: right;
     background-color: var(--color-fondo-header);
-    width: 22vw;
-    margin: 4px 4px 5px 5px;
-    height: max-content;
+    width: 395px;
+    max-width: 100%;
+    margin: 20vh 0vw 100vh 0vw;
+    height: 1000vh;
     box-sizing: border-box;
     border: 30px; 
     border-radius: 10px;
     box-shadow: 2px 2px 5px var(--color-primario);
-    /* border: 2px blue solid;
-    min-height: 180px;
-    min-width: 22%;
-    margin: 0.5rem;
-    float: right;
-    width: 25px; */
 
 
-}
+} */
 #aside-container{
-    width: 230px;
-    max-width: 75%;
+    float:right;
+    background-color: var(--color-fondo-header);
+    width: 260px;
+    max-width: 100%;
     height: auto;
-    border: 5px solid var(--color-fondo-header);
-    padding: 16px;
-    margin: 11px;
-    position: unset;
-    text-align: center;
-
+    border: 5px solid var(--color-secundario);
+    padding: 24px;
+    margin: 0px;
+    margin-left: 22px;
+    position: relative;
+    
 }
 
-#aside-list{
+#aside-list {
     text-decoration: none;
-    list-style-type: square var(--color-texto-body);
-    margin-left: 1vw;
+    list-style-type: circle;
+    margin-left: 5vw;
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-header);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 
 }
-#aside-list hiper-aside {
-    color: var(--color-texto-header);
+#aside-list .hiper-aside {
+    color: var(--color-secundario);
+    
+}
+#aside-list li{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #texto-aside {
     background-color: var(--color-fondo-header);
-    width: 233px;
-    max-width: 95%;
-    margin-left: 20px;
-    height: auto;
+    width: 300px;
+    max-width: 120%;
+    height: 1000vh;
+    border: 1px solid var(--color-secundario);
+    border-radius: 20px;
+    position:relative;
+    display: inline-block;
+}
+p{
+
+    font-size: 1.5vw;
+    margin: 10px 0px 50px 10px;
     text-align: justify;
     color: var(--color-texto-body);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid var(--color-secundario);
-    border-radius: 20px;
-    padding: 5%;
-    margin: 0%;
-    position:relative;
-    display: inline-block;
-
-
-
-
 }
-h1{
-
-    font-size: 3vw;
-    padding: 10px;
+aside h1 {
+    float: right;
+    font-size: 3.5vw;
     color: var(--color-texto-body);
     text-align: center;
-    margin: 15px;
-    margin-top: 100px;
-    margin-left: 13px;
+    margin: 6vh 0vw 1vh 130vw;
+    background: linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    border-radius: 4px;
+    padding: 25px;
 }
 .padre-h2 {
-    font-size: 2vw;
-    padding: 0px;
+    font-size: 3vw;
+    padding: 1px;
     color: var(--color-texto-body);
     text-align: center;
-    margin: 0px 0px 16px 6px;
-    width: 15vw;
+    margin: 10vh 0vw 12vh 6vh;
+    width: 25vw;
 }
 
 
