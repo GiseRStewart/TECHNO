@@ -54,7 +54,18 @@ aside h1 {
     margin: 25vh 3vw 10vh 0vw;
 
 } 
+.ppal-content ppal-animation:hover {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 26vw;
+    height: 25vh;
+    max-width: 45vw;
+    max-height: 100vh;
+    margin: auto;
+    position: relative;
 
+}
 video {
     width: 100px;
     height: 100px;
