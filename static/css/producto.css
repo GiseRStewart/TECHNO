@@ -15,12 +15,12 @@
     background-size: cover;
 
 }*/
-body, main{
+ body, main{
     border: 3px; color: black;
     min-height: 50px;
     margin: 0.5rem;
 
-}
+} 
 
 
 .texto_encabezado {
@@ -32,9 +32,10 @@ body, main{
 }
 
 .texto_encabezado p {
-    font-size: 1.5em; 
+    font-size: 16.5; 
     margin-top: 20px;
     text-align: left;
+    color: #fff;
 }
 
 .texto_encabezado h1 {
