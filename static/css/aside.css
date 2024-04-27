@@ -16,11 +16,11 @@
 } */
 #aside-container{
     float:right;
-    background-color: var(--color-fondo-header);
-    width: 26%;
+    background-color: var(--barra-input-color);
+    width: 27%;
     max-width: 100vw;
     height: 247vh;
-    border: 5px solid var(--color-secundario);
+    border: 3px solid var(--barra-input-color);
     padding: 24px;
     margin: 0px;
     margin-left: 22px;
@@ -34,7 +34,7 @@ aside h1 {
     color: var(--color-texto-body);
     text-align: center;
     margin: 20vh 3vw 10vh 0vw;
-    background: linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
+    background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9));
     border-radius: 4px;
     padding: 25px;
 }
@@ -105,7 +105,7 @@ video {
     width: 100%;
     max-width: 100vw;
     height: 70vh;
-    border: 1px solid var(--color-secundario);
+    border: 1px solid var(--color-fondo-body);
     border-radius: 20px;
     position:relative;
     display: inline-block;
