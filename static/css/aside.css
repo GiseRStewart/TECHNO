@@ -32,7 +32,7 @@ aside h1 {
     font-size: 3.5vw;
     color: var(--color-texto-body);
     text-align: center;
-    margin: 6vh 3vw 10vh 0vw;
+    margin: 20vh 3vw 10vh 0vw;
     background: linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
     border-radius: 4px;
     padding: 25px;

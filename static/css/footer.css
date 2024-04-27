@@ -1,5 +1,4 @@
 
-
 /*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
 footer{
     background:linear-gradient(to right, var(--color-secundario), var(--color-primario), var(--color-fondo-header));
