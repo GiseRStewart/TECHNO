@@ -1,19 +1,5 @@
+@import 'animate.css';
 
-
-/* main > aside {
-    float: right;
-    background-color: var(--color-fondo-header);
-    width: 395px;
-    max-width: 100%;
-    margin: 20vh 0vw 100vh 0vw;
-    height: 1000vh;
-    box-sizing: border-box;
-    border: 30px; 
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px var(--color-primario);
-
-
-} */
 #aside-container{
     float:right;
     background-color: var(--barra-input-color);
@@ -29,14 +15,20 @@
     
 }
 aside h1 {
+    
     float: right;
     font-size: 3.5vw;
     color: var(--color-texto-body);
     text-align: center;
     margin: 20vh 3vw 10vh 0vw;
-    background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9));
     border-radius: 4px;
     padding: 25px;
+    background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9));
+}
+aside h1:hover{
+    color: #9d92b2;
+    transform: skewX(20deg);
+    transition:cubic-bezier(.09,.85,.97,.6);
 }
 .padre-h2 {
     font-size: 3vw;
@@ -121,17 +113,11 @@ p{
 }
 
 
-@media screen and (max-width: 350px) and (max-width: 1280px){
+@media screen and (max-width: 300px) {
 
-aside{
-    width: 31vw;
-    height: auto;
-    margin: 3px;
-    padding: 0px;
-}
 #aside-container{
-    max-width: 16vw;
-    max-height: auto;
+    width: 10%;
+    max-height:210vh;
     padding: 5px;
     margin: 8px;
     text-align: center;
@@ -167,6 +153,14 @@ h4{
     margin: 10px 0px 0px -12px;
 
 }
+
+
+}
+
+
+@media screen and (max-width: 1280px){
+
+
 
 
 }

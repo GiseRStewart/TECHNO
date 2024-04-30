@@ -3,7 +3,7 @@ var asideContent = `
 <!-- Noticias o novedades -->
 
 <div id="aside-container">
-    <h1>Novedades</h1>
+    <h1 class="animate__animated animate__heartBeat">Novedades</h1>
     <h2 class="padre-h2">Las 10 mejores laptops que puedes regalar este 2024:</h2>
     <!-- video -->
             <div id="ppal-animation">
