@@ -30,7 +30,6 @@ body{
 body, main, footer{
     border: 3px; color: black;
     min-height: 50px;
-    margin: 0.5rem;
 }
 /* animacion */
 #cambiarImagen {

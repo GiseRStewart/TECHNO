@@ -1,13 +1,20 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-image: url(../img/pexels-pixabay-356056.jpg);
-    background-size: cover;
+    background-size:120%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 body, main, footer{
     border: 3px; color: black;
     min-height: 50px;
-    margin: 0.5rem;
-
 }
 
 .contain{
@@ -17,14 +24,13 @@ body, main, footer{
     text-align: center;
     font-size: 20px;
     color: rgb(180, 167, 224);
-    margin-top: 40px;
+    margin-top: 5vh;
 }
 
 h3{
     text-align: center;
     color: rgb(221, 221, 221);
     margin-top: 10px;
-
 }
 
 hr{
@@ -51,11 +57,11 @@ span{
 }
 
 .contact{
-    width: 460px;
-    height: auto;
+    width: 490px;
+    height:auto;
     border-radius: 1px;
-    padding: 50px;
     background-color: var(--color-fondo-form);
+    margin-top: 154px;
 }
 
 input{
@@ -127,8 +133,8 @@ textarea{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    margin-left: 10vw;
+    margin-left: 15vw;
+    margin-top: 200px;
     height: auto;
 }
 
@@ -170,3 +176,57 @@ textarea{
     padding-right: 5px;
 }
 
+@media screen and (max-width: 1024px) {
+
+    body{
+        background-size: cover; 
+    }
+
+
+    .contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contain-s1{
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info{
+        width: auto;
+        padding: 10px;
+    }
+
+    .contact{
+        width: 100%;
+        text-align:center;
+    }
+    .email-s1{
+        margin-left: 11px;
+        
+    }
+
+    #enviar{
+        margin-left: 90px;
+    }
+    .formulario{
+        vertical-align: middle;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .mapa-a1{
+        width: 350px;
+    }
+    .mapa {
+        width: 400px;
+    }
+
+    
+}
