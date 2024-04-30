@@ -91,3 +91,12 @@ header{
     }
 
 }
+
+@media screen and (max-width: 1024px) {
+
+    #logo{
+        margin-right: 0px;
+        
+    }
+    
+}
