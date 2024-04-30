@@ -32,7 +32,7 @@ body, main, footer{
     min-height: 50px;
 }
 /* animacion */
-#cambiarImagen {
+/*#cambiarImagen {
     background-image: url("../img/pexels-eli-sommer-3992776.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -46,7 +46,7 @@ body, main, footer{
     animation-iteration-count:infinite;
 }
 
-@keyframes cambiar {
+/*@keyframes cambiar {
     0% {
         background-image: url("../img/istockphoto-1157740043-1024x1024.png");
     }
