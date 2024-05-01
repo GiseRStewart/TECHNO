@@ -44,6 +44,7 @@ aside h1:hover{
     width: 26vw;
     height: auto;
     text-align: center;
+    box-sizing: border-box;
     margin: 25vh 3vw 10vh 0vw;
 
 } 
@@ -112,11 +113,37 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@media screen and (max-width: 2560px){
+    #aside-container{
+        height: 178vh;
+    }
+    aside h1{
+        margin: 14vh 3vw 10vh 0vw;
+    }
+    .padre-h2{
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+      
+    #ppal-animation{
+        margin: 10vh 0vw 8vh 1vw;
+    }
+    #aside-list{
+        font-size: xx-large;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #texto-aside{
+        height: 50vh;
+        margin-top: 7vh;
+        margin-bottom: 3vh;
+    }
+}
 
 @media screen and (max-width: 300px) {
 
 #aside-container{
-    width: 10%;
+    width: 100%;
     max-height:210vh;
     padding: 5px;
     margin: 8px;

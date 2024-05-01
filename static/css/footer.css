@@ -53,6 +53,17 @@ footer{
     transition: .3s linear;
 
 }
+@media screen and (max-width: 2560px){
+    .terminos{
+        font-size: 22px;
+    }
+    .redes{
+        font-size: 22px;
+    }
+    .copy {
+        font-size: 22px;
+    }
+}    
 
 @media screen and (max-width: 320px) and (max-width: 1280px) {
 
