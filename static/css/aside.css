@@ -23,7 +23,7 @@ aside h1 {
     margin: 20vh 3vw 10vh 0vw;
     border-radius: 4px;
     padding: 25px;
-    background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9));
+    /* background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9)); */
 }
 aside h1:hover{
     color: #9d92b2;
@@ -115,10 +115,10 @@ p{
 
 @media screen and (max-width: 2560px){
     #aside-container{
-        height: 178vh;
+        height: 184vh;
     }
     aside h1{
-        margin: 14vh 3vw 10vh 0vw;
+        margin: 16vh 3vw 10vh 0vw;
     }
     .padre-h2{
         font-size: 2vw;
@@ -130,13 +130,31 @@ p{
     }
     #aside-list{
         font-size: xx-large;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
     }
     #texto-aside{
         height: 50vh;
-        margin-top: 7vh;
-        margin-bottom: 3vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    #aside-container{
+        height: 181vh;
+    }
+    #ppal-animation{
+        margin: 10vh 0vw 8vh 1vw;
+    }
+    #aside-list{
+        font-size: x-large;
+        padding-top: 11vh;
+        padding-bottom: 1vh;
+    }
+    #texto-aside{
+        height: 50vh;
+        margin-top: 6vh;
+        margin-bottom: 2vh;
     }
 }
 
