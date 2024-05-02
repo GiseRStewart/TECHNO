@@ -139,9 +139,9 @@ p{
         margin-bottom: 5vh;
     }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     #aside-container{
-        height: 181vh;
+        height: 157vh;
     }
     #ppal-animation{
         margin: 10vh 0vw 8vh 1vw;
@@ -152,12 +152,42 @@ p{
         padding-bottom: 1vh;
     }
     #texto-aside{
+        height: 45vh;
+        margin-top: 4vh;
+        margin-bottom: 0vh;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #aside-container{
+        height: 155vh;
+    }
+    aside h1{
+        margin: 15vh 3vw 0vh 0vw;
+    }
+    .padre-h2{
+        font-size: 3vw;
+        margin: 0vh 0vw 10vh 1vw;
+    }
+    #ppal-animation{
+        margin-left: 0vw;
+    }
+    #aside-list{
+        font-size: larger;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        margin-left: 2vw;
+    }
+    #texto-aside{
         height: 50vh;
         margin-top: 6vh;
         margin-bottom: 2vh;
     }
-}
+    aside p{
+        font-size: 2vw;
+        margin: 25px 12px 0px 10px;
 
+    }
+}
 @media screen and (max-width: 300px) {
 
 #aside-container{
@@ -203,9 +233,9 @@ h4{
 }
 
 
-@media screen and (max-width: 1280px){
+/* @media screen and (max-width: 1280px){
 
 
 
 
-}
+} */
