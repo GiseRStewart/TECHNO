@@ -23,14 +23,15 @@ header{
     color: var(--color-texto-header);
     text-align: center;
     position: fixed;
+    padding: 1% 1%;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
 
 }
 #logo{
     width: 150px;
-    height: 150px;
+    height: 144px;
     box-sizing: var(--color-fondo-body);
     margin-right: 350px;
 }
@@ -72,7 +73,7 @@ header{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 2560px){
+/* @media screen and (max-width: 2560px){
     #logo{
         margin-right: 10vw;
     }
@@ -99,7 +100,7 @@ header{
         text-align: center;
         display: block;
         /* justify-content: center; */
-        margin: 40px 10px 20px 10px;
+        /* margin: 40px 10px 20px 10px;
     }
     #logo{
         margin-right: 200px;
@@ -114,4 +115,4 @@ header{
         
     }
     
-}
+} */

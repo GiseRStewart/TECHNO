@@ -1,59 +1,56 @@
-
 /*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
-footer{
-    background:linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9));
-    border: 3px; color: black;
-    min-height: 50px;
-    width: 100%;
-    z-index: 1000;    
-}
 .pie-pagina{
+    background: linear-gradient(150deg, rgb(31, 41, 121, 0.9), rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9), rgb(185, 167, 227, 0.9));
+    width: 100vw;
+    padding: 1%;
+
+}
+
+.pie-pagina > div {
+    width: 100vw;
+    border-radius: 3px;
+    background: linear-gradient(100deg, rgb(31, 41, 121, 0.9), rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9), rgb(185, 167, 227, 0.9));
+}
+
+.seccion-pie {
+    float: left;
+    width: 33%;
+}
+
+.seccion-pie h1{
+    font: bold 22px Arial, Helvetica, sans-serif;
+    margin: 5px 270px 11px 0px;
+}
+
+.seccion-pie a{
     color: var(--color-texto-header);
     text-decoration: none;
-    text-align: right;
-    padding-top: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
 }
-.terminos{
-    margin-right: 150px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    border-radius: 3px;
-    transition: .3s linear;
-    text-align: center;
-    padding-left: 150px;
-    padding-bottom: 20px;
-}
-.redes{
+.seccion-pie hiperv {
     color: var(--color-texto-header);
-    text-align: center;
-    vertical-align:bottom;
-    padding-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    border-radius: 3px;
-    transition: .3s linear;
-}
-
-.redes-img{
-    height: 16px;
-}
-
-.terminos-s1{
-    padding: 10px;
-    color: #ffffff;
     text-decoration: none;
+    font:16px Arial, Helvetica, sans-serif;
 }
-.copy{
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 16px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 5px;
-    transition: .3s linear;
+.seccion-pie > p {
+    margin: 1px 0px 3px 44px;
+}
+.redes-img {
+    height: 28px;
+    /* padding: 28px; */
+    margin: 10px 30px 12px 30px;
+    /* transition: .5s linear; */
+}
 
+.seccion-pie .copy {
+    font: 16px Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-left: 24px;
+    transition: .3s linear;
 }
-@media screen and (max-width: 2560px){
+
+
+/* @media screen and (max-width: 2560px){
     .terminos{
         font-size: 22px;
     }
@@ -92,4 +89,4 @@ footer{
     .terminos{
         padding-left: 120px;
     }
-}
+} */
