@@ -36,16 +36,16 @@
     margin: 1px 0px 3px 44px;
 }
 .redes-img {
-    height: 28px;
-    /* padding: 28px; */
-    margin: 10px 30px 12px 30px;
+    height: 25px;
+    padding: 6px;
+    margin: 12px 40px 45px 40px;
     /* transition: .5s linear; */
 }
 
 .seccion-pie .copy {
     font: 16px Arial, Helvetica, sans-serif;
-    padding: 5px;
-    margin-left: 24px;
+    padding: 4px;
+    margin-left: -292px;
     transition: .3s linear;
 }
 

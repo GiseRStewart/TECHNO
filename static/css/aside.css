@@ -1,54 +1,62 @@
 @import 'animate.css';
 
-#aside-container{
+
+aside {
     float:right;
     background-color: var(--barra-input-color);
-    width: 27%;
     max-width: 100vw;
     height: 247vh;
     border: 3px solid var(--barra-input-color);
-    padding: 24px;
+    width: 310px;
+    border-radius: 10px;
+    padding: 20px;
     margin: 0px;
     margin-left: 22px;
     position: relative;
-    z-index: 1000;
-    
+
+
 }
+
 aside h1 {
-    
-    float: right;
-    font-size: 3.5vw;
+
+    float: center;
+    font-size: 2em;
     color: var(--color-texto-body);
     text-align: center;
-    margin: 20vh 3vw 10vh 0vw;
+    margin: 20vh 2vw 10vh 1vw;
     border-radius: 4px;
-    padding: 25px;
-    /* background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9)); */
+    padding: 15px;
+    box-shadow: linear-gradient(150deg, rgb(31, 41, 121, 0.9), rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9), rgb(185, 167, 227, 0.9)) 5px 5px inset;
+
 }
-aside h1:hover{
-    color: #9d92b2;
+
+
+aside h1:hover {
     transform: skewX(20deg);
-    transition:cubic-bezier(.09,.85,.97,.6);
+    transition: cubic-bezier(.09, .85, .97, .6);
+
 }
+
 .padre-h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 1px;
     color: var(--color-texto-body);
     text-align: center;
-    margin: 10vh 3vw 8vh 0vw;
-    width: 25vw;
+    margin: 8vh 3vw 8vh 0vw;
+    width: 20vw;
 }
 
 
-#ppal-animation{
-    width: 26vw;
+#ppal-animation {
+    width: 24vw;
     height: auto;
-    text-align: center;
+    justify-content: center;
     box-sizing: border-box;
-    margin: 25vh 3vw 10vh 0vw;
+    margin: 23vh 10vw 10vh 0vw;
 
-} 
-.ppal-content ppal-animation:hover {
+}
+
+#ppal-animation:hover {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -60,6 +68,7 @@ aside h1:hover{
     position: relative;
 
 }
+
 video {
     width: 100px;
     height: 100px;
@@ -72,50 +81,71 @@ video {
 
 }
 
-
-#aside-list {
-    text-decoration: none;
-    list-style-type: circle;
-    margin-left: 5vw;
-    text-align: justify;
+#aside-list  ul a{
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-header);
-    padding-top: 4vh;
-    padding-bottom: 80px;
+}
+#aside-list {
+    margin-left: 2vw;
+    text-align: justify;
+    padding-top: 2vh;
+    padding-bottom: 10px;
+    text-decoration: none;
 
 }
+
 #aside-list .hiper-aside {
     color: var(--color-secundario);
-    
+    font-size: large;
+    text-decoration: none;
+    justify-content: center;
+
 }
-#aside-list li{
-    margin-top: 15px;
-     margin-bottom: 15px;
+
+#aside-list li {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 #texto-aside {
-    background-color: var(--color-fondo-header);
+    
     width: 100%;
     max-width: 100vw;
-    height: 70vh;
+    height: 65vh;
     border: 1px solid var(--color-fondo-body);
     border-radius: 20px;
     position:relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
-p{
-
-    font-size: 1vw;
-    margin: 22px 10px 22px 10px;
+#texto-aside p {
+    margin: 20px 10px 10px 5px;
     text-align: justify;
-    background-color: var(--color-fondo-header);
     color: var(--color-texto-body);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: 1em Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (max-width: 2560px){
+.recuperar {
+    clear:both;
+}
+/* @media (min-width: 480px) {
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 4rem;
+    }
+
+    aside {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+
+} */
+
+/* @media screen and (max-width: 2560px){
     #aside-container{
-        height: 184vh;
+        height: 175vh;
     }
     aside h1{
         margin: 16vh 3vw 10vh 0vw;
@@ -130,18 +160,18 @@ p{
     }
     #aside-list{
         font-size: xx-large;
-        padding-top: 4vh;
+        padding-top: 2vh;
         padding-bottom: 4vh;
     }
     #texto-aside{
-        height: 50vh;
-        margin-top: 5vh;
+        height: 45vh;
+        margin-top: 2vh;
         margin-bottom: 5vh;
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     #aside-container{
-        height: 157vh;
+        height: 180vh;
     }
     #ppal-animation{
         margin: 10vh 0vw 8vh 1vw;
@@ -157,7 +187,7 @@ p{
         margin-bottom: 0vh;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     #aside-container{
         height: 155vh;
     }
@@ -230,7 +260,7 @@ h4{
 }
 
 
-}
+} */
 
 
 /* @media screen and (max-width: 1280px){
