@@ -101,13 +101,13 @@ textarea{
 
 #enviar{
     height: 30px;
+    width: 400px;
     margin-left: 15px;
     background-color: transparent;
     border-color:var(--color-primario);
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    width: 400px;
     color: #ffffff;
 }
 
@@ -134,7 +134,7 @@ textarea{
     align-items: center;
     justify-content: center;
     margin-left: 17vw;
-    margin-top: 143px;
+    margin-top: 120px;
     height: auto;
 }
 
@@ -183,6 +183,12 @@ textarea{
     padding-right: 5px;
 }
 
+#aviso{
+    text-align: center;
+    margin-left: -100px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1024px) {
 
 
@@ -212,7 +218,7 @@ textarea{
     }
 
     .contain-s1{
-        margin-left: 0px;
+        margin-left: 70px;
         margin-top: 50px;
         margin-bottom: 20px;
     }
@@ -247,6 +253,10 @@ textarea{
 
     #consulta{
         vertical-align: top;
+    }
+
+    #aviso{
+        margin-left: 100px;
     }
 
     
