@@ -7,7 +7,7 @@
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
     --barra-input-color: #4f31572c;
-    --color-fondo-form: rgba(0, 0, 0, 0.622);
+    --color-fondo-form: rgba(0, 0, 0, 0.7);
     --color-fondo-texto: #5BA7CF;
 
 }
@@ -107,6 +107,7 @@ header{
     }
 
 }
+*/
 
 @media screen and (max-width: 1024px) {
 
@@ -115,4 +116,4 @@ header{
         
     }
     
-} */
+} 
