@@ -5,7 +5,7 @@ var asideContent = `
     <h2 class="padre-h2">Las 10 mejores laptops que puedes regalar este 2024:</h2>
     <!-- video -->
             <div id="ppal-animation">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
+                <iframe class= "video" width="300" height="200" src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
