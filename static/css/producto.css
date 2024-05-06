@@ -31,7 +31,7 @@
 }
 
 .texto_encabezado h1 {
-    font-size: 30px; 
+    font-size: 40px; 
     margin-top: 20px;
     text-align: left;
     color: #fff;
@@ -39,7 +39,7 @@
 }
 
 .texto_encabezado h2 {
-    font-size: 40px; 
+    font-size: 50px; 
     margin-bottom: 20px;
     text-align: right;
     padding-top: 30vh;
@@ -136,42 +136,89 @@
     margin-bottom: 10px;
 }
 
+
+
 .precio span {
     color: #888;
     text-decoration: line-through;
 }
+
+
 
 h1{
     margin-top: 10vw;
     font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
 }
-
-
 /* 
-@media screen and (max-width: 2560px) {
-
-    .texto_encabezado h1{
-        font-size: 70px;
+@media screen and (max-width: 2560px){
+    .texto_encabezado h1 {
+        font-size: 60px; 
+        
     }
     
-    .texto_encabezado h2{
-        font-size: 80px;
+    .texto_encabezado h2 {
+        font-size: 60px; 
+       
     }
 
     .productos .box-conteiner {
         flex-wrap: wrap;
+        gap: 1.5rem;
         justify-content: space-between; 
     }
 
     .productos .box-conteiner .box {
-        flex: 0 0 calc((100% - 10 * 1.5rem) / 5); 
-        margin-bottom: 1.5rem; 
+        flex: 0 0 calc(20% - 1.5rem); 
+        max-width: calc(20% - 1.5rem); 
+    }
+
+    .productos .box-conteiner .box .descuentos{
+        z-index: 50;
+    }
+
+    .productos .box-conteiner .box .imagen img{
+        margin-top: 6vh;
     }
     
-    .productos .box-conteiner .box .descuentos{
-        padding-top: 10px;
-        z-index: 50;
+    .boton-compra{
+        margin-top: 2vh;
     }
 } */
 
+
+@media screen and (max-width: 1440px){
+    #encabezado{
+        margin-top: 5vh;
+    }
+    
+    .texto_encabezado h1 {
+        font-size: 30px; 
+        
+    }
+    
+    .texto_encabezado h2 {
+        font-size: 40px; 
+       
+    }
+
+    .productos .box-conteiner .box .descuentos{
+        z-index: 50;
+    }
+
+    .productos .box-conteiner .box .imagen img{
+        margin-top: 4vh;
+    }
+    
+    .boton-compra{
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 728px){
+    
+}
