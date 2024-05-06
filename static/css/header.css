@@ -73,7 +73,7 @@ header{
     transform: scale(1.1);
 }
 
-/* @media screen and (max-width: 2560px){
+@media screen and (max-width: 2560px){
     #logo{
         margin-right: 10vw;
     }
@@ -99,8 +99,8 @@ header{
     .hipervinculo{
         text-align: center;
         display: block;
-        /* justify-content: center; */
-        /* margin: 40px 10px 20px 10px;
+        justify-content: center;
+        margin: 40px 10px 20px 10px;
     }
     #logo{
         margin-right: 200px;
@@ -115,4 +115,4 @@ header{
         
     }
     
-} */
+}
