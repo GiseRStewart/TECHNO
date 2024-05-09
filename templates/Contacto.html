@@ -23,59 +23,71 @@
                         <hr>               
                         <h3>Escribanos su consulta y nos pondremos en contacto a la brevedad</h3>
                         <hr>
-                        <form class="formulario" action=" https://formspree.io/f/mrgnrqlb" method="post" onsubmit="return validarDatos()">
-                            <p>
-                                <label class="etiqueta" for="nombre">Nombre
-                                <span class="obligatorio">*</span>
-                                </label>
-                                <input type="text" name="introducir_nombre" id="nombre" placeholder="Escriba su nombre">
-                            </p>
-                            <p class="email-s1">
-                                <label class="etiqueta" for="email">Email
-                                <span class="obligatorio">*</span>
-                                </label>
+                        <form class="formulario" action=" https://formspree.io/f/mrgnrqlb" target="_blank" method="post" onsubmit="return validarDatos()">
+
+                            <label class="etiqueta" for="nombre">Nombre</label> 
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="introducir_nombre" id="nombre" placeholder="Escriba su nombre">
+                            
+                            <div class="email-s1">
+                                <label class="etiqueta" for="email">Email</label>
+                                <span class="obligatorio">*</span>                                
                                 <input type="email" name="introducir_email" id="email" required placeholder="Escriba su email">
-                            </p>
-                            <p>
-                                <label class="etiqueta" for="asunto">Asunto
+                            </div>
+                            
+                            <label class="etiqueta" for="asunto">Asunto</label>
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="introducir_asunto" id="asunto" placeholder="Escriba el motivo de su consulta">
+                            
+                            <div>
+                                <label class="etiqueta" for="sector">Area de contacto:</label>
                                 <span class="obligatorio">*</span>
-                                </label>
-                                <input type="text" name="introducir_asunto" id="asunto" placeholder="Escriba el motivo de su consulta">
-                            </p>
-                            <p>
-                                <label class="etiqueta" for="prioridad">Prioridad
-                                    <span class="obligatorio">*</span>
-                                    </label>
-                                <select name="prioridad" class="prioridad">
-                                    <option value="1">Baja</option>
-                                    <option value="2">Media</option>
-                                    <option value="3">Alta</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label class="etiqueta" id="consulta" for="consulta">Consulta
+                                <div class="checkbox-s1" >
+                                    <label for="ventas" class="etiqueta-s1">Ventas:</label>
+                                    <input type="checkbox" id="ventas" name="ventas" class="checkbox">
+                                    <label for="rrhh" class="etiqueta-s1">R.R.H.H.:</label>
+                                    <input type="checkbox" id="rrhh" name="rrhh" class="checkbox">
+                                    <label for="compras" class="etiqueta-s1">Compras:</label>
+                                    <input type="checkbox" id="compras" name="compras" class="checkbox">
+                                </div>  
+                            </div>
+                            
+                            <div>
+                                <label for="file" class="etiqueta">Adjuntar archivo (CV, foto, imagen, PDF):</label>
+                                <input type="file" name="file" id="file" class="file">
+                            </div>
+
+                            <label class="etiqueta" for="prioridad">Prioridad</label>
+                            <span class="obligatorio">*</span>
+                            <select name="prioridad" class="prioridad">
+                                <option value="1">Baja</option>
+                                <option value="2">Media</option>
+                                <option value="3">Alta</option>
+                            </select>
+                            
+                            <div>
+                                <label class="etiqueta" id="consulta" for="consulta">Consulta</label>
                                 <span class="obligatorio">*</span>
-                                </label>
                                 <textarea name="introducir_mensaje" id="mensaje" required placeholder="Deje aquí su consulta..."></textarea>
-                            </p>
+                            </div>
 
                             <div id="aviso"></div>
                             
                             <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
                             
-                            <p class="leyenda">
+                            <div class="leyenda">
                                 <label class="etiqueta" for="nombre">
                                 <span class="obligatorio">*</span> Campos obligatorios
                                 </label>
-                            </p>
+                            </div>
                         </form>
                 </div>
                 <div class="contain-s1">
                     <div class="info">                        
                         <dl>
                             <dt><a class="info-a1" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6137361254227!2d-71.40802302411876!3d-41.12112623020099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a70bfedb5e05d%3A0x6fdd98db8edfe75b!2sAv.%20de%20los%20Pioneros%2010553%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1713556652708!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img class="icon" src="../static/img/tienda.png" alt=""> Av. de los Pioneros 10553, S. C. de Bariloche </a></dt>
-                            <dt><a class="info-a1" href="tel: +54929446926478" ><img class="icon" src="../static/img/llamada.png" alt="LLamada"> 4692-6478</a></dt>
-                            <dt><a class="info-a1" href="https://wa.me/29446926478" ><img class="icon" src="../static/img/llamada-telefonica.png" alt="Whatsapp"> (0294)-15-4692-6478</a></dt>
+                            <dt><a class="info-a1" href="tel:+54929446926478" ><img class="icon" src="../static/img/llamada.png" alt="LLamada"> 4692-6478</a></dt>
+                            <dt><a class="info-a1" href="https://wa.me/29446926478" target="_blank"><img class="icon" src="../static/img/llamada-telefonica.png" alt="Whatsapp"> (0294)-15-4692-6478</a></dt>
                             <dt><a class="info-a1" href="mailto:techno@techno.com.ar" ><img class="icon" src="../static/img/email.png" alt="E-mail"> techno@techno.com.ar</a></dt>
                         </dl>
                     </div>

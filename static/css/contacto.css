@@ -6,7 +6,7 @@
 
 body{
     background-image: url(../img/pexels-pixabay-356056.jpg);
-    background-size:130%;
+    background-size:150%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ body, main, footer{
     font-size: 20px;
     color: rgb(180, 167, 224);
     margin-top: 5vh;
+    margin-left: -40px;
 }
 
 h3{
@@ -56,12 +57,40 @@ span{
     font-size: 15px;
 }
 
+.etiqueta-s1{
+    font-size: 15px;
+    color:white;
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 20px;
+    margin-top: 10px;
+    
+
+}
+.checkbox{
+    width: 15px;
+}
+.checkbox-s1{
+    margin-left: 50px;
+}
+
+.file{
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: white;
+    border: 0;
+}
+
 .contact{
     width: 490px;
     height:auto;
     border-radius: 1px;
     background-color: var(--color-fondo-form);
-    margin-top: 176px;
+    margin-top: 178px;
 }
 
 input{
@@ -133,8 +162,8 @@ textarea{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 17vw;
-    margin-top: 120px;
+    margin-left: 26.6vw;
+    margin-top: 4.5vw;
     height: auto;
 }
 
@@ -159,9 +188,9 @@ textarea{
 }
 
 .info{
-    height: 34vh;
-    width: 29vw;
-    background-color:rgba(21, 21, 26, 0.891);
+    height: 40vh;
+    width: 34vw;
+    background-color:rgba(21, 21, 26, 0.95);
     border-radius: 5px; 
     display: flex;
     align-items: center;
@@ -172,7 +201,7 @@ textarea{
     text-decoration: none;
     color: white;
     font-size: 2.5vh;
-    padding: 5px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -189,6 +218,17 @@ textarea{
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    .contact{
+        margin-top: 190px;
+    }
+
+    .contain-s1{
+        margin-top: 200px;
+    }
+}
+
+    
 @media screen and (max-width: 1024px) {
 
 
