@@ -84,10 +84,13 @@ header{
 @media screen and (min-width: 1024px) and (max-width: 1440px){
     #logo{
         margin-right: 0px;
-        
     }
     .menu ul li a {
         font-size: 18px;
+    }
+
+    header{
+        width: 100%;
     }
 }
 @media screen and (max-width: 320px) and (max-width: 1280px) {
@@ -113,6 +116,16 @@ header{
 @media screen and (max-width: 768px) {
     header{
         justify-content: center;
+        width: 100%;
+    }
+
+    #logo{
+        margin-left: 8vw;    
+    }
+
+    .menu{
+        width: auto;
+        height: 100px;
     }
 
     
@@ -121,16 +134,25 @@ header{
 @media screen and (max-width: 480px){
     header{
         text-align: center;
+        width: 102% !important;
+        display: grid;
+        position:absolute;
     }
     .menu{
-        width: 100%;
-        height: 100%;
-        padding: 0%;
+        width:300px;
+        margin-left: 15vw;
     }
+
+    li{
+        line-height: 50px!important;
+    }
+
     .hipervinculo{
-        display: block;
-        margin-right: 0px;
-        text-align: center;
+        margin-left: 0px;
     }
-    
+
+    #logo{
+        margin-left: 0px;
+    }
+
 }
