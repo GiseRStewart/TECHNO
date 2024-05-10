@@ -115,33 +115,6 @@ p {
 
 }
 
-@media screen and (max-width: 768px){
-    aside {
-        width: 90%;
-        padding: 5%;
-        margin-top: 20px;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* @media (min-width: 480px) {
     .con-sidebar {
         display: grid;
@@ -157,9 +130,11 @@ p {
 
 } */
 
-/* @media screen and (max-width: 2560px){
-    #aside-container{
-        height: 175vh;
+@media screen and (max-width: 2560px){
+    aside{
+        
+        width: 350px;
+        height: 180vh;
     }
     aside h1{
         margin: 16vh 3vw 10vh 0vw;
@@ -170,68 +145,89 @@ p {
     }
 
     #ppal-animation{
-        margin: 10vh 0vw 8vh 1vw;
+        margin: 10vh 0vw 5vh 1vw;
     }
     #aside-list{
         font-size: xx-large;
-        padding-top: 2vh;
-        padding-bottom: 4vh;
+        padding-bottom: 1vh;
+        margin-left: 5vw;
     }
     #texto-aside{
-        height: 45vh;
-        margin-top: 2vh;
-        margin-bottom: 5vh;
+        height: 25vh;
+        margin-left: 1vw;
+       
     }
+   
 }
 @media screen and (max-width: 1440px) {
-    #aside-container{
+    aside{
         height: 180vh;
+        width: 352px;
+    }
+    aside h1{
+        margin: 25vh 5vw 8vh 0vw;
     }
     #ppal-animation{
         margin: 10vh 0vw 8vh 1vw;
     }
     #aside-list{
         font-size: x-large;
-        padding-top: 11vh;
-        padding-bottom: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        margin-left: 8vw;
     }
     #texto-aside{
-        height: 45vh;
-        margin-top: 4vh;
-        margin-bottom: 0vh;
+        height: 30vh;
+        margin-left: 2vw;
     }
 }
 @media screen and (max-width: 1024px) {
-    #aside-container{
+    aside {
         height: 155vh;
+        width: 290px;
     }
     aside h1{
-        margin: 15vh 3vw 0vh 0vw;
+        margin: 28vh 6vw 2vh 0vw;
+        font-size: 2rem;
     }
     .padre-h2{
-        font-size: 3vw;
-        margin: 0vh 0vw 10vh 1vw;
+        font-size: 2vw;
+        margin: 180px 0px 0px 0px;
+        padding: 44px;
+        
     }
     #ppal-animation{
-        margin-left: 0vw;
+        
+        margin-top: 5vh;
     }
     #aside-list{
-        font-size: larger;
-        padding-top: 0vh;
-        padding-bottom: 0vh;
-        margin-left: 2vw;
+        font-size: small;
+        margin-left: 5vw;
+        margin-bottom: 0px;
+
     }
     #texto-aside{
-        height: 50vh;
-        margin-top: 6vh;
-        margin-bottom: 2vh;
+        height: 25vh;
+        margin-top: 0px;
     }
-    aside p{
-        font-size: 2vw;
+    
+    p{
+        font-size: 1.2vw;
         margin: 25px 12px 0px 10px;
 
     }
 }
+
+@media screen and (max-width: 768px){
+    aside {
+        width: 90%;
+        padding: 5%;
+        margin-top: 20px;
+
+    }
+}
+
+/* 
 @media screen and (max-width: 300px) {
 
 #aside-container{
@@ -274,8 +270,8 @@ h4{
 }
 
 
-} */
+} 
 
 
-
+ */
 
