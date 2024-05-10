@@ -13,7 +13,6 @@
     --color-fondo-texto: #5BA7CF;
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -21,32 +20,38 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(../img/istockphoto-1341630209-1024x1024.jpg); /*CAMBIAR IMAGEN*/
-    background-size: cover;
-
+main {
+    width: 100vw;
+    height: 150vh;
+    margin-top:190px;
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: justify;
 }
 
-body, main, footer{
+body{
     border: 3px; color: black;
     min-height: 50px;
 }
 
+.mision-div {
+    width: 100%;
+    height: 2vh;
+    }
 
-h3 {
-    margin-top: 10px;
+.misionT .visionT .valoresT {
     padding: 10vw;
     width: 85vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: center;
     font-size: 2vw;
-
-
 }
 
-p {
-    background-color: rgb(252, 251, 250);
+.mision .vision .valores {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     color: var(--color-texto-body);
