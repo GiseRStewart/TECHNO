@@ -6,15 +6,18 @@
 body {
     background-color:var(--color-fondo-body);
     /*(Imagen de rawpixel*com en Freepik);  COLOCAR IMAGEN PARA EL FONDO */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 1.6rem;
     line-height: 1.2;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 
 main {
     width: 100vw;
-    /* background-image: url("../img/golden-frame-blue-background.png"); */
     background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
     background-size:contain;
     display: flex;
@@ -42,15 +45,14 @@ el encabezado cambie de color */
     /* <a href="https://www.freepik.es/foto-gratis/marco-oro-sobre-fondo-azul_4413670.htm#fromView=search&page=1&position=30&uuid=98d2489b-bbe4-4e9b-b1ce-9062882d56a4">Imagen de rawpixel.com en Freepik</a> */
 }
 #banner {
-    
-    background: url(../img/vecteezy_digital-transformation-technology.png) border-box no-repeat;
+
+    background: url(../img/vecteezy_digital-transformation-technology.png) no-repeat;
     background-size:contain;
     float: left;
     max-width: 100%;
     width: 100%;
-    height: 400px;
+    height: 350px;
     box-shadow: transparent 0 0 0 2000px var(--color-fondo-header);
-    /* padding-top: 600px; */
     border-radius: 10px;
     text-align: left;
 }
@@ -87,24 +89,27 @@ h1 {
     color: var(--color-texto-header);
     text-decoration: none;
     transform: scale(1.1);
-    padding: 4vh;
-    margin-left: 5vw;
-    font-size: 3vw;
-    font-weight: 600;
-    text-align: left;
+    padding: 0vh;
+    margin-left: 58vw;
+    font-size: 2vw;
+    font-weight: 550;
+    text-align: right;
     justify-content: left;
 }
 
 #search {
     text-align: center;
-    font-size: 1.5vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     position: relative;
     width: 45vw;
     height: 2vh;
-    margin: 38px 0px 20px  190px;
-    padding: 40px;
+    margin: 30px 0px 10px  200px;
+    padding: 35px;
     color: var(--color-texto-body);
+    font-family: "Sedan", serif;
+    /* font-weight: 400; */
+    font-style: normal;
 }
 
 #input-search {
@@ -114,67 +119,135 @@ h1 {
     color: black;
     font-size: 16px;
     height: 30px;
-    margin: 12vh 15vw 10vh 6vw;
+    margin: 5vh 0vw 5vh 18vw;
     outline: none;
     padding: 0px 20px;
-    width: 80%;
+    width: 60%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
-h3 {
-    margin: 2vh 0vw 3vh 0vw;
-    padding: 2vw;
-    width: 70vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--color-texto-body);
-    text-align: center;
-    font-size: 1.5vw;
+/* animacion */
+#cambiarImagen{
+    background-image: url("../img/pexels-eli-sommer-3992776.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40vh;
+    
+    animation-name: cambiarImagen;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
+
+    position: relative;
+    justify-content: center;
+    margin: 0vh 35vw 0vh 35vw;
 }
-#ppal-content {
-    width: 75vw;
-    height: 200vh;
+
+@keyframes cambiarImagen{
+    0% {
+        background-image: url("../img/pexels-mikhail-nilov-6893376.png");
+    }
+
+    25% {
+        background-image: url("../img/istockphoto-1206796363-1024x1024.gif");
+    }
+
+    50% {
+        background-image: url("../img/istockphoto-1459941554-1024x1024.png");
+    }
+
+    75% {
+        background-image: url("../img/IdearepresentativadeLogo-removebg-preview.png");
+    }
+
+    100% {
+        background-image: url("../img/vecteezy_digital-transformation-technology.png");
+    }
+}
+
+/* #animacion{
+    background-image: url(`../img/Chromebook.jpg`);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--color-fondo-header);
+    animation-name: cambiar;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transform: rotate(5deg) scale(2, 2) translate(20px, 40px);
+}
+@keyframes cambiar {
+    0% {background-image: url(`../img/asus-zenbook-14-oled.png`);}
+    25% {background-image: url(`../img/hp-spectre-x360-13-5-front-angled.png`);}
+    50% {background-image: url(`../img/macbook-air-m2-1.png`);}
+    75% {background-image: url(`../img/del-xps-13.png`);}
+    100% {background-image:url(`../img/thinkpadz13.jpg`);}
+} */
+
+.contenedor-cards{
+   
+    width: 100vw;
+    height: auto;
+    margin-top: 20vh;
+    gap: 15vh;
+}
+.ppal-content {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    column-gap: 3vw;
     border: 2px solid var(--barra-input-color);
     padding: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0vh;
-    justify-content:center; 
+    margin-top: 15vh;
+    margin-left: 2vw;
     background-color: var(--barra-input-color);
-    gap: 2vw;
 }
 
+.contenedor-cards h3 {
+    margin: 30vh 0vw 0vh 14vw;
+    width: 70vw;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    color: var(--color-texto-body);
+    text-align: center;
+    /* font-size: 2vw; */
+    font-family: "Sedan", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.contenedor-cards .card {
 
-.card {
-    box-sizing: border-box;
-    width: 360px;
-    height: 1350px;
     box-shadow: 2px 2px 2px 2px rgb(91, 90, 90);
     text-align: center;
     border-radius: 0.5%;
-    /* margin: 5vh 0.5vw 5vh 0.5vw; */
+    margin: 10vh 0.5vw 5vh 0.5vw;
 
 }
 
 .card img {
     transition: transform 0.3s ease-in-out;
-    
+
 }
 
 .card img:hover {
     transform: scale(1.2);
 }
 
-.title-animation {
+.contenedor-cards .title-animation {
     font-weight: 150;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     text-align: center;
     margin: 4vh 2vw 2vh 2vw;
     font-size: 22px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sedan", serif;
+    font-weight: 600;
+    font-style: normal;
     justify-content: center;
 }
 
-.subtitle{
+.contenedor-cards .subtitle{
     text-align: center;
     color: var(--color-texto-body);
     border-radius: 2px;
@@ -183,9 +256,9 @@ h3 {
 }
 .subtitle:hover{
     background: linear-gradient(150deg,rgb(31, 41, 121, 0.9) , rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9),rgb(185, 167, 227, 0.9));
-    
+
 }
-.imagen-borde {
+.contenedor-cards .imagen-borde {
     width: 16vw;
     height: 25vh;
     margin: 15px 28px 15px 30px;
@@ -194,37 +267,39 @@ h3 {
     border: 1px solid var(--color-fondo-body);
 }
 
-.texto {
+.contenedor-cards .texto {
     max-width: 100vw;
-    width: 22.5vw;
-    height: 140vh;
+    width: 27.5vw;
+    height: 63vh;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid var(--color-fondo-body);
     padding: 10px;
-    margin: 1px;
+    margin: 1px 8px 0px 5px;
     margin-left: 8px;
     writing-mode:horizontal-tb;
     justify-content: center;
-    
+
 }
-p {
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+
+.contenedor-cards .texto p {
+
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
     color: var(--color-texto-body);
     text-align: justify;
     letter-spacing: 1px;
-    text-indent: 5rem;
-    border-radius: 5%;
-    margin-top: 30px; 
+    text-indent: 3rem;
+    margin: 30px;
 }
 
 @media screen and (max-width: 720px) {
     .contenedor{
         width: 100%;
     }
-    
+
 }
 /* @media screen and (max-width: 2560px){
     #banner{
@@ -244,7 +319,7 @@ p {
         padding: 3vh;
     }
     #search{
-     margin: 6vh 0vw 3vh 22vw;   
+     margin: 6vh 0vw 3vh 22vw;
     }
     #input-search{
         margin: 3vh 10vw 1vh 15vw;
@@ -258,12 +333,12 @@ p {
 
     }
     .card{
-        margin: 3vh 1vw 3vh 1vw;    
+        margin: 3vh 1vw 3vh 1vw;
     }
     .title-animation{
-        margin: 0vh 3vw 4vh 2vw; 
+        margin: 0vh 3vw 4vh 2vw;
         font-size: 1vw;
-        font-weight:bolder;  
+        font-weight:bolder;
     }
     .subtitle{
         font-size: xx-large;
@@ -273,7 +348,7 @@ p {
         width: 20vw;
     }
 
-    
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -293,7 +368,7 @@ p {
     #texto-banner {
         padding: 3vh;
     }
-    
+
     #search{
         margin: 2vh 0vw 0vh 20vw;
 
@@ -309,13 +384,13 @@ p {
         width: 62vw;
     }
     .card{
-        margin: 2vh 0vw 2vh 0vw;   
-        align-items: center; 
+        margin: 2vh 0vw 2vh 0vw;
+        align-items: center;
     }
     .title-animation{
-        margin: 0vh 3vw 8vh 3vw; 
+        margin: 0vh 3vw 8vh 3vw;
         font-size: 1vw;
-        font-weight:bolder;  
+        font-weight:bolder;
     }
     .subtitle{
         font-size: xx-large;
@@ -330,7 +405,7 @@ p {
     .texto{
         width: 19vw;
         margin-left: 1vw;
-    }   
+    }
 }
 
 @media screen and (max-width: 1024px) /*and (max-width: 1440px)*/
@@ -355,7 +430,7 @@ h2{
 
 }
 #input-search {
-   
+
     margin: 2vh 0vw 0vh 9vw;
 }
 h3 {
@@ -370,12 +445,12 @@ h3 {
 }
 .card{
     margin: 2vh 0vw 2vh 0vw;
-    height: 82vh;    
+    height: 82vh;
 }
 .title-animation{
-    margin: 0vh 4vw 4vh 4vw; 
+    margin: 0vh 4vw 4vh 4vw;
     font-size: 2vw;
-    font-weight:bolder;  
+    font-weight:bolder;
 }
 .subtitle{
     font-size:x-large;
@@ -398,13 +473,20 @@ h3 {
 }*/
 
 
-@media screen and (max-width: 720px ) {
+@media screen and (max-width: 768px ) {
     .contenedor{
-        width: 100%;
-    
+        width: 100vw;
+    }
+    #ppal-content{
+        display: grid;
+        grid-template-columns: repeat(1, 600px);
+        grid-template-rows:repeat(1, 600px);
+        justify-content: center;
+    }
+
 }
 /*@media screen and (min-width:320px)  and (min-width: 375px) and (max-width: 425px) {
-    
+
     #banner {
         width: 90vw;
         height: 100px;
@@ -424,7 +506,7 @@ h3 {
         padding: 10px;
         font-size: 3vw;
         font-weight: 300;
-        text-align: left;    
+        text-align: left;
     }
     #search {
         text-align: center;
@@ -433,13 +515,13 @@ h3 {
         height: 2vh;
         margin: 40px 0px 40px  250px;
         padding: 20px;
-       
-    
+
+
     .ppal-content {
         width: 300px
-    
-    }
-    
 
-    
+    }
+
+
+
 } */

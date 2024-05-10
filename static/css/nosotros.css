@@ -31,42 +31,7 @@ body, main, footer{
     border: 3px; color: black;
     min-height: 50px;
 }
-/* animacion */
-/*#cambiarImagen {
-    background-image: url("../img/pexels-eli-sommer-3992776.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80vh;
-    position: relative;
-    justify-content: center;
-    margin: 30vh 10vw 10vh 20vw;
-    animation-name: cambiar;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-iteration-count:infinite;
-}
 
-/*@keyframes cambiar {
-    0% {
-        background-image: url("../img/istockphoto-1157740043-1024x1024.png");
-    }
-
-    25% {
-        background-image: url("../img/istockphoto-1206796363-1024x1024.gif");
-    }
-
-    50% {
-        background-image: url("../img/istockphoto-1206796363-1024x1024.png");
-    }
-
-    75% {
-        background-image: url("../img/IdearepresentativadeLogo-removebg-preview.png");
-    }
-
-    100% {
-        background-image: url("../img/pexels-pixabay-356056.jpg");
-    }
-}
 
 h3 {
     margin-top: 10px;
