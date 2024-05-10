@@ -1,11 +1,10 @@
-
 /* Posibles colores,a modificar */
-:root{
+:root {
     --color-primario: #1f2979;
     --color-secundario: #3d478e;
     --color-terciario: #574695;
     --color-fondo-header: #b9a7e3;
-    --color-texto-header:#fffdfd;
+    --color-texto-header: #fffdfd;
     --color-fondo-body: #ffffff;
     --color-texto-body: #010101;
     --barra-input-color: #4f31572c;
@@ -13,7 +12,7 @@
     --color-fondo-texto: #5BA7CF;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -22,28 +21,54 @@
 
 main {
     width: 100vw;
-    height: 150vh;
-    margin-top:190px;
+    height: 64vh;
+    margin-top: 190px;
     background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
     background-size: contain;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: justify;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
 }
 
-body{
-    border: 3px; color: black;
+body {
+    border: 3px;
+    color: black;
     min-height: 50px;
 }
 
 .mision-div {
     width: 100%;
     height: 2vh;
-    }
+    margin: 0px;
+}
 
-.misionT .visionT .valoresT {
-    padding: 10vw;
+.misionT {
+    padding-top: 1vw;
+    width: 24vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-texto-body);
+    text-align: center;
+    font-size: 2vw;
+}
+
+.mision {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: var(--color-texto-body);
+    text-align: center;
+    border-radius: 5%;
+}
+
+
+.vision-div {
+    width: 100%;
+    height: 2vh;
+    margin: 20px;
+}
+
+.visionT {
+    padding-top: 10vw;
     width: 85vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
@@ -51,10 +76,84 @@ body{
     font-size: 2vw;
 }
 
-.mision .vision .valores {
+.vision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     color: var(--color-texto-body);
     text-align: center;
     border-radius: 5%;
+}
+
+
+.valores-div {
+    width: 100%;
+    height: 2vh;
+    margin: 20px;
+}
+
+.valoresT {
+    padding-top: 20vw;
+    width: 85vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-texto-body);
+    text-align: center;
+    font-size: 2vw;
+}
+
+.valores {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: var(--color-texto-body);
+    text-align: center;
+    border-radius: 5%;
+}
+
+.seccionTextos {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.seccionAnimacion {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+/* animacion */
+#imagenAnime {
+    background-image: url("../img/pexels-eli-sommer-3992776.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vh;
+    animation-name: cambiarImagen;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    justify-content: center;
+    margin-top: 15vh;
+    margin-left: 20vh;
+}
+
+@keyframes cambiarImagen {
+    0% {
+        background-image: url("../img/pexels-mikhail-nilov-6893376.png");
+    }
+
+    25% {
+        background-image: url("../img/istockphoto-1206796363-1024x1024.gif");
+    }
+
+    50% {
+        background-image: url("../img/istockphoto-1459941554-1024x1024.png");
+    }
+
+    75% {
+        background-image: url("../img/IdearepresentativadeLogo-removebg-preview.png");
+    }
+
+    100% {
+        background-image: url("../img/vecteezy_digital-transformation-technology.png");
+    }
 }
