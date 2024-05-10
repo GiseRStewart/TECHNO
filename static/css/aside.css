@@ -220,12 +220,40 @@ p {
 
 @media screen and (max-width: 768px){
     aside {
-        width: 90%;
-        padding: 5%;
-        margin-top: 20px;
-
+        width: 28%;
+        padding: 0%;
+        margin-top: 30px;
+        height: 155vh;
+    
     }
+    aside h1 {
+        margin: 29vh 0vw 2vh 0vw;
+        font-size: 2.5rem;
+    }
+    .padre-h2 {
+        font-size: 1.3rem;
+        margin-left: 2px;
+        padding: 25px;
+    }
+    #ppal-animation {
+        margin-top: 5vh;
+        margin-left: 0vw;
+    }
+    #aside-list {
+        margin: 7vh 0vw 0vh 5vw;
+    }
+    #texto-aside {
+        height: 22vh;
+        margin-top: -25px;
+    }
+
+
+
+
+
+
 }
+
 
 /* 
 @media screen and (max-width: 300px) {
