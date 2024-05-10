@@ -66,8 +66,12 @@
 }    
 
 @media screen and (max-width: 768px) and (max-width: 1024px) {
-    .pie-pagina{
+
+    header{
         width: 100%;
+    }
+    .pie-pagina{
+        width: 100% !important;
         text-align: center;
     }
     .pie-pagina > div{
@@ -116,8 +120,13 @@
 
 @media screen and (max-width: 480px){
     .pie-pagina{
-        width: 80%;
+        width: 100%;
         text-align: center;
+    }
+
+    h1{
+        font-size: 12px !important;
+        margin-left: 10px !important;
     }
     .pie-pagina > div{
         width: 79%;
@@ -125,11 +134,34 @@
     }
     .seccion-pie{
         width: 79%;
-        text-align: center;
+        text-align: left;
+    }
+
+    .terminos-s1{
+        text-align: left !important;
+        margin-left: 0px;
+        font-size: 13px !important;
+    }
+
+    .hiperv{
+        font-size: 12px !important;
     }
     .redes-img{
         margin: 8px 10px 30px 0px;
         padding: 2px;
+        margin-bottom: 0px !important;
+    }
+    
+    .copy{
+        font-size: 12px !important;
+        margin-left: -150px !important;
+        margin-bottom: -50px !important;
+    }
+
+    .redes-img{
+        height: 15px;
+        margin-bottom: 60px !important;
+        margin-top: 10px !important;
     }
 
 }    
