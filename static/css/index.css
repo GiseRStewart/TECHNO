@@ -5,8 +5,6 @@
 
 body {
     background-color: var(--color-fondo-body);
-    /*(Imagen de rawpixel*com en Freepik);  COLOCAR IMAGEN PARA EL FONDO */
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 1.6rem;
     line-height: 1.2;
     font-family: "Sedan", serif;
