@@ -130,65 +130,6 @@ h1 {
 
 }
 
-/* animacion */
-/* #imagenAnime {
-    background-image: url("../img/pexels-eli-sommer-3992776.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 40vh;
-
-    animation-name: cambiarImagen;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-
-    position: relative;
-    justify-content: center;
-    margin: 0vh 35vw 0vh 35vw;
-}
-
-@keyframes cambiarImagen {
-    0% {
-        background-image: url("../img/pexels-mikhail-nilov-6893376.png");
-    }
-
-    25% {
-        background-image: url("../img/istockphoto-1206796363-1024x1024.gif");
-    }
-
-    50% {
-        background-image: url("../img/istockphoto-1459941554-1024x1024.png");
-    }
-
-    75% {
-        background-image: url("../img/IdearepresentativadeLogo-removebg-preview.png");
-    }
-
-    100% {
-        background-image: url("../img/vecteezy_digital-transformation-technology.png");
-    }
-} */
-
-#imagenAnime{
-    background-image: url(`../img/Chromebook.jpg`);
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: var(--color-fondo-header);
-    animation-name: cambiar;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes cambiarImagen {
-    0% {background-image: url(`../img/asus-zenbook-14-oled.png`);}
-    25% {background-image: url(`../img/hp-spectre-x360-13-5-front-angled.png`);}
-    50% {background-image: url(`../img/macbook-air-m2-1.png`);}
-    75% {background-image: url(`../img/del-xps-13.png`);}
-    100% {background-image:url(`../img/thinkpadz13.jpg`);}
-}
 
 .contenedor-cards {
 
