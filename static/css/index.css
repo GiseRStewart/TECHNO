@@ -134,7 +134,7 @@ h1 {
 
 .ppal-content {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(1, auto);
     justify-content: center;
     column-gap: 3vw;
@@ -332,14 +332,14 @@ h1 {
 @media screen and (max-width: 1440px) {
     .contenedor{
         max-width: 1440px;
-        width: 1115px;
-        padding-top: 172px;
+        width: 912px;
+        padding-top: 170px;
         margin: 10px 1px 0px 5px;
     
         }
 
     #banner {
-        width: 100vw;
+        width: 64vw;
         height: auto;
     }
 
@@ -378,10 +378,10 @@ h1 {
     .contenedor-cards h3 {
         width: 36vw;
         font-size: 2em;
-        margin: 0vh 0vw -7vw 20vw;
+        margin: 0vh 0vw -9vw 15vw;
     }
     .ppal-content {
-        width: 76.5vw;
+        width: 63vw;
         margin: 6vh 0vw 0vh -2vw;
         padding: 2vh;
 
@@ -389,7 +389,7 @@ h1 {
 
     .contenedor-cards .card {
         margin: 8vh -1vw 1vh -1vw;
-        width: 350px;
+        width: 300px;
     }
 
     .card .title-animation {
