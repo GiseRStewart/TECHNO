@@ -1,19 +1,20 @@
 @import 'animate.css';
 
-a{
+a {
     text-decoration: none;
 
-} 
+}
+
 aside {
-    float:right;
+    float: right;
     background-color: var(--barra-input-color);
     max-width: 100vw;
     width: 350px;
-    height: 185vh;
+    height: auto;
     border: 5px solid var(--barra-input-color);
     border-radius: 10px;
-    
-    
+
+
 }
 
 aside h1 {
@@ -23,12 +24,12 @@ aside h1 {
     color: var(--color-texto-header);
     text-align: center;
     margin: 35vh 3vw 5vh 3vw;
-    
+
 }
 
 
 aside h1:hover {
-    transform: perspective(500px) rotate3d(0,1,0, 45deg);
+    transform: perspective(500px) rotate3d(0, 1, 0, 45deg);
 }
 
 .padre-h2 {
@@ -37,17 +38,18 @@ aside h1:hover {
     text-align: center;
     color: var(--color-texto-header);
     margin: 2vh 2vw 10vh 2vw;
-    
-    
+
+
 
 }
 
 @font-face {
-    font-family:"Crimson Text" ;
+    font-family: "Crimson Text";
     src: url(/assets/fonts/CrimsonText-BoldItalic.ttf);
 }
+
 #ppal-animation {
-    margin-left:  1vw;
+    margin-left: 1vw;
     justify-content: center;
     align-content: center;
     width: 100px;
@@ -58,20 +60,14 @@ aside h1:hover {
 }
 
 #aside-list {
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 7vw;
-    margin-top: 10vh;
-    margin-bottom: 8vh;
+    margin: 10vh 0vw 8vh 7vw;
 
 }
 
 #aside-list .hiper-aside {
-    
+
     font: 16px "Crimson Text-Regular";
-    color: var(--color-texto-header) ;
+    color: var(--color-texto-header);
     padding: 10px 10px;
     border-radius: 3px;
     transition: .3s linear;
@@ -79,14 +75,14 @@ aside h1:hover {
 }
 
 #aside-list .hiper-aside:hover {
-    
+
     transform: scale(1.1);
     color: #9d92b2;
 }
 
 
 #texto-aside {
-    
+
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -94,8 +90,8 @@ aside h1:hover {
     border: 0.5px solid var(--color-fondo-body);
     border-radius: 20px;
     margin: 45px 15px 10px 10px;
-    
-   
+
+
 
 }
 
@@ -105,18 +101,214 @@ aside h1:hover {
 }
 
 p {
-   
+
     text-align: justify;
     color: var(--color-texto-header);
     font: 16px "Crimson Text-Regular";
-    writing-mode:horizontal-tb;
+    writing-mode: horizontal-tb;
     letter-spacing: 2px;
     text-indent: 7rem;
+    margin: 30px;
 
 }
 
-/* @media (min-width: 480px) {
-    .con-sidebar {
+
+
+@media screen and (max-width: 2560px) {
+    aside {
+
+        width: 543px;
+        height: auto;
+        margin-top: 202px;
+    }
+
+    aside h1 {
+        margin: 5vh 4vw 5vh 4vw;
+        font-size: 5rem;
+    }
+
+    .padre-h2 {
+        font-size: 2vw;
+        margin: 24vh 0vw 10vh 1vw;
+    }
+
+    #ppal-animation {
+        margin: 0vh 10vw 20vh 4vw;
+        height: 140px;
+    }
+
+    #aside-list {
+        font-size: small;
+        padding-bottom: 0vh;
+        margin: -9vh 3vw 0vh 9vw;
+        list-style-type: none;
+
+    }
+
+    #aside-list .hiper-aside {
+        font-size: 2.5rem;
+        text-align: justify;
+        padding: 10px 10px;
+        border-radius: 3px;
+        margin-left: -8vw;
+    }
+
+    #texto-aside {
+        height: 40vh;
+        margin: 20vh 0vw 5vh 1vw;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    aside {
+        height: 190vh;
+        width: 308px;
+        margin-top: 180px;
+    }
+
+    aside h1 {
+        margin: 13vh 0vw 8vh 0vw;
+        font-size: 4rem;
+    }
+
+    #ppal-animation {
+        margin: 10vh 0vw 10vh 1vw;
+    }
+
+    #aside-list {
+        font-size: small;
+        padding-top: 5vh;
+        margin-left: 9vw;
+    }
+    #aside-list .hiper-aside {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 11px;
+        margin-left: -8vw;
+    }
+
+    #texto-aside {
+        height: 48vh;
+        margin: 3vh 0vw 5vh 1vw;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    aside {
+        height: 171vh;
+        width: 270px;
+        margin-top: 173px;
+        margin-left:  10px;
+    }
+
+    aside h1 {
+        margin: 8vh 3vw 18vh 0vw;
+        font-size: 3rem;
+    }
+
+    .padre-h2 {
+        font-size: 2vw;
+        margin: 12vh 2vw;
+        padding: 10px;
+
+    }
+
+    #ppal-animation {
+        margin: 5vh 0vw 8vh 3vw;
+        height: 30vh;
+    }
+    iframe{
+        width: 22vw;
+        height: 30vh;
+    }
+
+    #aside-list {
+        font-size: small;
+        margin-left: 5vw;
+        margin-bottom: 8px;
+    }
+
+   
+    #aside-list .hiper-aside {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 80px;
+        margin-left: -8vw;
+    }
+    #texto-aside {
+        height: 39vh;
+        margin: 1vh 0vw 2vh 1vw;
+    }
+
+
+    p{
+        font-size: 1rem;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        width: 27%;
+        padding: 0%;
+        margin-top: 217px;
+        height: 300vh;
+
+    }
+
+    aside h1 {
+        margin: 8vh 0vw 2vh 0vw;
+        font-size: 2.5rem;
+    }
+
+    .padre-h2 {
+        font-size: 1.3rem;
+        margin-left: 2px;
+        padding: 10px;
+    }
+
+    #ppal-animation {
+        margin-top: 15vh;
+        margin-left: 0vw;
+    }
+    iframe{
+        width: 27vw;
+        height: 34vh;
+    }
+
+    #aside-list {
+        margin: 12vh -1vw 25vh 0vw;
+        font-size: small;
+    }
+    #aside-list .hiper-aside {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 78px;
+        margin-left: -8vw;
+    }
+
+    #texto-aside {
+        height: 65vh;
+        
+    }
+    
+    p{
+        font-size: 1rem;
+        text-align: justify;
+    }
+   
+}
+
+@media (min-width: 425px) {
+    /* .con-sidebar {
         display: grid;
         grid-template-columns: 1fr 3fr;
         column-gap: 4rem;
@@ -125,135 +317,61 @@ p {
     aside {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-    }
+    } */
 
 
-} */
-
-@media screen and (max-width: 2560px){
-    aside{
-        
-        width: 350px;
-        height: 180vh;
-    }
-    aside h1{
-        margin: 16vh 3vw 10vh 0vw;
-    }
-    .padre-h2{
-        font-size: 2vw;
-        margin-left: 1vw;
-    }
-
-    #ppal-animation{
-        margin: 10vh 0vw 5vh 1vw;
-    }
-    #aside-list{
-        font-size: xx-large;
-        padding-bottom: 1vh;
-        margin-left: 5vw;
-    }
-    #texto-aside{
-        height: 25vh;
-        margin-left: 1vw;
-       
-    }
-   
-}
-@media screen and (max-width: 1440px) {
-    aside{
-        height: 180vh;
-        width: 352px;
-    }
-    aside h1{
-        margin: 25vh 5vw 8vh 0vw;
-    }
-    #ppal-animation{
-        margin: 10vh 0vw 8vh 1vw;
-    }
-    #aside-list{
-        font-size: x-large;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        margin-left: 8vw;
-    }
-    #texto-aside{
-        height: 30vh;
-        margin-left: 2vw;
-    }
-}
-@media screen and (max-width: 1024px) {
     aside {
-        height: 155vh;
-        width: 290px;
-    }
-    aside h1{
-        margin: 28vh 6vw 2vh 0vw;
-        font-size: 2rem;
-    }
-    .padre-h2{
-        font-size: 2vw;
-        margin: 180px 0px 0px 0px;
-        padding: 44px;
-        
-    }
-    #ppal-animation{
-        
-        margin-top: 5vh;
-    }
-    #aside-list{
-        font-size: small;
-        margin-left: 5vw;
-        margin-bottom: 0px;
+        width: 24%;
+        padding: 0%;
+        margin-top: 210px;
+        height: 300vh;
 
     }
-    #texto-aside{
-        height: 25vh;
-        margin-top: 0px;
+
+    aside h1 {
+        margin: 5vh 2vw 3vh 0vw;
+        font: size 1.5rem;;
+    }
+
+    .padre-h2 {
+        font-size: 1rem;
+        margin-left: 0px;
+        padding: 1px;
+    }
+
+    #ppal-animation {
+        margin-top: 15vh;
+        margin-left: 1vw;
+    }
+    iframe{
+        width: 22vw;
+        height: 23vh;
+    }
+
+    #aside-list {
+        margin: 12vh -1vw 25vh 0vw;
+        font-size: small;
+    }
+    #aside-list .hiper-aside {
+        font-size: 0.7rem;
+        text-align: center;
+        padding-left: 0px;
+        margin-left: -3vw;
+        padding: 6px;
+    }
+
+    #texto-aside {
+        height: 65vh;
+        
     }
     
     p{
-        font-size: 1.2vw;
-        margin: 25px 12px 0px 10px;
-
+        font-size: 10px;
+        text-align:justify;
+        letter-spacing: 4px;
     }
+   
 }
-
-@media screen and (max-width: 768px){
-    aside {
-        width: 28%;
-        padding: 0%;
-        margin-top: 30px;
-        height: 155vh;
-    
-    }
-    aside h1 {
-        margin: 29vh 0vw 2vh 0vw;
-        font-size: 2.5rem;
-    }
-    .padre-h2 {
-        font-size: 1.3rem;
-        margin-left: 2px;
-        padding: 25px;
-    }
-    #ppal-animation {
-        margin-top: 5vh;
-        margin-left: 0vw;
-    }
-    #aside-list {
-        margin: 7vh 0vw 0vh 5vw;
-    }
-    #texto-aside {
-        height: 22vh;
-        margin-top: -25px;
-    }
-
-
-
-
-
-
-}
-
 
 /* 
 @media screen and (max-width: 300px) {
@@ -302,4 +420,3 @@ h4{
 
 
  */
-

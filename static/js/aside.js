@@ -5,7 +5,7 @@ var asideContent = `
     <h2 class="padre-h2">Las 10 mejores laptops que puedes regalar este 2024:</h2>
     <!-- video -->
             <div id="ppal-animation">
-                <iframe class= "video" width="300" height="200" frameborder: 1  src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
+                <iframe class= "video" width="400" height="300" frameborder: 1  src="https://www.youtube.com/embed/HeIz534YWas?si=Kvhgs1dRNOCR7ANt"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -25,9 +25,11 @@ var asideContent = `
                 <li><a class="hiper-aside" href="./templates/Producto.html">Lenovo Chromebook Duet 3</a></li>
             </ul>
             <div id="texto-aside">
-                <p> Cada una de ellas han sido examinada minuciosamente. Ya sea una Chromebook de buen
+                <p> 
+                Cada una de ellas han sido examinada minuciosamente. Ya sea una Chromebook de buen
                 precio o una computadora portátil para juegos de primera línea, todas han sido sometidas a duras
-                pruebas en el mundo real, así como a comparativas de rendimiento y duración de la batería.</p>
+                pruebas en el mundo real, así como a comparativas de rendimiento y duración de la batería.
+                </p>
             <div/>
     
 </aside>`;
