@@ -23,7 +23,7 @@
 
 .seccion-pie{
     font: bold 22px Arial, Helvetica, sans-serif;
-    margin: 5px 10px 11px 36px;
+    margin: 5px 10px 11px 0px !important;
 }
 
 .seccion-pie a{
@@ -32,11 +32,11 @@
     font: 16px Arial, Helvetica, sans-serif;
 }
 .terminos-s1 {
-    text-align: center;
-    margin: 10px 0px 0px 50px;
+    text-align: center !important;
+    margin: 10px 0px 0px 0px !important;
 }
 .seccion-pie > p {
-    margin: 1px 0px 3px 4px;
+    margin: 1px 0px 3px 4px !important;
 }
 .redes-img {
     flex: 1;
@@ -55,78 +55,50 @@
 }
 
 .titulo-sitio{
-    margin-left: 4px;
-    font: bold 22px Arial, Helvetica, sans-serif;    
+    margin-top: inherit;
+    margin-left: 4px !important;
+    font: bold 22px Arial, Helvetica, sans-serif !important;    
 }  
 .titulo-ayuda{
-    text-align: left;
-    margin-left: 55px;
-    font-size: 22px;
+margin-top: inherit;
+    text-align: left !important;
+    margin-left: 55px !important;
+    font-size: 22px !important;
 }
 
 .titulo-siguenos{
-    margin-left:130px;
-    font-size: 22px;
+    margin-top: inherit;
+    margin-left:130px !important;
+    font-size: 22px !important;
 }
 
+p{
+    text-indent: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+    font: inherit;
+}
 
-@media screen and (max-width: 2560px){
-    .terminos-s1{
-        width: 25%;
-    }
-    .copy {
-        font-size: 22px;
-    }
-}    
+h1{
+    margin: inherit;
+    
+}
 
-@media screen and (max-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .pie-pagina{
-        width: 100% !important;
-        text-align: center;
+        width: 100vw;
     }
-    .pie-pagina > div{
-        width: 98%;
-        text-align: center;
-    }
-    .seccion-pie{
-        width: 95%;
-        text-align: center;
-    }
-    .seccion-pie h1{
-        margin: 5px 100px 11px 90px;
 
-    }
-    .terminos-s1{
-        text-align: center;
-        margin: 1px 10px 0px 10px;
-        padding: 0px;
-        width: 25%;
-
-    }
-    .seccion-pie > p {
-        margin: 1px 10px 0px 10px;
-    }
     .redes-img{
-        margin: 8px 10px 30px 5px;
-        padding: 3px;
+        margin-right: 20px;
     }
 
-    .seccion-pie .copy{
-        padding: 10px;
-        margin-left: -200px;
+    .titulo-siguenos{
+        margin-left: 120px !important;
     }
+    
 }
-/* @media screen and (max-width: 375px) and (max-width: 425px) {
-    footer{
-        max-width: 100vw;
-    }
-    .pie-pagina{
-        max-width: 100vw;
-    }
-    .terminos{
-        padding-left: 120px;
-    }
-} */
+
 
 @media screen and (max-width: 480px){
     .pie-pagina{
