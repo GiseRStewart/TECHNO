@@ -5,7 +5,6 @@
     padding: 1%;
     display: flex;
     justify-content: center;
-
 }
 
 .pie-pagina > div {
@@ -22,9 +21,9 @@
     width: 33%;
 }
 
-.seccion-pie h1{
+.seccion-pie{
     font: bold 22px Arial, Helvetica, sans-serif;
-    margin: 5px 150px 11px 120px;
+    margin: 5px 10px 11px 36px;
 }
 
 .seccion-pie a{
@@ -34,10 +33,10 @@
 }
 .terminos-s1 {
     text-align: center;
-    margin: 10px 100px 0px 0px;
+    margin: 10px 0px 0px 50px;
 }
 .seccion-pie > p {
-    margin: 1px 0px 3px 44px;
+    margin: 1px 0px 3px 4px;
 }
 .redes-img {
     flex: 1;
@@ -53,6 +52,21 @@
     padding: 4px;
     margin-left: -292px;
     transition: .3s linear;
+}
+
+.titulo-sitio{
+    margin-left: 4px;
+    font: bold 22px Arial, Helvetica, sans-serif;    
+}  
+.titulo-ayuda{
+    text-align: left;
+    margin-left: 55px;
+    font-size: 22px;
+}
+
+.titulo-siguenos{
+    margin-left:130px;
+    font-size: 22px;
 }
 
 
