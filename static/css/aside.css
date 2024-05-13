@@ -101,7 +101,6 @@ aside h1:hover {
 }
 
 p {
-
     text-align: justify;
     color: var(--color-texto-header);
     font: 16px "Crimson Text-Regular";
@@ -109,7 +108,6 @@ p {
     letter-spacing: 2px;
     text-indent: 7rem;
     margin: 30px;
-
 }
 
 
@@ -167,34 +165,38 @@ p {
 @media screen and (max-width: 1440px) {
     aside {
         height: 190vh;
-        width: 308px;
-        margin-top: 180px;
+        width: 300px;
+        margin-top: 180px!important;
     }
 
     aside h1 {
-        margin: 13vh 0vw 8vh 0vw;
+        margin: 6vh 0vw 8vh 0vw;
         font-size: 4rem;
     }
 
     #ppal-animation {
         margin: 10vh 0vw 10vh 1vw;
     }
+    iframe{
+        width: 19vw;
+        height: 28vh;
+    }
 
     #aside-list {
         font-size: small;
-        padding-top: 5vh;
+        padding-top: 10vh;
         margin-left: 9vw;
     }
     #aside-list .hiper-aside {
         font-size: 1.5rem;
         text-align: center;
-        padding-left: 11px;
+        padding-left: 2px;
         margin-left: -8vw;
     }
 
     #texto-aside {
-        height: 48vh;
-        margin: 3vh 0vw 5vh 1vw;
+        height: 49vh;
+        margin: 6vh 0vw 5vh 1vw;
     }
     p{
         font-size: 1rem;
@@ -307,7 +309,7 @@ p {
    
 }
 
-@media (min-width: 425px) {
+/* @media (min-width: 425px) { */
     /* .con-sidebar {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -320,7 +322,7 @@ p {
     } */
 
 
-    aside {
+    /* aside {
         width: 24%;
         padding: 0%;
         margin-top: 210px;
@@ -371,7 +373,7 @@ p {
         letter-spacing: 4px;
     }
    
-}
+} */
 
 /* 
 @media screen and (max-width: 300px) {
@@ -418,5 +420,3 @@ h4{
 
 } 
 
-
- */

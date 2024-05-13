@@ -52,10 +52,10 @@ el encabezado cambie de color */
     border-radius: 10px;
     text-align: left;
 }
-/* 
+
 .recuperar {
     clear: both;
-} */
+}
 
 h1 {
 
@@ -93,6 +93,7 @@ h1 {
     text-align: right;
     justify-content: left;
 }
+
 /* 
 #search {
     text-align: center;
@@ -155,7 +156,7 @@ h1 {
     font-family: "Sedan", serif;
     font-weight: 600;
     font-style: normal;
-    
+
 }
 
 .contenedor-cards .card {
@@ -168,7 +169,8 @@ h1 {
     justify-content: center; */
 
 }
-.card img{
+
+.card img {
     height: 250px;
     width: 250px;
     object-fit: cover;
@@ -225,7 +227,7 @@ h1 {
     border-radius: 5px;
     border: 1px solid var(--color-fondo-body);
     padding: 10px;
-    margin: 1px 8px 0px 8px;   
+    margin: 1px 8px 0px 8px;
     writing-mode: horizontal-tb;
     justify-content: center;
 
@@ -246,14 +248,15 @@ h1 {
 
 
 @media screen and (max-width: 2560px) {
-    .contenedor{
-    max-width: 2560px;
-    width: 2000px;
-    padding-top: 180px;
-    margin: 24px 4px 0px 0px;
-    border-radius: 5px;
+    .contenedor {
+        max-width: 2560px;
+        width: 2000px;
+        padding-top: 180px;
+        margin: 24px 4px 0px 0px;
+        border-radius: 5px;
 
     }
+
     #banner {
         width: 100%;
         padding-top: 260px;
@@ -266,7 +269,7 @@ h1 {
     }
 
     #banner h2 {
-        margin-left: 1vh ;
+        margin-left: 1vh;
         padding: 1vh;
         font-size: 5rem;
     }
@@ -287,9 +290,10 @@ h1 {
     .contenedor-cards {
         width: 78vw;
         margin-top: 8vh;
-    
+
 
     }
+
     .contenedor-cards h3 {
         margin: -6vh 0vw -13vh 3vw;
         font-size: 2.5em;
@@ -322,6 +326,7 @@ h1 {
         width: 22vw;
         margin-top: 2vh;
     }
+
     .contenedor-cards .texto p {
         font-size: 2rem;
     }
@@ -330,17 +335,17 @@ h1 {
 }
 
 @media screen and (max-width: 1440px) {
-    .contenedor{
+    .contenedor {
         max-width: 1440px;
-        width: 912px;
+        width: 1100px;
         padding-top: 170px;
         margin: 10px 1px 0px 5px;
-    
-        }
+
+    }
 
     #banner {
-        width: 64vw;
-        height: auto;
+        width: 78vw;
+        height: max-content;
     }
 
     h1 {
@@ -348,16 +353,19 @@ h1 {
         padding: 0vh;
         font-size: 4rem;
     }
+
     #banner h2 {
         margin-left: -3vw;
         padding: 7vh;
         font-size: 2.5rem;
     }
+
     #texto-banner {
         margin: -50px 11px 0px 0px;
         float: right;
     }
-/* 
+
+    /* 
     #search {
         margin: 2vh 5vw 0vh 10vw;
 
@@ -370,26 +378,32 @@ h1 {
 
 
     .contenedor-cards {
-        width: 66vw;
+        width: 76vw;
         height: auto;
-        margin-top: 6vh;
+        margin-top: -4vh !important;
     }
 
     .contenedor-cards h3 {
         width: 36vw;
         font-size: 2em;
-        margin: 0vh 0vw -9vw 15vw;
+        margin: 0vh 0vw -8vw 15vw;
     }
+
     .ppal-content {
-        width: 63vw;
-        margin: 6vh 0vw 0vh -2vw;
-        padding: 2vh;
+        width: 71vw;
+        margin-top: -2vh;
+        padding: 4vh;
+        display: grid;
+        grid-template-columns: repeat(3, 310px);
+        grid-template-rows: repeat(1, auto);
+        justify-content: space-between;
+        column-gap: 1vw;
 
     }
 
     .contenedor-cards .card {
-        margin: 8vh -1vw 1vh -1vw;
-        width: 300px;
+        margin: 14vh 0vw 1vh -3vw;
+        width: 360px;
     }
 
     .card .title-animation {
@@ -402,6 +416,7 @@ h1 {
         font-size: 2rem;
         padding: 2vw;
     }
+
     .contenedor-cards .imagen-borde {
         width: 19vw;
         height: 22vh;
@@ -410,7 +425,9 @@ h1 {
     .card .texto {
         width: 23vw;
         margin-top: 2vh;
+        margin-left: 0.5vw;
     }
+
     .card .texto p {
         font-size: 1.2rem;
         margin: 20px;
@@ -425,6 +442,7 @@ h1 {
         padding-top: 163px;
         margin: 10px 0px 0px 2px;
     }
+
     #banner {
         width: 72vw;
         height: auto;
@@ -441,7 +459,8 @@ h1 {
         padding: 5vh;
         font-size: 2rem;
     }
-    #texto-banner{
+
+    #texto-banner {
         margin: 8px 8px 0px 0px;
     }
 
@@ -450,11 +469,13 @@ h1 {
         height: auto;
         margin: 11px;
     }
+
     .contenedor-cards h3 {
         margin: 1vh 0vw 0vh 8vw;
         width: 52vw;
         font-size: 2em;
     }
+
     .ppal-content {
         display: grid;
         grid-template-columns: repeat(2, 350px);
@@ -465,29 +486,35 @@ h1 {
         width: 69.5vw;
         margin-top: -9vh;
     }
+
     .card {
         height: 120vh;
     }
+
     .card .subtitle {
         margin-left: 0vw;
         font-size: 1.8rem;
     }
+
     .contenedor-cards .imagen-borde {
         width: 25vw;
         height: 30vh;
     }
+
     .card .texto {
-        margin-top: -2vh;  
+        margin-top: -2vh;
         width: 32vw;
         margin-left: 2vw;
         font-size: 1.5vw;
         height: 56vh;
     }
+
     .contenedor-cards .texto p {
         font-size: 1rem;
-        margin: 0px 30px 0px 10px ;
+        margin: 0px 30px 0px 10px;
+    }
 }
-}
+
 @media screen and (max-width: 768px) {
     .contenedor {
         max-width: 768px;
@@ -495,23 +522,28 @@ h1 {
         padding-top: 206px;
         margin: 8px 0px 0px 1px;
     }
+
     #banner {
         width: 72vw;
         height: auto;
     }
+
     h1 {
         margin: -34vh 0vw 0vh 2vw;
         padding: 2vh;
         font-size: 2rem;
     }
+
     #banner h2 {
         margin-left: -6vw;
         padding: 12vh;
         font-size: 1.5rem;
     }
+
     #texto-banner {
         margin: -70px 3px 0px 0px;
     }
+
     /* #search {
         margin: 8vh 7vw 4vh 10vw;
     }
@@ -524,6 +556,7 @@ h1 {
         height: 321vh;
         margin: 2px;
     }
+
     .contenedor-cards h3 {
         margin: 1vh 0vw -15vh 11vw;
         font-size: 1.5em;
@@ -539,27 +572,32 @@ h1 {
         margin-left: 0vw;
         height: 330vh;
     }
+
     .contenedor-cards .card {
         height: 98vh;
         width: 400px;
         margin-top: 107px;
     }
+
     .subtitle {
         margin-left: 0vw;
     }
+
     .contenedor-cards .imagen-borde {
         width: 30vw;
         height: 26vh;
         margin: 15px 20px 15px 20px;
     }
+
     .contenedor-cards .texto {
         max-width: 100vw;
         width: 48vw;
-        height:auto;
+        height: auto;
         padding: 5px;
         margin-top: 10px;
         margin-left: 20px;
     }
+
     .contenedor-cards .texto p {
         font-size: 1rem;
         margin: 5px 10px 0px 5px;
@@ -573,35 +611,43 @@ h1 {
         width: 50vw;
         padding-top: 150px;
     }
+
     #banner {
         width: 900%;
         height: auto;
     }
+
     h1 {
         margin: -33vh 0vw -4vh 2vw;
         padding: 2vh;
         font-size: 2rem;
     }
+
     #banner h2 {
         margin-left: -2vw;
         padding: 7vh;
         font-size: 1.5rem;
     }
+
     #texto-banner {
         margin: -70px 3px 0px 0px;
     }
+
     #search {
         margin: 8vh 7vw 4vh 10vw;
     }
+
     #input-search {
         justify-content: center;
         margin: 4vh 0vw 6vh 15vw;
     }
+
     .contenedor-cards {
         width: 100vw;
         height: auto;
         margin: 2px;
     }
+
     .contenedor-cards h3 {
         margin: 0vh 0vw -7vh 20vw;
         width: 40vw;
@@ -617,25 +663,30 @@ h1 {
         margin-top: 9vh;
         margin-left: 0vw;
     }
+
     .card {
         height: 106vh;
     }
+
     .subtitle {
         margin-left: 0vw;
     }
+
     .contenedor-cards .imagen-borde {
         width: 25vw;
         height: 22vh;
         margin: 7px 13px 10px 16px;
     }
+
     .contenedor-cards .texto {
         max-width: 100vw;
         width: 29.5vw;
-        height:auto;
+        height: auto;
         padding: 0px;
         margin-top: 5px;
         margin-left: 4px;
     }
+
     .contenedor-cards .texto p {
         font-size: 1rem;
         margin: 5px 10px 0px 5px;
