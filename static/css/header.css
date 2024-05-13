@@ -205,3 +205,33 @@ header{
         margin-left: -10px !important;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .checkbtn{
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .checkbtn{
+        margin-left: 100px;
+    }
+
+    #logo{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    ul{
+        top: 75px;
+    }
+
+    .menu ul li a {
+        margin: 0px;
+        padding: 0px;
+    }
+}

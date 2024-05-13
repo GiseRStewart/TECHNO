@@ -144,7 +144,7 @@ h1{
 }
 
     .seccion-pie a{
-        font-size: 14px !important;
+        font-size: 14px;
 }
 
     .seccion-pie{
@@ -224,3 +224,47 @@ h1{
     }
 
 }    
+
+@media screen and (max-width: 375px){
+
+    .terminos-s1{
+        font-size: 12px !important;
+    }
+
+    .titulo-ayuda{
+        font-size: 16px !important ;
+    }
+
+    .titulo-siguenos{
+        font-size: 16px !important ;
+    }
+
+    .titulo-sitio{
+        font-size: 16px !important ;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .titulo-siguenos{
+        margin-left: 10px !important;
+    }
+
+    .redes-img{
+        margin-left: 6px;
+        margin-right: 0px;
+    }
+
+    .copy-2{
+        margin-left: 22px;
+    }
+
+    .terminos-s1{
+        font-size: 10px !important;
+    }
+
+    .hiperv{
+        font-size: 10px !important;
+    }
+}
