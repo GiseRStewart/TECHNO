@@ -96,8 +96,66 @@ h1{
     .titulo-siguenos{
         margin-left: 120px !important;
     }
+
+    .copy{
+        margin-left: 58px !important;
+    }
     
 }
+
+@media screen and (max-width: 768px){
+
+    .pie-pagina{
+        height: 120px;
+    }
+
+    .redes-img{
+        margin-right: 0px;
+    }
+
+    .titulo-siguenos{
+        font-size: 18px !important;
+        margin-left: 100px !important ;
+        margin-top: -5px;
+    }
+
+    .copy{
+        margin-left: -200px !important;
+        font-size: 13px !important;
+    }
+
+    .redes-img{
+        height: 20px;
+        padding-top: 18px;
+    }
+
+    .titulo-sitio{
+        font-size: 18px !important;
+        margin-top: -5px;
+}
+
+    .titulo-ayuda{
+        font-size: 18px !important;
+        margin-top: -5px;
+}
+
+    .seccion-pie a{
+        font-size: 14px !important;
+}
+
+    .seccion-pie{
+        margin-bottom: 0px !important;
+    }
+
+    .seccion-pie > p {
+        margin: 0px !important;
+    }
+
+    h1 {
+        padding: inherit;
+    }
+}
+
 
 
 @media screen and (max-width: 480px){

@@ -117,17 +117,27 @@ header{
 @media screen and (max-width: 768px) {
     header{
         justify-content: center;
-        width: 100%;
     }
 
     #logo{
         margin-left: 8vw;    
+        width: 92px;
+        height: 130px; 
     }
 
     .menu{
         width: auto;
-        height: 100px;
+        height: 70px;
     }
+
+    .hipervinculo{
+        font-size: 17px !important;
+    }
+
+    li {
+        line-height: 100px !important;
+    }
+
 
     
     
