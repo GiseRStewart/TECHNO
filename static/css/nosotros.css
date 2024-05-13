@@ -39,87 +39,160 @@ body {
 
 .mision-div {
     width: 100%;
-    height: 2vh;
-    margin: 0px;
+    height: 12vh;
+    margin: 10px;
 }
 
 .misionT {
-    padding-top: 1vw;
-    width: 24vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
-    text-align: center;
-    font-size: 2vw;
-}
+    text-align: left;
+    font-size: 1,8vh;
+    }
 
 .mision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size:large;
     color: var(--color-texto-body);
-    text-align: center;
+    text-align: left;
     border-radius: 5%;
 }
 
 
 .vision-div {
     width: 100%;
-    height: 2vh;
-    margin: 20px;
+    height: 12vh;
+    margin: 10px;
+
 }
 
 .visionT {
-    padding-top: 10vw;
-    width: 85vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
-    text-align: center;
-    font-size: 2vw;
+    text-align: left;
+    font-size: 1,8vh;
 }
 
 .vision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size:large;
     color: var(--color-texto-body);
-    text-align: center;
+    text-align: left;
     border-radius: 5%;
 }
 
 
 .valores-div {
     width: 100%;
-    height: 2vh;
-    margin: 20px;
+    height: 12vh;
+    margin: 10px;
 }
 
 .valoresT {
-    padding-top: 20vw;
-    width: 85vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
-    text-align: center;
-    font-size: 2vw;
+    text-align: left;
+    font-size: 1,8vw;
 }
 
 .valores {
+    margin-top: 1vh;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size:large;
     color: var(--color-texto-body);
-    text-align: center;
+    text-align: left;
     border-radius: 5%;
 }
 
-.seccionTextos {
+
+.textos-div {
     float: left;
-    width: 50%;
-    height: 100%;
+    width: 50%; 
+    height: 0vh;
+   
 }
 
-.seccionAnimacion {
+
+.animacion-div {
     float: right;
     width: 50%;
-    height: 100%;
+    height: 50vh;
+    /* border: 2px solid blue; */
+    /* box-sizing: border-box; */
 }
 
+.marcas-div {
+    width: 100%;
+    height: 25%;
+    position:relative;
+    top:500px;
+    /* margin-top:100px; */
+    padding-top:100px;
+    border: 2px solid green;
+    box-sizing: border-box;
+
+}
+
+
+.asus{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+
+.cisco{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:300px;
+    top:20px;
+}
+
+
+.dell{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:600px;
+    top:20px;
+}
+.lenovo{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:900px;
+    top:20px;
+}
+
+
+.microsoft{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:1200px;
+    top:20px;
+}
+
+
+
+.rog{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:1500px;
+    top:20px;
+}
+
+
+.unifi{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    left:1750px;
+    top:20px;
+}
 /* animacion */
 #imagenAnime {
     background-image: url("../img/pexels-eli-sommer-3992776.png");
