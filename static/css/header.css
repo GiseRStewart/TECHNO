@@ -23,7 +23,8 @@ header{
     color: var(--color-texto-header);
     text-align: center;
     position: fixed;
-    padding: 1% 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     top: 0;
     width: 100vw;
     z-index: 1000;
@@ -90,7 +91,7 @@ header{
     }
 
     header{
-        width: 100%;
+        width: 100vw;
     }
 }
 @media screen and (max-width: 320px) and (max-width: 1280px) {
@@ -116,17 +117,27 @@ header{
 @media screen and (max-width: 768px) {
     header{
         justify-content: center;
-        width: 100%;
     }
 
     #logo{
         margin-left: 8vw;    
+        width: 92px;
+        height: 130px; 
     }
 
     .menu{
         width: auto;
-        height: 100px;
+        height: 70px;
     }
+
+    .hipervinculo{
+        font-size: 17px !important;
+    }
+
+    li {
+        line-height: 100px !important;
+    }
+
 
     
     

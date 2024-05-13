@@ -267,7 +267,7 @@ textarea{
         align-items: center;
         text-align: center;
         margin-top: -5px;
-        width: 105%;
+        width: 100vw;
     }
 
     .contain-s1{
@@ -287,7 +287,7 @@ textarea{
     }
 
     .contact{
-        width: 100%;
+        width: 100vw;
         text-align:center;
     }
     .email-s1{
@@ -335,7 +335,7 @@ textarea{
 @media screen and (max-width: 768px){
 
     .contact{
-        margin-top: 28.8vw;
+        margin-top: 21vw;
     }
 
     .titulo-form{
@@ -347,12 +347,12 @@ textarea{
     }
 
     .mapa{
-        width: 50vw;
+        width: 45vw;
         text-align: center;
     }
 
     .mapa-a1{
-        width: 45vw;
+        width: 40vw;
     }    
 }
 
