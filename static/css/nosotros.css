@@ -117,8 +117,7 @@ body {
     float: right;
     width: 50%;
     height: 50vh;
-    /* border: 2px solid blue; */
-    /* box-sizing: border-box; */
+  
 }
 
 .marcas-div {
@@ -126,7 +125,6 @@ body {
     height: 25%;
     position:relative;
     top:500px;
-    /* margin-top:100px; */
     padding-top:100px;
     
 }
@@ -148,7 +146,6 @@ body {
     top:20px;
 }
 
-
 .dell{
     width: 250px;
     height: 100px;
@@ -156,6 +153,7 @@ body {
     left:600px;
     top:20px;
 }
+
 .lenovo{
     width: 250px;
     height: 100px;
@@ -163,7 +161,6 @@ body {
     left:900px;
     top:20px;
 }
-
 
 .microsoft{
     width: 250px;
@@ -173,8 +170,6 @@ body {
     top:20px;
 }
 
-
-
 .rog{
     width: 250px;
     height: 100px;
@@ -183,7 +178,6 @@ body {
     top:20px;
 }
 
-
 .unifi{
     width: 250px;
     height: 100px;
@@ -191,6 +185,7 @@ body {
     left:1750px;
     top:20px;
 }
+
 /* animacion */
 #imagenAnime {
     background-image: url("../img/pexels-eli-sommer-3992776.png");
