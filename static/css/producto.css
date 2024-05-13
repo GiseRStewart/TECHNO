@@ -1,6 +1,15 @@
 
 /* Eva:Contenido de productos*/
 
+body {
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
 #encabezado{
     background-image: url(../img/283818.jpg);
     height: 80vh; 
@@ -8,7 +17,7 @@
     background-position: center; 
     display: flex;
     align-items: center; 
-    margin-top: 15vh;
+    margin-top: 24vh;
 }
 
 /* body{
@@ -16,10 +25,11 @@
     background-size: cover;
 
 }*/
- body, main{
+ 
+/* body, main{
     border: 3px; color: black;
     min-height: 50px;
-} 
+}  */
 
 
 .texto_encabezado {
@@ -27,31 +37,48 @@
     max-width: 100vw; 
     padding: 6vw;
     text-align: center; 
-    color: #fff;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
 
 .texto_encabezado h1 {
-    font-size: 40px; 
+    font-size: 30px; 
     margin-top: 20px;
     text-align: left;
-    color: #fff;
     padding-top: 15vh;
+    font-family: sans-serif;
 }
 
 .texto_encabezado h2 {
-    font-size: 50px; 
+    font-size: 40px; 
     margin-bottom: 20px;
     text-align: right;
     padding-top: 30vh;
+    font-family: sans-serif;
 }
 
 
-.productos{
+/* .productos{
     height: auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
     background: #ffffff;
+} */
+
+.productos {
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    /* min-height: calc(100vh - (altura del nav + altura del footer)); */
+    margin: 0;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
 }
+
 
 .box-conteiner {
     display: flex;
@@ -61,10 +88,11 @@
 
 .productos .box-conteiner .box {
     flex: 0.5 0.5 475px;
-    box-shadow: 0 8px 24px #010101;
+    box-shadow: 0 8px 24px #010101; 
     border-radius: 30px;
     border-radius: 16px solid #111111;
     position: relative;
+    background-color: #fbfbfb;
 
 }
 
@@ -150,8 +178,15 @@ h1{
     font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
 }
-/* 
-@media screen and (max-width: 2560px){
+
+
+
+
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+    #encabezado{
+        margin-top: 18.5vh;
+    }
+
     .texto_encabezado h1 {
         font-size: 60px; 
         
@@ -184,21 +219,33 @@ h1{
     .boton-compra{
         margin-top: 2vh;
     }
-} */
+}
 
 
-@media screen and (max-width: 1440px){
+
+@media screen and (min-width: 1367px) and (max-width: 1440px){
     #encabezado{
-        margin-top: 5vh;
+        margin-top: 16vh;
+        height: 50vh; 
+        background-size: cover;
+        background-position: center; 
+        display: flex;
+        align-items: center; 
     }
     
     .texto_encabezado h1 {
         font-size: 30px; 
+        margin-top: 20px;
+        text-align: left;
+        padding-top: 10vh;
         
     }
     
     .texto_encabezado h2 {
         font-size: 40px; 
+        margin-bottom: 20px;
+        text-align: right;
+        padding-top: 15vh;
        
     }
 
@@ -208,6 +255,7 @@ h1{
 
     .productos .box-conteiner .box .imagen img{
         margin-top: 4vh;
+
     }
     
     .boton-compra{
@@ -216,9 +264,177 @@ h1{
 }
 
 @media screen and (max-width: 1024px){
+    #encabezado{
+        margin-top: 20;
+        height: 30vh; 
+        background-size: cover;
+        background-position: center; 
+        display: flex;
+        align-items: center; 
+    }
+    
+    .texto_encabezado h1 {
+        font-size: 20px; 
+        margin-top: 20px;
+        text-align: left;
+        padding-top: 5vh;
+        
+    }
+    
+    .texto_encabezado h2 {
+        font-size: 29px; 
+        margin-bottom: 20px;
+        text-align: right;
+        padding-top: 10vh;
+       
+    }
+    
+    .productos .box-conteiner .box {
+        flex: 0 0 calc(50% - 1.5rem); /* 50% del contenedor menos el espacio entre cajas */
+    }
+    
+    .productos .box-conteiner .box .descuentos{
+        z-index: 50;
+    }
+
+    .productos .box-conteiner .box .imagen img{
+        height: 25vh;
+        margin-top: 2.5vh;
+
+    }
+    
+    .boton-compra{
+        margin-top: 2vh;
+    }
 
 }
 
-@media screen and (max-width: 728px){
+@media screen and (max-width: 768px){
+    #encabezado{
+        margin-top: 45vh;
+        height: 38vh; 
+        background-size: cover;
+        background-position: center; 
+        display: flex;
+        align-items: center; 
+    }
     
+    .texto_encabezado h1 {
+        font-size: 10px; 
+        margin-top: 20px;
+        text-align: left;
+        padding-top: 6vh;
+        
+    }
+    
+    .texto_encabezado h2 {
+        font-size: 12px; 
+        margin-bottom: 20px;
+        text-align: right;
+        padding-top: 4vh;
+       
+    }
+    
+    .productos .box-conteiner .box {
+        flex: 0 0 calc(50% - 1.5rem); /* 50% del ancho del contenedor menos el espacio entre cajas */
+    }
+
+    
+    .productos .box-conteiner .box .imagen img{
+        height: 18vh;
+        margin-top: 2.5vh;
+
+    }
+    
+    .boton-compra{
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #encabezado{
+        margin-top: 33vh;
+        height: 20vh; 
+        background-size: cover;
+        background-position: center; 
+        display: flex;
+        align-items: center; 
+    }
+    
+    .texto_encabezado h1 {
+        font-size: 10px; 
+        margin-top: 20px;
+        text-align: left;
+        padding-top: 6vh;
+        
+    }
+    
+    .texto_encabezado h2 {
+        font-size: 12px; 
+        margin-bottom: 20px;
+        text-align: right;
+        padding-top: 4vh;
+       
+    }
+    
+    .productos .box-conteiner .box {
+        flex: 1 0 100%; 
+        margin-right: 0;
+        
+    }
+
+    .productos .box-conteiner .box .imagen img{
+        height: 30vh;
+        margin-top: 2.5vh;
+
+    }
+    
+    .boton-compra{
+        margin-top: 2vh;
+    }
+
+    .productos .box-conteiner .box .contenido h3 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .productos .box-conteiner .box .contenido p {
+        font-size: 16px; 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background: none;
+    }
+    
+    .precio {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 375px){
+    #encabezado{
+        margin-top: 45vh;
+        height: 20vh; 
+        background-size: cover;
+        background-position: center; 
+        display: flex;
+        align-items: center; 
+    }
+
+    .productos .box-conteiner .box .descuentos{
+        z-index: 50;
+    }
+
+    .productos .box-conteiner .box .imagen img{
+        height: 25vh;
+        margin-top: 3vh;
+
+    }
+    
+    .boton-compra{
+        margin-top: 3vh;
+    }
+
 }
