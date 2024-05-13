@@ -81,12 +81,15 @@ p{
 
 h1{
     margin: inherit;
-    
+}
+
+.copy-2{
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
     .pie-pagina{
-        width: 100vw;
+        width: 98vw;
     }
 
     .redes-img{
@@ -107,6 +110,7 @@ h1{
 
     .pie-pagina{
         height: 120px;
+        width: 98vw;
     }
 
     .redes-img{
@@ -160,7 +164,7 @@ h1{
 
 @media screen and (max-width: 480px){
     .pie-pagina{
-        width: 100%;
+        width: 98%;
         text-align: center;
     }
 
@@ -175,10 +179,11 @@ h1{
     .seccion-pie{
         width: 79%;
         text-align: left;
+        margin: 0px !important;
     }
 
     .terminos-s1{
-        text-align: left !important;
+        text-align: right !important;
         margin-left: 0px;
         font-size: 13px !important;
     }
@@ -187,21 +192,35 @@ h1{
         font-size: 12px !important;
     }
     .redes-img{
-        margin: 8px 10px 30px 0px;
+        margin-top: 30px;
+        margin-right: -41px;
         padding: 2px;
-        margin-bottom: 0px !important;
-    }
-    
-    .copy{
-        font-size: 12px !important;
-        margin-left: -150px !important;
-        margin-bottom: -50px !important;
+        margin-bottom: 30px !important;
+        height: 15px;
     }
 
-    .redes-img{
-        height: 15px;
-        margin-bottom: 60px !important;
-        margin-top: 10px !important;
+    .copy{
+        display: none;
+    }
+    
+    .copy-2{
+        display: block;
+        margin-left: 55px;
+
+    }
+
+    .titulo-ayuda{
+        margin-top: 0px;
+        margin-left: 0px !important;
+    }
+
+    .titulo-sitio{
+        margin-top: 0px;
+        margin-left: 0px !important;
+    }
+    .titulo-siguenos{
+        margin-top: 0px;
+        margin-left: 36px !important;
     }
 
 }    

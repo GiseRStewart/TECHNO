@@ -266,7 +266,7 @@ textarea{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: -5px;
+        margin-top: -6px;
         width: 100vw;
     }
 
@@ -308,12 +308,13 @@ textarea{
     }
 
     .mapa{
-        width: 40vw;
+        width: 35vw;
+        height: 37vh;
         margin-top: 5vw;
     }
 
     .mapa-a1{
-        width: 35vw;
+        width: 30vw;
     }
 
     #consulta{
@@ -335,15 +336,19 @@ textarea{
 @media screen and (max-width: 768px){
 
     .contact{
-        margin-top: 21vw;
+        margin-top: 20.8vw;
     }
 
     .titulo-form{
-        margin-left: 7vw;
+        margin-left: 4vw;
     }
 
     h3{
         margin-left: 10vw;
+    }
+
+    hr{
+        margin-left: 42vw;
     }
 
     .mapa{
@@ -407,4 +412,43 @@ textarea{
     .mapa-a1{
         width: 65vw;
     }
+
+    input{
+        width: 85%;
+    }
+
+    textarea{
+        width: 85%;
+        margin-left: 26px;
+    }
+
+    .file{
+        width: 75%;
+        margin-left: 0px;
+    }
+
+    #enviar{
+        width: 85%;
+    }
 }
+
+/* @media screen and (max-width: 375px) {
+
+    input{
+        width: 85%;
+    }
+
+    textarea{
+        width: 85%;
+    }
+
+    .file{
+        width: 75%;
+        margin-left: 0px;
+    }
+
+    #enviar{
+        width: 85%;
+    }
+    
+} */
