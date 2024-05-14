@@ -47,12 +47,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 1,8vh;
-    }
+    font-size: 1, 8vh;
+}
 
 .mision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:large;
+    font-size: large;
     color: var(--color-texto-body);
     text-align: justify;
     border-radius: 5%;
@@ -70,12 +70,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 1,8vh;
+    font-size: 1, 8vh;
 }
 
 .vision {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:large;
+    font-size: large;
     color: var(--color-texto-body);
     text-align: justify;
     border-radius: 5%;
@@ -92,13 +92,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 1,8vw;
+    font-size: 1, 8vw;
 }
 
 .valores {
-    margin-top: 1vh;    
+    margin-top: 1vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:large;
+    font-size: large;
     color: var(--color-texto-body);
     text-align: justify;
 }
@@ -106,7 +106,7 @@ body {
 
 .textos-div {
     float: left;
-    width: 50%; 
+    width: 50%;
     height: 0vh;
 }
 
@@ -122,10 +122,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: center;
-    font-size: 1,8vw;
+    font-size: 1, 8vw;
 
-    
+
 }
+
 /* animacion */
 #imagenAnime {
     /* background-image: url("../img/pexels-eli-sommer-3992776.png"); */
@@ -146,10 +147,11 @@ body {
     0% {
         background-image: url("../img/Logos/AsusLogo.png");
     }
+
     25% {
         background-image: url("../img/Logos/RogLogo.png");
     }
- 
+
     50% {
         background-image: url("../img/Logos/DellLogo.png");
     }
@@ -163,11 +165,18 @@ body {
     }
 }
 
+@media screen and (max-width: 1366px) {
+    main {
+        width: 100vw;
+        height: 57vh;
+        margin-top: 179px;
+        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+        background-size: contain;
+    }
 
+}
 
-
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     main {
         width: 100vw;
         height: 75vh;
@@ -175,17 +184,20 @@ body {
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
         background-size: contain;
     }
+
     .mision-div {
         width: 100%;
         height: 10vh;
         margin: 10px;
     }
+
     .vision-div {
         width: 100%;
         height: 15vh;
         margin: 10px;
-    
+
     }
+
     #imagenAnime {
         background-repeat: no-repeat;
         background-size: contain;
@@ -202,8 +214,7 @@ body {
 }
 
 
-
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     main {
         width: 100vw;
         height: 112vh;
@@ -214,21 +225,23 @@ body {
 
     .textos-div {
         float: left;
-        width: 90%; 
+        width: 90%;
         height: 60vh;
     }
-    
+
     .animacion-div {
         float: left;
         width: 50%;
         height: 50vh;
         margin: 10px;
     }
+
     .vision-div {
         width: 100%;
         height: 15vh;
         margin: 10px;
     }
+
     #imagenAnime {
         background-repeat: no-repeat;
         background-size: contain;
