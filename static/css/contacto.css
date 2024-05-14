@@ -432,23 +432,40 @@ textarea{
     }
 }
 
-/* @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
 
-    input{
-        width: 85%;
+    .contact{
+        margin-top: 17vh;
     }
 
-    textarea{
-        width: 85%;
+    .titulo-form{
+        font-size: 18px !important;
+        }
+
+    h3{
+        font-size: 16px;
+    }
+    
+    hr{
+        margin-left: 115px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .contact{
+        margin-top: 16.5vh;
     }
 
-    .file{
-        width: 75%;
+    hr{
+        margin-left: 85px;
+    }
+
+    h3{
         margin-left: 0px;
     }
 
-    #enviar{
-        width: 85%;
+    .etiqueta-s1{
+        padding-left: 9px;
     }
-    
-} */
+}
