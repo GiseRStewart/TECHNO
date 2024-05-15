@@ -256,5 +256,44 @@ body {
         margin-left: 0vh;
     }
 
+@media screen and (max-width: 375px) {
+
+.mision-div {
+    width: 100%;
+    height: 14vh;
+    margin: 10px;
+}
+.vision-div {
+    width: 100%;
+    height: 23vh;
+    margin: 10px;
+}
+
+.valores-div {
+    width: 100%;
+    height: 39vh;
+    margin: 10px;
+}
+.animacionT {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-texto-body);
+    text-align: left;
+    margin-top: 20vh;
+    font-size: 1, 8vw;
+
+
+}
+#imagenAnime {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vh;
+    animation-name: cambiarImagen;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 5vh;
 
 }
