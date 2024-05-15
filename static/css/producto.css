@@ -311,7 +311,7 @@ h1{
 
 @media screen and (max-width: 768px){
     #encabezado{
-        margin-top: 45vh;
+        margin-top: 13.5vh;
         height: 38vh; 
         background-size: cover;
         background-position: center; 
@@ -341,7 +341,7 @@ h1{
 
     
     .productos .box-conteiner .box .imagen img{
-        height: 18vh;
+        height: 20vh;
         margin-top: 2.5vh;
 
     }
@@ -350,41 +350,34 @@ h1{
         margin-top: 2vh;
     }
 }
-/* 
-@media screen and (max-width: 425px){
+
+@media screen and (max-width: 480px){ 
     #encabezado{
-        margin-top: 33vh;
-        height: 20vh; 
-        background-size: cover;
-        background-position: center; 
-        display: flex;
-        align-items: center; 
+        margin-top: 46vh ; 
+        
     }
     
     .texto_encabezado h1 {
         font-size: 10px; 
-        margin-top: 20px;
-        text-align: left;
-        padding-top: 6vh;
+        
         
     }
     
     .texto_encabezado h2 {
         font-size: 12px; 
-        margin-bottom: 20px;
-        text-align: right;
-        padding-top: 4vh;
+        
        
     }
     
     .productos .box-conteiner .box {
+    
         flex: 1 0 100%; 
         margin-right: 0;
         
     }
 
     .productos .box-conteiner .box .imagen img{
-        height: 30vh;
+        height: 35vh;
         margin-top: 2.5vh;
 
     }
@@ -395,14 +388,13 @@ h1{
 
     .productos .box-conteiner .box .contenido h3 {
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+      
         
     }
     
     .productos .box-conteiner .box .contenido p {
         font-size: 16px; 
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        background: none;
+      
     }
     
     .precio {
@@ -413,14 +405,11 @@ h1{
     
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 380px){
     #encabezado{
-        margin-top: 45vh;
+        margin-top: 13vh !important;
         height: 20vh; 
-        background-size: cover;
-        background-position: center; 
-        display: flex;
-        align-items: center; 
+    
     }
 
     .productos .box-conteiner .box .descuentos{
@@ -437,4 +426,28 @@ h1{
         margin-top: 3vh;
     }
 
-} */
+}   
+
+@media screen and (max-width: 320px){
+    #encabezado{
+        margin-top: 16vh;
+    }
+
+    .texto_encabezado h1{
+        font-size: 10px !important;
+        margin-top: 8px;
+        padding-top: 1vh;
+    }
+
+    .texto_encabezado h2{
+        font-size: 10px !important;
+        margin-bottom: 8px;
+        padding-top: 1vh;
+    }
+
+    .productos .box-conteiner .box{
+        display: flex !important;
+        flex-direction: column  !important;
+        flex: 1 1 auto !important;
+    }
+}
