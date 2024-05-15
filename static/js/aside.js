@@ -10,7 +10,8 @@ var asideContent = `
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-            </div>  
+            </div>
+            <hr>  
             <ul id="aside-list">
 
                 <li><a class="hiper-aside" href="./templates/Producto.html">Apple MacBook Air M2</a></li>
@@ -25,6 +26,8 @@ var asideContent = `
                 <li><a class="hiper-aside" href="./templates/Producto.html">Lenovo Chromebook Duet 3</a></li>
             </ul>
             <div id="texto-aside">
+            <hr>
+             
                 <p> 
                 Cada una de ellas han sido examinada minuciosamente. Ya sea una Chromebook de buen
                 precio o una computadora portátil para juegos de primera línea, todas han sido sometidas a duras
