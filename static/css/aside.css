@@ -84,7 +84,7 @@ aside h1:hover {
 }
 
 hr {
-    width:25vw;
+    width: 25vw;
     margin: 10vh 5vw 12vh 2vw;
 
 }
@@ -95,8 +95,6 @@ hr {
     flex-wrap: wrap;
     width: 90%;
     height: 65vh;
-    border: 0.5px solid var(--color-fondo-body);
-    border-radius: 20px;
     margin: -11px 0px 0px 15px;
 }
 
@@ -139,6 +137,13 @@ p {
         margin: 0vh 10vw 20vh 4vw;
         height: 140px;
     }
+    
+    hr {
+    width:25vw;
+    margin: 10vh 5vw 12vh 2vw;
+
+}
+
 
     #aside-list {
         font-size: small;
@@ -187,6 +192,11 @@ p {
     iframe{
         width: 19vw;
         height: 28vh;
+    }
+    hr {
+        width: 25vw;
+        margin: 10vh 5vw 12vh 2vw;
+    
     }
 
     #aside-list {
@@ -237,6 +247,11 @@ p {
     iframe{
         width: 22vw;
         height: 30vh;
+    }
+    hr {
+        width: 25vw;
+        margin: 10vh 5vw 12vh 2vw;
+    
     }
 
     #aside-list {
@@ -291,6 +306,11 @@ p {
     iframe{
         width: 27vw;
         height: 34vh;
+    }
+    hr {
+        width: 25vw;
+        margin: 10vh 5vw 12vh 2vw;
+    
     }
 
     #aside-list {
@@ -356,6 +376,11 @@ p {
         width: 22vw;
         height: 23vh;
     }
+    hr {
+    width: 25vw;
+    margin: 10vh 5vw 12vh 2vw;
+
+}
 
     #aside-list {
         margin: 12vh -1vw 25vh 0vw;
@@ -423,7 +448,11 @@ h4{
     margin: 10px 0px 0px -12px;
 
 }
+hr {
+    width: 25vw;
+    margin: 10vh 5vw 12vh 2vw;
 
+}
 
 } 
 
