@@ -7,14 +7,19 @@ a {
 
 aside {
     float: right;
+    display: flex;
     background-color: var(--barra-input-color);
     max-width: 50vw;
-    width: 21vw;
+    width: 19vw;
     height: auto;
     border: 5px solid var(--barra-input-color);
     border-radius: 10px;
-    margin-top: 24vh;
-
+    margin-top: 26vh !important;
+    margin-left: 0vw;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -38,7 +43,7 @@ aside h1:hover {
     font-size: 1.5rem;
     text-align: center;
     color: var(--color-texto-header);
-    margin: 0vh 2vw 15vh 2vw;
+    margin: 0vh 2vw 8vh 2vw;
 
 
 
@@ -53,24 +58,30 @@ aside h1:hover {
     margin-left: 1vw;
     justify-content: center;
     align-content: center;
-    width: 100px;
+    width: 5vw;
     height: 20vh;
     max-width: 100%;
     text-decoration: none;
 
 }
+iframe{
+    width: 15vw;
+    height: 25vh;
+    margin-left: -5vw;
+}
 
 #aside-list {
-    margin: 10vh 0vw 8vh 3vw;
+    margin-left: 3vw;
     list-style-type: none;
     font: size 2.5rem;
+    margin-top: -9vh !important;
 
 
 }
 
 #aside-list .hiper-aside {
 
-    font: 24px "Crimson Text-Regular";
+    font: 1.5vw "Crimson Text-Regular";
     color: var(--color-texto-header);
     /* padding-left: 2vw; */
     border-radius: 3px;
@@ -86,16 +97,15 @@ aside h1:hover {
 
 hr {
     width: 16vw;
-    margin: 10vh 5vw 12vh 2vw;
-
+    margin: 7vh 1vw 14vh 2vw;
 }
 
 #texto-aside {
 
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    margin: -8vh 0vw 0vh 1vw;
+    width: 17vw;
+    margin: -11vh 0vw 3vh 1vw;
 }
 
 @font-face {
@@ -106,13 +116,15 @@ hr {
 aside p {
     text-align: justify;
     color: var(--color-texto-header);
-    font: 22px "Crimson Text-Regular";
+    font: 1.3vw "Crimson Text-Regular";
     writing-mode: horizontal-tb;
     letter-spacing: 2px;
-    text-indent: 7rem;
+    text-indent: 3em;
     
 }
-
+/* .ocultar-aside{
+    display: none;
+} */
 
 /* 
 @media screen and (max-width: 2560px) {
@@ -172,9 +184,10 @@ aside p {
 
 @media screen and (max-width: 1440px) {
     aside {
+        display:unset !important;
         height: auto;
-        width: 21vw;
-        margin-top: 22vh!important;
+        width: 22vw;
+        margin-top: 26vh!important;
     }
 
     aside h1 {
@@ -190,8 +203,9 @@ aside p {
         margin-left: 1vw;
     }
     iframe{
-        width: 19vw;
+        width: 19vw ;
         height: 24vh;
+        margin-left: 1vw !important;
     }
     hr {
         width: 16vw;
@@ -211,247 +225,150 @@ aside p {
     }
 
     #texto-aside {
-        height: 68vh;
+        height: 45vh;
         margin-left: 1vw;
     }
     aside p{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
 @media screen and (max-width: 1024px) {
     aside {
-        height: 171vh;
-        width: 270px;
-        margin-top: 173px;
-        margin-left:  10px;
+        display:unset !important;
+        height: auto;
+        width: 24vw;
+        margin-left:  1vw;
     }
 
     aside h1 {
-        margin: 8vh 3vw 18vh 0vw;
-        font-size: 3rem;
+
+        margin: 0vh 2vw 15vh 0vw !important;
+        font-size: 2.3rem;
     }
 
     .padre-h2 {
         font-size: 2vw;
-        margin: 12vh 2vw;
-        padding: 10px;
-
+        margin-left: 2vw !important;
+        padding: 2vh !important;
     }
 
     #ppal-animation {
-        margin: 5vh 0vw 8vh 3vw;
-        height: 30vh;
+        height: 28vh;
+        margin-bottom: 5vh;
+        margin-top: -11vh;
     }
     iframe{
-        width: 22vw;
-        height: 30vh;
+        width: 18vw ;
+        height: 26vh;
+        margin-left: 2vw !important;
     }
     hr {
-        width: 16vw;
-    margin: 10vh 5vw 12vh 2vw;
+        width: 20vw;
+    margin: 0vh 0vw 12.5vh 2vw !important;
     
     }
 
     #aside-list {
         font-size: small;
-        margin-left: 5vw;
-        margin-bottom: 8px;
+        margin-left: 4vw;
+        margin-bottom: 5vh;
     }
 
    
     #aside-list .hiper-aside {
-        font-size: 1rem;
+        font-size: 1.5em;
         text-align: center;
-        padding-left: 80px;
-        margin-left: -8vw;
+        padding-left: 9vw;
     }
     #texto-aside {
-        height: 39vh;
-        margin: 1vh 0vw 2vh 1vw;
+        margin-left:1vw;
     }
 
 
-    p{
-        font-size: 1rem;
+    aside p{
+        font-size: 1em;
     }
    
 }
 
 @media screen and (max-width: 768px) {
     aside {
-        width: 29%;
-        padding: 0%;
-        margin-top: 217px;
-        height: 300vh;
+        display:unset !important;
+        width: 25vw;
+        margin-left: 3vw;
+        height: auto;
+        padding-top: 5vh !important;
+        margin-top: -20vh !important;
 
     }
 
     aside h1 {
-        margin: 8vh 0vw 2vh 0vw;
+        margin: 8vh 2vw 8vh 0vw;
         font-size: 2rem;
     }
-
     .padre-h2 {
         font-size: 1.3rem;
         margin-left: 2px;
         padding: 10px;
     }
-
     #ppal-animation {
-        margin-top: 15vh;
+        margin-top: 20vh;
         margin-left: 0vw;
     }
     iframe{
-        width: 27vw;
-        height: 34vh;
+        width: 22vw;
+        height: 28vh;
+        margin-left: 1vw;
     }
+    
     hr {
-        width: 16vw;
-    margin: 10vh 5vw 12vh 2vw;
+        width: 20vw;
     
     }
-
     #aside-list {
-        margin: 12vh 0vw 25vh 0vw;
-        font-size: small;
+        margin: 0vh -1vw 10vh -3vw;
+        padding: 2vh 0vw 5vh 0vw;
     }
     #aside-list .hiper-aside {
-        font-size: 1rem;
-        text-align: center;
-        padding-left: 78px;
-        margin-left: -8vw;
+        
+        padding-left: 5vw;
+        margin-left: 2vw;
+        font-size: 1em;
     }
 
     #texto-aside {
-        height: 65vh;
-        
+        height: 80vh;
+        width: 21vw;
+        margin-top: 5vh;
+        margin-left: 2vw;
+        justify-content: center;
     }
     
-    p{
+    aside p {
         font-size: 1rem;
         text-align: justify;
     }
    
 }
 
-/* @media (min-width: 425px) { */
-    /* .con-sidebar {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 4rem;
-    }
-
+@media screen and (min-width:320px) and (max-width: 426px) {
     aside {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    } */
-
-
-    /* aside {
-        width: 24%;
-        padding: 0%;
-        margin-top: 210px;
-        height: 300vh;
-
-    }
-
-    aside h1 {
-        margin: 5vh 2vw 3vh 0vw;
-        font: size 1.5rem;;
-    }
-
-    .padre-h2 {
-        font-size: 1rem;
-        margin-left: 0px;
-        padding: 1px;
-    }
-
-    #ppal-animation {
-        margin-top: 15vh;
-        margin-left: 1vw;
-    }
-    iframe{
-        width: 22vw;
-        height: 23vh;
-    }
-    hr {
-    width: 16vw;
-    margin: 10vh 5vw 12vh 2vw;
-
-}
-
-    #aside-list {
-        margin: 12vh -1vw 25vh 0vw;
-        font-size: small;
-    }
-    #aside-list .hiper-aside {
-        font-size: 0.7rem;
-        text-align: center;
-        padding-left: 0px;
-        margin-left: -3vw;
-        padding: 6px;
-    }
-
-    #texto-aside {
-        height: 65vh;
-        
+        display: none;
     }
     
-    p{
-        font-size: 10px;
-        text-align:justify;
-        letter-spacing: 4px;
+}
+
+@media screen and (max-width:375px) {
+    aside{
+        display: none;
     }
-   
-} */
-
-/* 
-@media screen and (max-width: 300px) {
-
-#aside-container{
-    width: 100%;
-    max-height:210vh;
-    padding: 5px;
-    margin: 8px;
-    text-align: center;
-    justify-content: right;
+      
 }
-#aside-list{
-    max-width: 20vw;
-    align-content: stretch;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-    font-size: 3vw;
-
+@media screen and (max-width: 320px) {
+    aside{
+        display: none;
+    }
+    
 }
-h4{
-    font-size: 3vw;
-    text-align: center;
-    max-width: 15vw;
-
-}
-#texto-aside{
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    text-align: justify;
-    height: auto;
-    font-size:60%;
-    max-width: 20vw;
-    padding: 11px;
-    margin: 10px 0px 0px -12px;
-
-}
-hr {
-    width: 25vw;
-    margin: 10vh 5vw 12vh 2vw;
-
-}
-
-} 
 

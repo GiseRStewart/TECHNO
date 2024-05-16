@@ -34,7 +34,7 @@ var asideContent = `
                 pruebas en el mundo real, así como a comparativas de rendimiento y duración de la batería.
                 </p>
             <div/>
-    
+            
 </aside>`;
 
 document.body.insertAdjacentHTML('afterbegin', asideContent)
