@@ -131,7 +131,7 @@ h1 {
 
 .ppal-content {
     display: grid;
-    grid-template-columns: repeat(3, 385px);
+    grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(1, auto);
     justify-content: center;
     column-gap: 1vw;
@@ -409,7 +409,7 @@ h1 {
 @media screen and (max-width: 2560px) {
     .contenedor {
         max-width: 100vw;
-        width: 100vw;
+        width: 77vw;
         padding-top: 0vh;
         margin: 17vh 22vw 0vh 0vw;
         border-radius: 5vw;
@@ -417,27 +417,27 @@ h1 {
     }
 
     #banner {
-        width: 78vw;
+        width: 77vw;
         padding-top: 10vh;
     }
 
-    h1 {
-        margin: -13vh 0vw 7vh 1vw;
+    #banner h1 {
+        margin: -10vh 0vw 7vh 1vw;
         padding: 0vh;
         font-size: 10rem;
     }
 
     #banner h2 {
-        margin-left: 2vh;
+        
         padding: 0vh;
-        margin: 8vh 0vw 6vh 1vw;
+        margin: 10vh 0vw 8vh 1vw;
         font-size: 5rem;
     }
 
     #texto-banner {
-        padding: 1vh;
+        padding: 4vh;
         float: right;
-        margin-right: 4vw;
+        margin-right: 0vw;
     }
 
     /* #search {
@@ -455,24 +455,24 @@ h1 {
     }
 
     .contenedor-cards h3 {
-        margin: -6vh 0vw -13vh 3vw;
-        font-size: 2.5em;
+        margin: -5vh 0vw -23vh 17vw;
+        font-size: 4rem;
+        width: 41vw;
     }
 
     .ppal-content {
-        width: 72vw;
-        margin: 16vh 0vw 0vh 1vw;
-        padding: 4vh;
-
+        width: 71vw;
+        margin-top: 17vh;
+        padding: 6vh;
     }
 
     .card1 {
-        margin: 3vh -2vw 3vh 0vw;
-        width: 614px;
+        margin: 6vh 0vw 0vh -16vw;
+        width: 24vw;
     }
 
-    title-animation1 {
-        margin: 0vh 0vw 2vh 2vw;
+    .title-animation1 {
+        margin: 4vh 0vw 2vh 2vw;
         font-size: 4rem;
         font-weight: bolder;
     }
@@ -481,24 +481,28 @@ h1 {
     .subtitle1 {
         font-size: 3rem;
         padding: 2vw;
+        margin-top: 8vh;
     }
-
-    .text1 {
-        font-size: 2rem;
+    .imagen-borde1 {
+        width: 20vw;
+        height: 30vh;
+        margin: 1vh 2vw 1vh 2vw;
     }
-
     .texto1 {
         width: 22vw;
         margin-top: 2vh;
     }
-
-    .card2 {
-        margin: 3vh -2vw 3vh 0vw;
-        width: 614px;
+    #text1 {
+        font-size: 2rem;
     }
 
-    title-animation2 {
-        margin: 0vh 0vw 2vh 2vw;
+    .card2 {
+        margin: 6vh 0vw 0vh -5vw;
+        width: 24vw;
+    }
+
+    .title-animation2 {
+        margin: 4vh 0vw 2vh 2vw;
         font-size: 4rem;
         font-weight: bolder;
     }
@@ -507,8 +511,13 @@ h1 {
         font-size: 3rem;
         padding: 2vw;
     }
+    .imagen-borde2 {
+        width: 20vw;
+        height: 30vh;
+        margin: 1vh 2vw 1vh 2vw;
+    }
 
-    .text2 {
+    #text2 {
         font-size: 2rem;
     }
 
@@ -518,20 +527,23 @@ h1 {
     }
 
     .card3 {
-        margin: 3vh -2vw 3vh 0vw;
-        width: 614px;
+        margin: 6vh 0vw 0vh 6vw;
+        width: 24vw;
     }
 
-    title-animation3 {
-        margin: 0vh 0vw 2vh 2vw;
+    .title-animation3 {
+        margin: 4vh 0vw 2vh 2vw;
         font-size: 4rem;
         font-weight: bolder;
     }
-
-
     .subtitle3 {
         font-size: 3rem;
         padding: 2vw;
+    }
+    .imagen-borde3 {
+        width: 20vw;
+        height: 30vh;
+        margin: 1vh 2vw 0vh 2vw;
     }
 
     .texto3 {
@@ -539,12 +551,190 @@ h1 {
         margin-top: 2vh;
     }
 
-    .text3 {
+    #text3 {
         font-size: 2rem;
     }
 
 
 }
+/* @media screen and (max-width: 1520px) {
+    .contenedor {
+        max-width: 100vw;
+        width: 76vw;
+        padding-top: 14vh;
+        margin: 1vh;
+
+    }
+
+    #banner {
+        width: 76vw;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        margin-top: 10vh;
+    }
+
+    h1 {
+        padding: 2vh;
+        font-size: 4rem;
+        margin-top: -10vh !important;
+    }
+
+    #banner h2 {
+        margin-top: 4vh !important;
+        margin-left: -1vw;
+        padding: 4vh;
+        font-size: 2.5rem;
+        color: var(--color-texto-header);
+    }
+
+    #texto-banner {
+        margin: -8vh 1vw;
+        float: right;
+        color: var(--color-texto-header);
+        font-weight: bolder;
+    }
+
+    
+    #search {
+        margin: 2vh 5vw 0vh 10vw;
+
+    }
+
+    #input-search {
+        justify-content: center;
+        margin: 2vh 0vw 0vh 15vw;
+    }
+
+
+    .contenedor-cards {
+        width: 76vw;
+        height: auto;
+        margin-top: 6vh !important;
+    }
+
+    .contenedor-cards h3 {
+        width: 36vw;
+        font-size: 2em;
+        margin: 0vh 0vw -8vw 19vw;
+    }
+
+    .ppal-content {
+        width: 73vw;
+        margin-top: -2vh;
+        padding: 2vh;
+        display: grid;
+        grid-template-columns: repeat(3, 290px);
+        grid-template-rows: repeat(1, auto);
+        justify-content: space-between;
+        column-gap: 1vw;
+
+    }
+
+    .card1 {
+        margin: 18vh 0vw 1vh -1vw;
+        width: 20vw;
+    }
+
+    .title-animation1 {
+        margin: 2vh 0vw 2vh 2vw;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .subtitle1 {
+        font-size: 2rem;
+        padding: 2vw;
+        margin-bottom: 5vh;
+    }
+
+    .imagen-borde1 {
+        width: 17vw;
+        height: 25vh;
+
+    }
+
+    .texto1 {
+        width: 22.5vw;
+        height: 68vh;
+        margin-top: 2vh;
+        margin-left: 0.5vw;
+    }
+
+    #text1 {
+        font-size: 1.2rem;
+        margin: 1vw;
+    }
+
+    .card2 {
+        margin: 18vh 0vw 1vh -1vw;
+        width: 20vw;
+    }
+
+    .title-animation2 {
+        margin: 2vh 0vw 2vh 2vw;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .subtitle2 {
+        font-size: 2rem;
+        padding: 2vw;
+    }
+
+    .imagen-borde2 {
+        width: 17vw;
+        height: 25vh;
+    }
+
+    .texto2 {
+        width: 22.5vw;
+        height: 68vh;
+        margin-top: 2vh;
+        margin-left: 0.5vw;
+    }
+
+    #text2 {
+        font-size: 1.2rem;
+        margin: 1vw;
+    }
+
+    .card3 {
+        margin: 18vh 0vw 1vh -1vw;
+        width: 20vw;
+    }
+
+    .title-animation3 {
+        margin: 2vh 0vw 2vh 2vw;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .subtitle3 {
+        font-size: 2rem;
+        padding: 2vw;
+        margin-bottom: 5vh;
+    }
+
+    .imagen-borde3 {
+        width: 17vw;
+        height: 25vh;
+    }
+
+    .texto3 {
+        width: 22.5vw;
+        height: 68vh;
+        margin-top: 2vh;
+        margin-left: 0.5vw;
+    }
+
+    #text3 {
+        font-size: 1.2rem;
+        margin: 1vw;
+    }
+
+}*/
+
 
 @media screen and (max-width: 1440px) {
     .contenedor {
@@ -611,9 +801,9 @@ h1 {
     .ppal-content {
         width: 74vw;
         margin-top: -2vh;
-        padding: 2vh;
+        padding: 1vh;
         display: grid;
-        grid-template-columns: repeat(3, 310px);
+        grid-template-columns: repeat(3, 320px);
         grid-template-rows: repeat(1, auto);
         justify-content: space-between;
         column-gap: 1vw;
