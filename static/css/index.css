@@ -5,6 +5,7 @@ body {
     font-style: normal;
 
 }
+
 main {
     width: 100vw;
     background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
@@ -34,9 +35,8 @@ el encabezado cambie de color */
 
 #banner {
 
-    background: url(../img/vecteezy_digital-transformation-technology.png) 
-     no-repeat;
-     object-fit: cover;
+    background: url(../img/vecteezy_digital-transformation-technology.png) no-repeat;
+    object-fit: cover;
     background-size: cover;
     float: left;
     max-width: 100vw;
@@ -45,7 +45,7 @@ el encabezado cambie de color */
     box-shadow: transparent 0 0 0 2000px var(--color-fondo-header);
     border-radius: 10px;
     text-align: left;
-    
+
 }
 
 /* .recuperar {
@@ -410,15 +410,15 @@ h1 {
     .contenedor {
         max-width: 100vw;
         width: 100vw;
-        padding-top: 180vh;
-        margin: 24vh 4vw 0vh 0vw;
+        padding-top: 0vh;
+        margin: 17vh 22vw 0vh 0vw;
         border-radius: 5vw;
 
     }
 
     #banner {
-        width: 100%;
-        padding-top: 260vh;
+        width: 78vw;
+        padding-top: 10vh;
     }
 
     h1 {
@@ -428,27 +428,28 @@ h1 {
     }
 
     #banner h2 {
-        margin-left: 1vh;
-        padding: 1vh;
+        margin-left: 2vh;
+        padding: 0vh;
+        margin: 8vh 0vw 6vh 1vw;
         font-size: 5rem;
     }
 
     #texto-banner {
         padding: 1vh;
         float: right;
-        margin-right: 48px;
+        margin-right: 4vw;
     }
 
-     #search {
+    /* #search {
         margin: 6vh 0vw 3vh 18vw;
     }
 
     #input-search {
         margin: 3vh 8vw 1vh 20vw;
-    } 
+    }  */
     .contenedor-cards {
         width: 78vw;
-        margin-top: 8vh;
+        margin-top: 1vh;
 
 
     }
@@ -475,19 +476,22 @@ h1 {
         font-size: 4rem;
         font-weight: bolder;
     }
-    
-    
+
+
     .subtitle1 {
         font-size: 3rem;
         padding: 2vw;
     }
+
     .text1 {
         font-size: 2rem;
     }
+
     .texto1 {
         width: 22vw;
         margin-top: 2vh;
     }
+
     .card2 {
         margin: 3vh -2vw 3vh 0vw;
         width: 614px;
@@ -503,17 +507,21 @@ h1 {
         font-size: 3rem;
         padding: 2vw;
     }
+
     .text2 {
         font-size: 2rem;
     }
+
     .texto2 {
         width: 22vw;
         margin-top: 2vh;
     }
+
     .card3 {
         margin: 3vh -2vw 3vh 0vw;
         width: 614px;
     }
+
     title-animation3 {
         margin: 0vh 0vw 2vh 2vw;
         font-size: 4rem;
@@ -799,7 +807,8 @@ h1 {
 
     #text1 {
         font-size: 1rem;
-        margin: 0vh 1vw 0vh 5vw;;
+        margin: 0vh 1vw 0vh 5vw;
+        ;
     }
 
     .card2 {
@@ -834,7 +843,8 @@ h1 {
 
     #text2 {
         font-size: 1rem;
-        margin: 0vh 1vw 0vh 5vw;;
+        margin: 0vh 1vw 0vh 5vw;
+        ;
     }
 
     .card3 {
@@ -862,6 +872,7 @@ h1 {
     }
 
     #banner h2 {
+        color: var(--color-texto-body);
         margin-left: -6vw;
         padding: 12vh;
         font-size: 1.5rem;
@@ -956,7 +967,7 @@ h1 {
         margin: 5px 10px 0px 5px;
     }
 
-    
+
 
     .card3 {
         display: grid !important;
@@ -1003,6 +1014,7 @@ h1 {
         height: auto;
         margin: 5vh 1vw -9vh 1vw;
     }
+
     #banner h1 {
         margin: 0vh 0vw 8vh 2vw;
         padding: 0vh;
@@ -1013,6 +1025,7 @@ h1 {
         margin-left: 3vw;
         padding: 0vh;
         font-size: 0.9em;
+        color: var(--color-texto-body);
     }
 
     #texto-banner {
@@ -1054,6 +1067,7 @@ h1 {
         width: 85vw;
         margin: 9vh 0vw 6vh 7vw;
     }
+
     .title-animation1 {
         margin: 2vh 0vw 2vh 2vw;
         font-size: 1.5em;
@@ -1070,6 +1084,7 @@ h1 {
         height: 26vh;
         margin: 0vh 6vw 8vh 7vw;
     }
+
     .texto1 {
         max-width: 100vw;
         width: 80vw;
@@ -1089,6 +1104,7 @@ h1 {
         width: 85vw;
         margin: 9vh 0vw 6vh 7vw;
     }
+
     .title-animation2 {
         margin: 2vh 0vw 2vh 2vw;
         font-size: 1.5em;
@@ -1121,11 +1137,12 @@ h1 {
     }
 
     .card3 {
-        
+
         height: 115vh;
         width: 85vw;
         margin: 9vh 0vw 6vh 7vw;
     }
+
     .title-animation3 {
         margin: 2vh 0vw 2vh 2vw;
         font-size: 1.5em;
@@ -1157,4 +1174,14 @@ h1 {
         margin: 5px 10px 0px 5px;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+    .contenedor {
+        max-width: 100vw;
+        width: 100vw;
+        padding-top: 19vh !important ;
+        margin-left: 0vw;
+        background-size: cover;
+    }
 }
