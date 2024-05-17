@@ -11,10 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100%;
-}
-body, main, footer{
-    border: 3px; color: black;
-    min-height: 50px;
+    background-color: var(--color-primario);
 }
 
 .contain{

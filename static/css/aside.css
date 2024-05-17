@@ -287,7 +287,7 @@ aside p {
         margin-left: 3vw;
         height: auto;
         padding-top: 5vh;
-        margin-top: -20vh;
+        margin-top: 23vh !important;
 
     }
 
@@ -307,7 +307,7 @@ aside p {
     iframe{
         width: 22vw;
         height: 28vh;
-        margin-left: -9vw;
+        margin-left: -8vw;
     }
     
     hr {
