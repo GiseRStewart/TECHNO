@@ -254,7 +254,7 @@ textarea{
     }
 
     hr{
-        margin-left: 49vw;
+        margin-left: 46vw;
     }
 
     h3{
@@ -271,7 +271,7 @@ textarea{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: -12px;
+        margin-top: -8px;
         width: 100vw;
     }
 
@@ -341,7 +341,7 @@ textarea{
 @media screen and (max-width: 768px){
 
     .contact{
-        margin-top: 21.5vw  ;
+        margin-top: 21.1vw  ;
     }
 
     .titulo-form{
@@ -369,7 +369,7 @@ textarea{
 @media screen and (max-width: 425px) {
 
     .contact{
-        margin-top: 21.3vw;
+        margin-top: 20.3vw;
         width: 100%;
     }
 
@@ -384,7 +384,7 @@ textarea{
     }
 
     hr{
-        margin-left: 35vw;
+        margin-left: 31vw;
     }
 
     .titulo-form{
@@ -440,7 +440,7 @@ textarea{
 @media screen and (max-width: 375px) {
 
     .contact{
-        margin-top: 23.5vw;
+        margin-top: 22.7vw;
     }
 
     .titulo-form{
@@ -452,14 +452,14 @@ textarea{
     }
     
     hr{
-        margin-left: 115px;
+        margin-left: 112px;
     }
 }
 
 @media screen and (max-width: 320px){
 
     .contact{
-        margin-top: 27.2vw;
+        margin-top: 25.9vw;
     }
 
     hr{
