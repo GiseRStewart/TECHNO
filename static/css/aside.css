@@ -122,7 +122,7 @@ aside p {
     text-indent: 3em;
     
 }
-@media screen and (max-width: 2560px) {
+/* @media screen and (max-width: 2560px) {
     aside {
         display: flex;
         flex-wrap: wrap;
@@ -172,9 +172,9 @@ aside p {
         height: 32vh;
         margin: -11vh 0vw 10vh 1vw;
     }
-}
+} */
 
-@media screen and (max-width: 1520px) {
+/* @media screen and (max-width: 1520px) {
     aside {
         display: flex;
         flex-wrap: wrap;
@@ -225,7 +225,7 @@ aside p {
         height: 30vh;
         margin: 0vh 0vw 10vh 1vw;
     }
-}
+} */
 
 @media screen and (max-width: 1440px) {
     aside {
