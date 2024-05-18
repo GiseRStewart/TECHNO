@@ -47,7 +47,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 1, 8vh;
+    font-size: 2vh;
 }
 
 .mision {
@@ -70,7 +70,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 1, 8vh;
+    font-size: 2vh;
 }
 
 .vision {
@@ -92,7 +92,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 1, 8vw;
+    font-size: 2vh;
 }
 
 .valores {
@@ -122,7 +122,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: center;
-    font-size: 1, 8vw;
+    font-size: 2vh;
 
 
 }
@@ -218,16 +218,22 @@ body {
 @media screen and (max-width: 375px) {
     main {
         width: 100vw;
-        height: 112vh;
+        height: 128vh;
         margin-top: 75px;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
         background-size: contain;
     }
 
+    .mision-div {
+        width: 100%;
+        height: 15vh;
+        margin: 10px;
+    }
+
     .textos-div {
         float: left;
         width: 90%;
-        height: 60vh;
+        height: 75vh;
     }
 
     .animacion-div {
@@ -239,8 +245,15 @@ body {
 
     .vision-div {
         width: 100%;
-        height: 15vh;
+        height: 20vh;
         margin: 10px;
+    }
+
+    .animacionT {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--color-texto-body);
+        text-align: left;
+        font-size: 2vh;
     }
 
 
@@ -264,7 +277,7 @@ body {
 
     main {
         width: 100vw;
-        height: 115vh;
+        height: 128vh;
         margin-top: 75px;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
         background-size: contain;
@@ -290,8 +303,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
-    margin-top: 22vh;
-    font-size: 1, 8vw;
+    margin-top: 5vh;
+    font-size: 2vh;
 }
 #imagenAnime {
     background-repeat: no-repeat;
