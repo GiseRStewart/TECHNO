@@ -174,17 +174,21 @@ aside p {
     }
 }
 
-/* @media screen and (max-width: 1520px) {
+@media screen and (max-width: 1520px) {
     aside {
-        display:flex;
-        width: 25vw;
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        max-width: 50vw;
+        width: 20vw;
         height: auto;
-        margin-top: 25vh!important;
+        margin-left: -22vw;
+        margin-top: 24vh;
     }
 
     aside h1 {
         margin: 0vh 1vw 5vh 1vw;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 13vh;
     }
 
@@ -208,20 +212,20 @@ aside p {
     #aside-list {
         font-size: small;
         padding-bottom: 1vh;
-        margin: 0vh -1vw 2vh 10vw;
+        margin: 0vh -1vw 2vh 5vw;
         
     }
     #aside-list .hiper-aside {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: justify;
         padding-top: 1vh;
         margin-left: -8vw;
     }
     #texto-aside {
-        height: 32vh;
-        margin: 3vh 0vw 10vh 1vw;
+        height: 30vh;
+        margin: 0vh 0vw 10vh 1vw;
     }
-} */
+}
 
 @media screen and (max-width: 1440px) {
     aside {
