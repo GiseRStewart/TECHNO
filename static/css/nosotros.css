@@ -243,6 +243,7 @@ body {
         margin: 10px;
     }
 
+
     #imagenAnime {
         background-repeat: no-repeat;
         background-size: contain;
@@ -256,6 +257,8 @@ body {
         margin-top: 10vh;
         margin-left: 0vh;
     }
+}
+
 
 @media screen and (max-width: 320px) {
 
@@ -302,5 +305,5 @@ body {
     justify-content: center;
     margin-top: 5vh;
     margin-left: 10vh;
-
+}
 }
