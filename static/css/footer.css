@@ -1,7 +1,7 @@
 /*CARLOS: Desde acá hasta el final lo puse yo para que queden todos los pie de paginas iguales*/
 .pie-pagina{
     background: linear-gradient(150deg, rgb(31, 41, 121, 0.9), rgb(61, 71, 142, 0.9), rgb(87, 70, 149, 0.9), rgb(185, 167, 227, 0.9));
-    width: 100vw;
+    width: 98vw;
     padding: 1%;
     display: flex;
     justify-content: center;
