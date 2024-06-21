@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- meta menú hamburger -->
+        <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
+        <!-- Icono -->
+        <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
+        <!-- estilos -->
+        <link rel="stylesheet" href="../static/css/contacto.css">
+        <link rel="stylesheet" href="../static/css/header.css">
+        <link rel="stylesheet" href="../static/css/footer.css">
+        <title>TECHNO - Contacto</title>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header></header>
+        <!-- Contenido  Formulario y mapa-->
+        <main>
+            <div class="contain">
+                <div class="contact">
+                    <h1 class="titulo-form">Formulario de contacto</h1>
+                        <hr>               
+                        <h3>Escribanos su consulta y nos pondremos en contacto a la brevedad</h3>
+                        <hr>
+                        <form class="formulario" action=" https://formspree.io/f/mrgnrqlb" target="_blank" method="post" onsubmit="return validarDatos()">
+
+                            <label class="etiqueta" for="nombre">Nombre:</label> 
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="introducir_nombre" id="nombre" placeholder="Escriba su nombre">
+                            
+                            <div class="email-s1">
+                                <label class="etiqueta" for="email">Email:</label>
+                                <span class="obligatorio">*</span>                                
+                                <input type="email" name="introducir_email" id="email" required placeholder="Escriba su email">
+                            </div>
+                            
+                            <label class="etiqueta" for="asunto">Asunto:</label>
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="introducir_asunto" id="asunto" placeholder="Escriba el motivo de su consulta">
+                            
+                            <div class="div-check">
+                                <label class="etiqueta" for="sector">Area de contacto:</label>
+                                <span class="obligatorio">*</span>
+                                <div class="checkbox-s1" >
+                                    <label for="ventas" class="etiqueta-s1">Ventas:</label>
+                                    <input type="checkbox" id="ventas" name="ventas" class="checkbox">
+                                    <label for="rrhh" class="etiqueta-s1">R.R.H.H.:</label>
+                                    <input type="checkbox" id="rrhh" name="rrhh" class="checkbox">
+                                    <label for="compras" class="etiqueta-s1">Compras:</label>
+                                    <input type="checkbox" id="compras" name="compras" class="checkbox">
+                                </div>  
+                            </div>
+                            
+                            <div>
+                                <label for="file" class="etiqueta">Adjuntar archivo (CV, foto, imagen, PDF):</label>
+                                <input type="file" name="file" id="file" class="file">
+                            </div>
+
+                            <div>
+                                <label class="etiqueta" for="prioridad">Prioridad:</label>
+                                <span class="obligatorio">*</span>
+                                <select name="prioridad" class="prioridad">
+                                    <option value="1">Baja</option>
+                                    <option value="2">Media</option>
+                                    <option value="3">Alta</option>
+                                </select>
+                            </div>
+                            <div class="div-consulta">
+                                <label class="etiqueta" id="consulta" for="consulta">Consulta:</label>
+                                <span class="obligatorio">*</span>
+                                <textarea name="introducir_mensaje" id="mensaje" required placeholder="Deje aquí su consulta..."></textarea>
+                            </div>
+
+                            <div id="aviso"></div>
+                            
+                            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                            
+                            <div class="leyenda">
+                                <label class="etiqueta" for="nombre">
+                                <span class="obligatorio">*</span> Campos obligatorios
+                                </label>
+                            </div>
+                        </form>
+                </div>
+        </main>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div>
+            <section class="seccion-pie">
+                <h1 class="titulo-sitio">Sitio Web</h1>
+                <p><a class="hiperv" href="../index.html">Home</a></p>
+                <p><a class="hiperv" href="../templates/Nosotros.html">Nosotros</a></p>
+                <p><a class="hiperv" href="../templates/Producto.html">Producto</a></p>
+                <p><a class="hiperv" href="../templates/Contacto.html">Contacto</a></p>
+            </section>
+            <section class="seccion-pie">
+                <h1 class="titulo-ayuda">Ayuda</h1>
+                <p><a class="terminos-s1" href="">Términos y condiciones</a></p>
+                <p><a class="terminos-s1" href="">Preguntas Frecuentes</a></p>
+                <p><a class="terminos-s1" href="">Ayuda</a></p>
+            </section>
+            <section class="seccion-pie" id="seccion-redes">
+                <h1 class="titulo-siguenos">Síguenos</h1>
+                <a href="https://www.facebook.com/" target="_blank"><img class="redes-img"
+                        src="../static/img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="redes-img"
+                        src="../static/img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
+                        alt=""></a>
+                <a class="copy" <small>&copy;Derechos Reservados 2024</small></a>
+                <a class="copy-2" <small>&copy;  2024</small></a>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+        <script src="../static/js/header.js"></script>
+        <script src="../static/js/validacionForm.js"></script>
+    </body>
+
+</html>
