@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#encabezado{
+    background-image: url(../img/283818.jpg);
+    height: 80vh; 
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center; 
+    margin-top: 24vh;
+}
+main {
+    width: 100vw;
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
