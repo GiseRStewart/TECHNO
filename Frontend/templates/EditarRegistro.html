@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="../static/css/contacto.css">
         <link rel="stylesheet" href="../static/css/header.css">
         <link rel="stylesheet" href="../static/css/footer.css">
-        <title>TECHNO - Contacto</title>
+        <link rel="stylesheet" href="../static/css/EditarRegistro.css">
+        <title>TECHNO - Editar Registros</title>
     </head>
     <body>
         <!-- Encabezado -->
@@ -20,68 +21,43 @@
         <!-- Contenido  Formulario y mapa-->
         <main>
             <div class="contain">
-                <div class="contact">
-                    <h1 class="titulo-form">Formulario de contacto</h1>
-                        <hr>               
-                        <h3>Escribanos su consulta y nos pondremos en contacto a la brevedad</h3>
-                        <hr>
-                        <form class="formulario" action=" https://formspree.io/f/mrgnrqlb" target="_blank" method="post" onsubmit="return validarDatos()">
+                <div class="contact" id="registro">
+                    <h1 class="titulo-form">Formulario de Edición de Registro</h1>
+                        <form class="formulario" action=" " >
 
-                            <label class="etiqueta" for="nombre">Nombre:</label> 
+                            <label class="etiqueta" for="nombre">Modelo:</label> 
                             <span class="obligatorio">*</span>
-                            <input type="text" name="introducir_nombre" id="nombre" placeholder="Escriba su nombre">
+                            <input type="text" name="introducir_nombre" id="nombre" placeholder="Modelo del producto" required>
                             
                             <div class="email-s1">
-                                <label class="etiqueta" for="email">Email:</label>
+                                <label class="etiqueta" for="precio">Precio</label>
                                 <span class="obligatorio">*</span>                                
-                                <input type="email" name="introducir_email" id="email" required placeholder="Escriba su email">
+                                <input type="number" name="precio" id="precio" required placeholder="Precio del producto">
                             </div>
                             
-                            <label class="etiqueta" for="asunto">Asunto:</label>
+                            <label class="etiqueta" for="cantidad">Cantidad:</label>
                             <span class="obligatorio">*</span>
-                            <input type="text" name="introducir_asunto" id="asunto" placeholder="Escriba el motivo de su consulta">
-                            
-                            <div class="div-check">
-                                <label class="etiqueta" for="sector">Area de contacto:</label>
-                                <span class="obligatorio">*</span>
-                                <div class="checkbox-s1" >
-                                    <label for="ventas" class="etiqueta-s1">Ventas:</label>
-                                    <input type="checkbox" id="ventas" name="ventas" class="checkbox">
-                                    <label for="rrhh" class="etiqueta-s1">R.R.H.H.:</label>
-                                    <input type="checkbox" id="rrhh" name="rrhh" class="checkbox">
-                                    <label for="compras" class="etiqueta-s1">Compras:</label>
-                                    <input type="checkbox" id="compras" name="compras" class="checkbox">
-                                </div>  
-                            </div>
+                            <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad de producto">
                             
                             <div>
-                                <label for="file" class="etiqueta">Adjuntar archivo (CV, foto, imagen, PDF):</label>
-                                <input type="file" name="file" id="file" class="file">
-                            </div>
-
-                            <div>
-                                <label class="etiqueta" for="prioridad">Prioridad:</label>
-                                <span class="obligatorio">*</span>
-                                <select name="prioridad" class="prioridad">
-                                    <option value="1">Baja</option>
-                                    <option value="2">Media</option>
-                                    <option value="3">Alta</option>
-                                </select>
+                                <label for="imagen" class="etiqueta">Adjuntar imagen del producto (CV, foto, imagen, PDF):</label>
+                                <input type="file" name="imagen" id="imagen" class="file">
                             </div>
                             <div class="div-consulta">
-                                <label class="etiqueta" id="consulta" for="consulta">Consulta:</label>
+                                <label class="etiqueta" id="detalle" for="consulta">Detalle del producto:</label>
                                 <span class="obligatorio">*</span>
-                                <textarea name="introducir_mensaje" id="mensaje" required placeholder="Deje aquí su consulta..."></textarea>
+                                <textarea name="detalle" id="detalle" required placeholder="Ingrese detalle del producto"></textarea>
                             </div>
 
                             <div id="aviso"></div>
                             
-                            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                            <button type="button" name="enviar_formulario" id="enviar" onclick="guardar()">Enviar</button>
                             
                             <div class="leyenda">
                                 <label class="etiqueta" for="nombre">
                                 <span class="obligatorio">*</span> Campos obligatorios
                                 </label>
+                              
                             </div>
                         </form>
                 </div>
@@ -117,7 +93,7 @@
         </div>
     </footer>
         <script src="../static/js/header.js"></script>
-        <script src="../static/js/validacionForm.js"></script>
+        <script src="../static/js/EditarRegistro.js"></script>
     </body>
 
 </html>
