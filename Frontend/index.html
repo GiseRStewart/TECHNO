@@ -15,14 +15,14 @@
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Sedan:ital@0;1&display=swap"
         rel="stylesheet">
     <!-- estilo -->
-    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="../Frontend/static/css/index.css">
     <!-- palabras claves para el CEO  copiarlas en todos los HTML -->
     <meta name="keywords" content="laptop, portatil, computadora, tecnología, tienda, electronica">
     <!-- Descripción de la página -->
     <meta name="description" content="Presentamos las portatiles con mejor tecnología y de buen precio en el mercado.">
-    <link rel="stylesheet" href="./static/js/header.js">
-    <link rel="stylesheet" href="./static/js/aside.js">
-    <link rel="stylesheet" href="./static/js/footer.js">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="../static/css/aside.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <title>TECHNO - Home</title>
 </head>
 
@@ -38,7 +38,7 @@
                 <div>
                     <h1>Notebooks</h1>
                     <h2>Encuentra la ideal para vos</h2>
-                    <a id="texto-banner" href="./templates/Contacto.html">Consulta aquí 🛒👆🏽 </a>
+                    <a id="texto-banner" href="../Frontend/templates/Contacto.html">Consulta aquí 🛒👆🏽 </a>
                 </div>
             </section>
             <!-- <section>
@@ -176,8 +176,7 @@
                         src="../static/img/instagram.png" alt=""></a>
                 <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
                         alt=""></a>
-                <a class="copy">&copy;Derechos Reservados 2024</a>
-                <a class="copy-2"> &copy; 2024</a>
+                <a class="copy" <small>&copy; Derechos Reservados 2024</small></a>
             </section>
         </div>
     </footer>
@@ -187,5 +186,7 @@
 
 
 <script src="static/js/header.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./js/tabla_productos.js"></script>
 <!-- <script src="static/js/aside.js"></script> -->
 <!-- <script src="static/js/footer.js"></script> -->
