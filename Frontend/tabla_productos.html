@@ -24,14 +24,14 @@
                 <!-- Botón Nuevo -->
                 <a class="nuevo" href="templates/ingresar_producto.html">Nuevo</a>
 
-                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-if="error" class="error">Lo sentimos se produjo un error</section>
                 <section v-else>
-                    <section v-if="cargando">
+                    <section v-if="cargando" class="loading">
                         <p>Cargando .....</p>
 
                     </section>
 
-                    <section v-else>
+                    <section v-else class="content">
                         
                         <div >
                             <table class="tabla">
