@@ -12,11 +12,11 @@ var headerContent = `
         <i class="fa-solid fa-bars"></i>
         </label>
         <ul>
-            <li><a class="hipervinculo" href="/Frontend/index.html">Home</a></li>
-            <li><a class="hipervinculo" href="../templates/Nosotros.html">Nosotros</a></li>
-            <li><a class="hipervinculo" href="../templates/Producto.html">Producto</a></li>
-            <li><a class="hipervinculo" href="../templates/Contacto.html">Contacto</a></li>
-            <li><a class="hipervinculo" href="/Frontend/tabla_productos.html">Tabla</a></li>
+            <li><a class="hipervinculo" href="../index.html">Home</a></li>
+            <li><a class="hipervinculo" href="../Frontend/templates/Nosotros.html">Nosotros</a></li>
+            <li><a class="hipervinculo" href="../Frontend/templates/Producto.html">Producto</a></li>
+            <li><a class="hipervinculo" href="../Frontend/templates/Contacto.html">Contacto</a></li>
+            <li><a class="hipervinculo" href="../tabla_productos.html">Tabla</a></li>
         </ul>
     </nav>
 </header>

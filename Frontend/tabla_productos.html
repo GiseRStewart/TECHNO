@@ -22,7 +22,7 @@
             <div id="app" >
 
                 <!-- Botón Nuevo -->
-                <a class="nuevo" href="templates/ingresar_producto.html">Nuevo</a>
+                <a class="nuevo" href="templates/RegistroNuevo.html">Nuevo</a>
 
                 <section v-if="error" class="error">Lo sentimos se produjo un error</section>
                 <section v-else>
@@ -38,9 +38,10 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Nombre</th>
+                                        <th>marca</th>
                                         <th>Precio</th>
-                                        <th>Stock</th>
+                                        <th>cantidad</th>
+                                        <th>descripcion</th>
                                         <th>Imagen</th>
                                         <th>Acciones</th>
                                         <th>Acciones</th>
@@ -50,9 +51,10 @@
                                    
                                     <tr v-for="producto in productos">
                                         <td >{{producto.id}}</td>
-                                        <td>{{producto.nombre}}</td>
+                                        <td>{{producto.marca}}</td>
                                         <td>{{producto.precio}}</td>
-                                        <td>{{producto.stock}}</td>
+                                        <td>{{producto.cantidad}}</td>
+                                        <td>{{producto.descripcion}}</td>
                                         <td>
                                             <img :src="producto.imagen" alt="">
                                         </td>
@@ -60,7 +62,7 @@
                                             <button type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
                                         </td>
                                         <td>
-                                            <a class="boton" :href="'templates/editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen">Editar</a>
+                                            <a class="boton" :href="'templates/EditarRegistro.html?id='+ producto.id+'&marca= '+ producto.marca +' '&precio='+producto.precio+'&cantidad='+producto.cantidad +' '&descripcion='+producto.descripcion + '&imagen='+producto.imagen">Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>
