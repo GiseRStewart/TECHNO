@@ -8,7 +8,23 @@ body {
 }
 
 
-#encabezado{
+main {
+    width: 100vw;
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+
+
+.container {
+    max-width: 1200px;
+    margin: 12vw auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-image: url(../img/283818.jpg);
     height: 80vh; 
     background-size: cover;
@@ -17,32 +33,14 @@ body {
     align-items: center; 
     margin-top: 24vh;
 }
-main {
-    width: 100vw;
-    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-    background-size: contain;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: 12vw auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 
 .nuevo {
     display: inline-block;
     padding: 10px 20px;
     margin-bottom: 20px;
-    background-color: #007bff;
+    background:transparent;
+    border: 2px solid var(--color-primario);
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -51,7 +49,7 @@ main {
 }
 
 .nuevo:hover {
-    background-color: #0056b3;
+    background-color: var(--color-fondo-header)
 }
 
 /* Estilos para la sección de error */
@@ -65,7 +63,7 @@ main {
     text-align: center;
 }
 
-/* Estilos para la sección de carga */
+
 .loading {
     color: #004085;
     background-color: #cce5ff;
@@ -76,24 +74,25 @@ main {
     text-align: center;
 }
 
-/* Estilos para el contenido cargado */
+
 .content {
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
     padding: 15px;
     border: 1px solid #ffffff;
     border-radius: 4px;
     margin: 20px 0;
     text-align: center;
+    background: transparent;
+    border: 2px solid  rgb(240, 240, 240);
+    backdrop-filter: blur(20px);
 }
 
-/* Estilos adicionales para los párrafos dentro de las secciones */
 section p {
     margin: 0;
     font-size: 1.1em;
 }
 
-/* Estilos para la tabla */
+
 .tabla {
     width: 100%;
     border-collapse: collapse;
@@ -103,7 +102,8 @@ section p {
 }
 
 .tabla thead tr {
-    background-color: #007bff;
+    background: transparent;
+    backdrop-filter: blur(20px);
     color: #ffffff;
     text-align: left;
 }
@@ -122,7 +122,7 @@ section p {
 }
 
 .tabla tbody tr:last-of-type {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #ffffff;
 }
 
 
