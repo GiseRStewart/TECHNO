@@ -2,7 +2,7 @@ var headerContent = `
 <header>
     <!-- Logo -->
     <div class="menu">
-    <img id="logo" src="static/img/IdearepresentativadeLogo-removebg-preview.png" alt="logo">
+    <img id="logo" src="/Frontend/static/img/IdearepresentativadeLogo-removebg-preview.png" alt="logo">
 
     </div>
     <!-- Hipervínculos del menú -->
@@ -12,12 +12,12 @@ var headerContent = `
         <i class="fa-solid fa-bars"></i>
         </label>
         <ul>
-            <li><a class="hipervinculo" href="index.html">Home</a></li>
+            <li><a class="hipervinculo" href="/Frontend/index.html">Home</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/Nosotros.html">Nosotros</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/Producto.html">Producto</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/RegistroNuevo.html">Registro nuevo</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/EditarRegistro.html">Editar registro</a></li>
-            <li><a class="hipervinculo" href="tabla_productos.html">Tabla</a></li>
+            <li><a class="hipervinculo" href="/Frontend/tabla_productos.html">Tabla</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/Contacto.html">Contacto</a></li>
         </ul>
     </nav>

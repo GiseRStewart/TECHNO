@@ -1,7 +1,7 @@
 function guardar() {
-    let nombre_ingresado = document.getElementById("modelo").value //input
+    let modelo_ingresado = document.getElementById("modelo").value //input
     let precio_ingresado = document.getElementById("precio").value 
-    let stock_ingresado = document.getElementById("cantidad").value 
+    let cantidad_ingresado = document.getElementById("cantidad").value 
     let imagen_ingresada = document.getElementById("imagen").value 
 
     console.log(modelo_ingresado,precio_ingresado,cantidad_ingresado,imagen_ingresada);
