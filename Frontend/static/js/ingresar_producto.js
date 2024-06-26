@@ -5,7 +5,12 @@ function guardar() {
     let descripcion_ingresada = document.getElementById('descripcion').value
     let imagen_ingresada = document.getElementById("imagen").value 
 
-    console.log(modelo_ingresado,precio_ingresado,cantidad_ingresado,imagen_ingresada);
+
+    if (!modelo_ingresado || !precio_ingresado || !cantidad_ingresado || !descripcion_ingresada || !imagen_ingresada) {
+        alert("Por favor complete todos los campos.");
+        return;
+    }
+
     // Se arma el objeto de js 
     let datos = {
         modelo: modelo_ingresado,

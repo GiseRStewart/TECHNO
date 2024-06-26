@@ -22,7 +22,7 @@ class Notebook(db.Model):   # la clase Producto hereda de db.Model
     descripcion=db.Column(db.String(500))
     imagen=db.Column(db.String(400))
     def __init__(self,modelo,precio,cantidad,descripcion,imagen):   #crea el  constructor de la clase
-        self.modelo=modelo   # no hace falta el id porque lo crea sola mysql por ser auto_incremento
+        self.modelo=modelo  
         self.precio=precio
         self.cantidad=cantidad
         self.descripcion=descripcion
@@ -31,12 +31,6 @@ class Notebook(db.Model):   # la clase Producto hereda de db.Model
 
 with app.app_context():
     db.create_all() 
-
-
-#crear ruta de acceso 
-@app.route("/")
-def index():
-    return f'App Web para registrar nombre de productos'
 
 
 @app.route('/registro', methods=['POST']) # crea ruta o endpoint

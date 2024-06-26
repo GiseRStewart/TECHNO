@@ -6,6 +6,12 @@ function modificar() {
     let descripcion_ingresada = document.getElementById('descripcion').value
     let imagen_ingresada = document.getElementById("imagen").value 
 
+        // Verificar que todos los campos tengan valores
+    if (!id || !modelo_ingresado || !precio_ingresado || !cantidad_ingresado || !descripcion_ingresada || !imagen_ingresada) {
+        alert("Por favor complete todos los campos.");
+        return;
+    }
+
 
     let datos = {
         modelo:modelo_ingresado,

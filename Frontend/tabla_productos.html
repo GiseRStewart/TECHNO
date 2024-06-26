@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- meta menú hamburger -->
-        <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
         <!-- Icono -->
-        <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./static/css/header.css">
     <link rel="stylesheet" href="./static/css/footer.css">
     <link rel="stylesheet" href="./static/css/tabla_productos.css">
@@ -47,7 +46,7 @@
                                     <tr v-for="notebooks in notebook">
                                         <td>{{notebooks.id}}</td>
                                         <td>{{notebooks.modelo}}</td>
-                                        <td>{{notebooks.precio}}</td>
+                                        <td>${{notebooks.precio}}</td>
                                         <td>{{notebooks.cantidad}}</td>
                                         <td>{{notebooks.descripcion}}</td>
                                         <td>
@@ -102,6 +101,6 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./static/js/tabla_productos.js"></script>
-    <script src="./static/js/header2.js"></script>
+    <script src="./static/js/header.js"></script>
 </body>
 </html>
