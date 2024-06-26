@@ -1,7 +1,8 @@
 function guardar() {
     let modelo_ingresado = document.getElementById("modelo").value //input
     let precio_ingresado = document.getElementById("precio").value 
-    let cantidad_ingresado = document.getElementById("cantidad").value 
+    let cantidad_ingresado = document.getElementById("cantidad").value  
+    let descripcion_ingresada = document.getElementById('descripcion').value
     let imagen_ingresada = document.getElementById("imagen").value 
 
     console.log(modelo_ingresado,precio_ingresado,cantidad_ingresado,imagen_ingresada);
@@ -10,6 +11,7 @@ function guardar() {
         modelo: modelo_ingresado,
         precio:precio_ingresado,
         cantidad:cantidad_ingresado,
+        descripcion:descripcion_ingresada,
         imagen:imagen_ingresada
     }
     console.log(datos);

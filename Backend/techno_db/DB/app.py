@@ -1,23 +1,20 @@
 from flask import Flask,  request, jsonify 
-# del modulo flask importar la clase Flask y los métodos jsonify,request
-from flask_cors import CORS       # del modulo flask_cors importar CORS
 from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
+from flask_cors import CORS 
 
-app=Flask(__name__)  # crear el objeto app de la clase Flask
-CORS(app) #modulo cors es para que me permita acceder desde el frontend al backend
+app = Flask(__name__)
+
+CORS(app)
 
 
-# configuro la base de datos, con el nombre el usuario y la clave
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+mysqlconnector://root:Valen/1589_@localhost:3306/productos_db'
-# URI de la BBDD                          driver de la BD  user:clave@URLBBDD/nombreBBDD
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False #none
-db= SQLAlchemy(app)   #crea el objeto db de la clase SQLAlquemy
-ma=Marshmallow(app)   #crea el objeto ma de de la clase Marshmallow
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+mysqlconnector://root:clave@localhost:3306/productos_db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+
+db= SQLAlchemy(app)
 
 
 # defino la tabla
-class notebook(db.Model):   # la clase Producto hereda de db.Model    
+class Notebook(db.Model):   # la clase Producto hereda de db.Model    
     id=db.Column(db.Integer, primary_key=True)   #define los campos de la tabla
     modelo=db.Column(db.String(100))
     precio=db.Column(db.Integer)
@@ -32,27 +29,8 @@ class notebook(db.Model):   # la clase Producto hereda de db.Model
         self.imagen=imagen
 
 
-
-
-
-    #  si hay que crear mas tablas , se hace aqui
-
-
-
-
 with app.app_context():
-    db.create_all()  # aqui crea todas las tablas
-#  ************************************************************
-class NotebookSchema(ma.Schema):
-    class Meta:
-        fields=('id','modelo','precio','cantidad','descripcion','imagen')
-
-
-
-
-notebook_schema=NotebookSchema()            # El objeto producto_schema es para traer un producto
-notebooks_schema=NotebookSchema(many=True)  # El objeto productos_schema es para traer multiples registros de producto
-
+    db.create_all() 
 
 
 #crear ruta de acceso 
@@ -60,52 +38,38 @@ notebooks_schema=NotebookSchema(many=True)  # El objeto productos_schema es para
 def index():
     return f'App Web para registrar nombre de productos'
 
-# crea los endpoint o rutas (json)
-# @app.route('/registros',methods=['GET'])
-# def get_registro():
-#      all_registro=registro.query.all()         # el metodo query.all() lo hereda de db.Model
-#      result=notebook_schema.dump(all_registro)  # el metodo dump() lo hereda de ma.schema y
-#                                                 # trae todos los registros de la tabla
-#      return jsonify(result)                       # retorna un JSON de todos los registros de la tabla
-
-
-
-
-@app.route('/notebooks',methods=['GET'])
-def get_notebooks():
-    registro=registro.query.get(id)
-    return notebook_schema.jsonify(registro)   # retorna el JSON de un producto recibido como parametro
-
-
-
-
-@app.route('/registros/<id>',methods=['DELETE'])
-def delete_registro(id):
-    registro=registro.query.get(id)
-    db.session.delete(registro)
-    db.session.commit()
-    return notebook_schema.jsonify(registro)   # me devuelve un json con el registro eliminado
-
 
 @app.route('/registro', methods=['POST']) # crea ruta o endpoint
 def registro():
-    #print(request.json)  # request.json contiene el json que envio el cliente
     modelo=request.json['modelo']
     precio=request.json['precio']
     cantidad=request.json['cantidad']
-    descripcion=request.json['descripcion']
+    descripcion=request.json['descripcion'] 
     imagen=request.json['imagen']
 
-    new_producto=notebook(modelo=modelo,precio=precio,cantidad=cantidad,descripcion=descripcion,imagen=imagen)
+    new_producto = Notebook(modelo=modelo,precio=precio,cantidad=cantidad,descripcion=descripcion,imagen=imagen)
     db.session.add(new_producto)
     db.session.commit()
-    return notebook_schema.jsonify(new_producto)
+
+    return 'Solicitud de post recibida'
 
 
-@app.route('/registros/<id>' ,methods=['PUT'])
-def update_registro(id):
-    registro=registro.query.get(id)
- 
+@app.route('/productos',methods=['GET'])
+def productos():
+    all_registros = Notebook.query.all()
+
+    data_serializada = []
+    
+    for objeto in all_registros:
+        data_serializada.append({"id":objeto.id, "modelo":objeto.modelo, "precio":objeto.precio, "cantidad":objeto.cantidad, "descripcion":objeto.descripcion, "imagen":objeto.imagen})
+
+    return jsonify(data_serializada)  # retorna el JSON de un producto recibido como parámetro
+
+
+@app.route('/update/<id>', methods=['PUT'])
+def update(id):
+    registro = Notebook.query.get(id)
+
     modelo=request.json['modelo']
     precio=request.json['precio']
     cantidad=request.json['cantidad']
@@ -121,10 +85,23 @@ def update_registro(id):
 
 
     db.session.commit()
-    return notebook_schema.jsonify(registro)
- 
+
+    data_serializada = [{'id': registro.id, 'modelo': registro.modelo, 'cantidad': registro.cantidad, 'descripcion': registro.descripcion, 'imagen': registro.imagen}]
+
+    return jsonify(data_serializada)
+
+@app.route('/delete/<id>',methods=['DELETE'])
+def delete(id):
+    registro=Notebook.query.get(id)
+
+    db.session.delete(registro)
+    db.session.commit()
 
 
-# programa principal *******************************
+    data_serializada = [{'id': registro.id, 'modelo': registro.modelo, 'cantidad': registro.cantidad, 'descripcion': registro.descripcion, 'imagen': registro.imagen}]
+
+    return jsonify(data_serializada) 
+
+
 if __name__=='__main__':  
-    app.run(debug=True, port=5000)    # ejecuta el servidor Flask en el puerto 5000
+    app.run(debug=True)    # ejecuta el servidor Flask en el puerto 5000

@@ -17,28 +17,24 @@
     <header id="header"></header>
 
     <main>
-
         <section class="container">
             <div id="app" >
-
                 <!-- Botón Nuevo -->
-                <a class="nuevo" href="templates/RegistroNuevo.html">Nuevo</a>
 
+                <h1>Tabla de productos</h1>
+                <a class="nuevo" href="templates/RegistroNuevo.html">Nuevo</a>
                 <section v-if="error" class="error">Lo sentimos se produjo un error</section>
                 <section v-else>
                     <section v-if="cargando" class="loading">
                         <p>Cargando .....</p>
-
                     </section>
-
                     <section v-else class="content">
-                        
                         <div >
                             <table class="tabla">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>marca</th>
+                                        <th>Modelo</th>
                                         <th>Precio</th>
                                         <th>cantidad</th>
                                         <th>descripcion</th>
@@ -48,21 +44,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                   
-                                    <tr v-for="producto in productos">
-                                        <td >{{producto.id}}</td>
-                                        <td>{{producto.marca}}</td>
-                                        <td>{{producto.precio}}</td>
-                                        <td>{{producto.cantidad}}</td>
-                                        <td>{{producto.descripcion}}</td>
+                                    <tr v-for="notebooks in notebook">
+                                        <td>{{notebooks.id}}</td>
+                                        <td>{{notebooks.modelo}}</td>
+                                        <td>{{notebooks.precio}}</td>
+                                        <td>{{notebooks.cantidad}}</td>
+                                        <td>{{notebooks.descripcion}}</td>
                                         <td>
-                                            <img :src="producto.imagen" alt="">
+                                            <img :src="notebooks.imagen" alt="">
                                         </td>
                                         <td>
-                                            <button type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            <button type="button"  v-on:click="eliminar(notebooks.id)">Eliminar</button>
                                         </td>
                                         <td>
-                                            <a class="boton" :href="'templates/EditarRegistro.html?id='+ producto.id+'&marca= '+ producto.marca +' '&precio='+producto.precio+'&cantidad='+producto.cantidad +' '&descripcion='+producto.descripcion + '&imagen='+producto.imagen">Editar</a>
+                                            <a class="boton" :href="'templates/EditarRegistro.html?id=' + notebooks.id + '&modelo=' + notebooks.modelo + '&precio=' + notebooks.precio + '&cantidad=' + notebooks.cantidad + '&descripcion=' + notebooks.descripcion + '&imagen=' + notebooks.imagen">Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -70,10 +65,8 @@
                         </div>
                     </section>
                 </section>
-
             </div>
         </section>
-
     </main>
 
     <!-- Pie de página -->
@@ -95,10 +88,10 @@
             <section class="seccion-pie" id="seccion-redes">
                 <h1 class="titulo-siguenos">Síguenos</h1>
                 <a href="https://www.facebook.com/" target="_blank"><img class="redes-img"
-                        src="../static/img/facebook.png" alt=""></a>
+                        src="./static/img/facebook.png" alt=""></a>
                 <a href="https://www.instagram.com/" target="_blank"><img class="redes-img"
-                        src="../static/img/instagram.png" alt=""></a>
-                <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
+                        src="./static/img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="./static/img/gorjeo.png"
                         alt=""></a>
                 <a class="copy" <small>&copy;Derechos Reservados 2024</small></a>
                 <a class="copy-2" <small>&copy;  2024</small></a>
@@ -107,7 +100,8 @@
         </div>
     </footer>
 
-    <script src="/Frontend/static/js/tabla_productos.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./static/js/tabla_productos.js"></script>
     <script src="./static/js/header2.js"></script>
 </body>
 </html>

@@ -16,7 +16,6 @@ var headerContent = `
             <li><a class="hipervinculo" href="/Frontend/templates/Nosotros.html">Nosotros</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/Producto.html">Producto</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/RegistroNuevo.html">Registro nuevo</a></li>
-            <li><a class="hipervinculo" href="/Frontend/templates/EditarRegistro.html">Editar registro</a></li>
             <li><a class="hipervinculo" href="tabla_productos.html">Tabla</a></li>
             <li><a class="hipervinculo" href="/Frontend/templates/Contacto.html">Contacto</a></li>
         </ul>

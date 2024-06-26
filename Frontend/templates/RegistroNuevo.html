@@ -36,23 +36,20 @@
                                 <input type="number" name="precio" id="precio" required placeholder="Precio del producto">
                             </div>
                             
-                            <label class="etiqueta" for="cantidad">Cantidad</label>
+                            <label class="etiqueta" for="cantidad">Cantidad:</label>
                             <span class="obligatorio">*</span>
                             <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad de producto">
                             
                             <div>
-                                <label for="imagen" class="etiqueta">Adjuntar imagen del producto (CV, foto, imagen, PDF):</label>
-                                <input type="file" name="image" id="imagen" class="file">
+                                <label for="imagen" class="etiqueta">Ingrese link de la imagen:</label>
+                                <input type="text" name="image" id="imagen" class="file">
                             </div>
 
-                            <div class="div-consulta">
-                                <label class="etiqueta" id="detalle" for="consulta">Detalle del producto:</label>
-                                <span class="obligatorio">*</span>
-                                <textarea name="detalle" id="detalle" required placeholder="Ingrese detalle del producto"></textarea>
-                            </div>
-
-                            <div id="aviso"></div>
+                            <label class="etiqueta" for="descripcion">Detalle:</label>
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del producto">
                             
+
                             <button type="button" name="enviar_formulario" id="enviar" onclick="guardar()">Enviar</button>
                             
                             <div class="leyenda">

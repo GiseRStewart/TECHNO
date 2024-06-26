@@ -1,13 +1,13 @@
 const { createApp } = Vue
 
-  createApp({
+createApp({
     data() {
-      return {
+        return {
         url:"http://127.0.0.1:5000/productos", // Retorna todos los registro de la tabla productos
-        productos:[],
+        notebook:[],
         error:false,
         cargando:true
-      }
+        }
     },
     // Se llama después de que la instancia haya 
     // terminado de procesar todas las opciones relacionadas con el estado.
@@ -20,7 +20,7 @@ const { createApp } = Vue
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.productos = data;
+                    this.notebook = data;
                     this.cargando=false
                 })
                 .catch(err => {
@@ -31,7 +31,7 @@ const { createApp } = Vue
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             
-            const url = 'http://localhost:5000/borrar/'+id;
+            const url = 'http://localhost:5000/delete/'+id;
             var options = {
                 method: 'DELETE',
                 
@@ -47,7 +47,4 @@ const { createApp } = Vue
 
     },
     
-
-
-
-  }).mount('#app')
+}).mount('#app')

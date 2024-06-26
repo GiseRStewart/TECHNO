@@ -1,31 +1,32 @@
-function guardar() {
-    let modelo_ingresado = document.getElementById("modelo").value //input
+function modificar() {
+    let id = document.getElementById('id').value
+    let modelo_ingresado = document.getElementById("modelo").value
     let precio_ingresado = document.getElementById("precio").value 
     let cantidad_ingresado = document.getElementById("cantidad").value 
+    let descripcion_ingresada = document.getElementById('descripcion').value
     let imagen_ingresada = document.getElementById("imagen").value 
 
-    console.log(modelo_ingresado,precio_ingresado,cantidad_ingresado,imagen_ingresada);
-    // Se arma el objeto de js 
+
     let datos = {
-        modelo: modelo_ingresado,
+        modelo:modelo_ingresado,
         precio:precio_ingresado,
         cantidad:cantidad_ingresado,
+        descripcion:descripcion_ingresada,
         imagen:imagen_ingresada
     }
-    console.log(datos);
     
-    let url = "http://localhost:5000/registro"
+    let url = "http://localhost:5000/update/"+id
     var options = {
         body: JSON.stringify(datos),
-        method: 'POST',
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
+        redirect: 'follow'
     }
     fetch(url, options)
         .then(function () {
-            console.log("creado")
-            alert("Grabado")
-            // Devuelve el href (URL) de la página actual
-            window.location.href = "/Frontend/static/EditarRegistro.html";  
+            console.log("modificado")
+            alert("Registro modificado")
+            window.location.href = "/Frontend/tabla_productos.html";  
             
         })
         .catch(err => {
