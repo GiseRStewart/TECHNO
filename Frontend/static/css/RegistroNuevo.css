@@ -36,10 +36,11 @@ main {
     height: auto; 
     min-height: 80vh;
     background-color: #f0f0f0; 
-    padding: 25px; 
+    padding: 10vh; 
     max-width: 1200px;
     margin: 12vw auto;
     height: 80vh; 
+   
     
 }
 
@@ -54,6 +55,7 @@ main {
     padding: 20px; 
     border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; /* Añadido */
 }
 
 
