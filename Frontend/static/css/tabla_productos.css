@@ -13,8 +13,10 @@ main {
     background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
     background-size: contain;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 } 
 
 
@@ -31,6 +33,7 @@ main {
     display: flex;
     align-items: center; 
     margin-top: 24vh;
+    flex-direction: column; 
 }
 
 
@@ -52,7 +55,6 @@ main {
     background-color: var(--color-fondo-header)
 }
 
-/* Estilos para la sección de error */
 .error {
     color: #721c24;
     background-color: #f8d7da;
@@ -99,6 +101,18 @@ section p {
     margin: 20px 0;
     font-size: 1em;
     font-family: Arial, sans-serif;
+    overflow-x: auto; 
+    display: block; 
+}
+
+.tabla thead {
+    display: table; 
+    width: 100%; 
+}
+
+.tabla tbody {
+    display: block; 
+    max-height: 400px; 
 }
 
 .tabla thead tr {
@@ -111,11 +125,16 @@ section p {
 .tabla th, .tabla td {
     padding: 12px 15px;
     border: 1px solid #dddddd;
+    min-width: 100px; 
 }
 
 .tabla tbody tr {
     border-bottom: 1px solid #dddddd;
+    display: table; 
+    width: 100%; 
+    table-layout: fixed; 
 }
+
 
 .tabla tbody tr:nth-of-type(even) {
     background-color: #f3f3f300;
