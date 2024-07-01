@@ -225,9 +225,3 @@ input[type="file"] {
 }
 
 
-@media screen and (max-width: 375px){
-    .contain {
-        margin-top: 100vh !important; 
-        padding-top: 100vh !important; 
-    }
-}
