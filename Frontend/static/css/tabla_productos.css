@@ -189,28 +189,52 @@ h1{
 }
 
 @media screen and (min-width: 1920px) and (max-width: 2560px){
-    .container{
-        margin: 12vh 8vw;
-        padding-top: 5vh;
-        height: 5vh;
+    .container {
+        padding-top: 15vh;
+        margin: 2vh 2vw;
+        height: 45vh;
+        margin-top: 20vh;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .nuevo, .boton, button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+
+    .content, .error, .loading {
+        padding: 20px;
+        font-size: 1.1em;
+    }
+
+    .tabla th, .tabla td {
+        padding: 15px 20px;
+        font-size: 1.1em;
+    }
+
+    img {
+        max-width: 150px;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px){
     .container{
-        margin: 18vh 2vw;
+        margin: 25vh 2vw;
         padding-top: 2vh;
-        height: 70vh;
+        height: 50vh;
     }
 }
 
 
 @media screen and (max-width: 768px){
     .container {
-        margin: 2vh 4vw;
+        margin: 10vh 4vw;
         padding-top: 10vh;
-        height: auto;
-        margin-top: 10vh;
+        height: 50vh;
+        margin-top: 22vh;
         flex-direction: column;
         align-items: center;
     }
@@ -305,6 +329,32 @@ h1{
 }
 
 
+@media screen and (max-width: 425px){
+    .container {
+        padding-top: 10vh;
+        margin: 2vh 2vw;
+        height: auto;
+        margin-top: 15vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .nuevo, .boton, button {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    .content, .error, .loading {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    img {
+        max-width: 80px !important;
+    }
+}
 
 @media screen and (max-width: 380px){
 
