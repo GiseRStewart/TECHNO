@@ -222,8 +222,8 @@ img {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
     .container{
-        margin: 25vh 2vw;
         margin-top: 13vw;
+        margin: 25vh 2vw;
         padding-top: 2vh;
         height: 50vh;
     }
@@ -271,10 +271,9 @@ img {
     .container {
         margin: 10vh 4vw;
         padding-top: 10vh;
-        height: 50vh;
-        margin-top: 22vh;
         height: auto;
-        margin-top: 43.6vh;
+        margin-top: 45.6vh;
+        height: 50vh;
         flex-direction: column;
         align-items: center;
     }
@@ -304,7 +303,7 @@ img {
 
     .tabla {
         display: block;
-        max-height: 500px; 
+        max-height: 215px; 
         overflow-y: auto;
         width: 100%;
         border-collapse: collapse;
@@ -369,8 +368,10 @@ img {
     h1 {
         font-size: 36px;
     }
-
-   
+    
+    .titulo-tabla{
+        margin-top: 0px;
+    }
 }
 
 
@@ -400,13 +401,6 @@ img {
         max-width: 80px !important;
     }
 }
-    
-    .titulo-tabla{
-        margin-top: 0px;
-    }
-}
-
-
 
 @media screen and (max-width: 425px){
 

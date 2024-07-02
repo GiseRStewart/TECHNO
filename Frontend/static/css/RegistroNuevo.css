@@ -236,7 +236,7 @@ input[type="file"] {
 }
 
 
-
+<<<<<<< HEAD
 @media screen and (max-width: 375px){
     .contain {
         margin-top: 13vh !important; 
@@ -244,3 +244,5 @@ input[type="file"] {
     }
 }
 }
+=======
+>>>>>>> 2817797b95e5c4b43eb11ce75633d393bb217c79
