@@ -39,7 +39,7 @@ main {
 
 .nuevo {
     display: inline-block;
-    margin-left: 3vw;
+    margin-left: 1vw;
     padding: 10px 20px;
     margin-bottom: 20px;
     background:transparent;
@@ -98,7 +98,6 @@ section p {
 .tabla {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 1em;
     font-family: Arial, sans-serif;
     overflow-x: auto; 
@@ -113,6 +112,7 @@ section p {
 .tabla tbody {
     display: block; 
     max-height: 400px; 
+    overflow-y: auto;
 }
 
 .tabla thead tr {
@@ -181,7 +181,7 @@ img {
     border-radius: 4px;
 }
 
-h1{
+.titulo-tabla{
     text-align: center;
     color: white;
     font-size: 50px;
@@ -196,13 +196,50 @@ h1{
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px){
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .container{
-        margin: 18vh 2vw;
+        margin-top: 13vw;
         padding-top: 2vh;
         height: 70vh;
     }
+    .content{
+        margin: 0;
+        padding: 0;
+    }
 }
+
+@media screen and (max-width: 1024px){
+    .container{
+        margin-top: 30vw;
+        height: 70vh;
+        width: 99vw;
+    }
+
+    .nuevo{
+        margin-left: 4vw;
+    }
+
+    .content{
+        max-width: 95vw;
+        margin: 41px;
+        padding: 0;
+    }
+
+    .tabla{
+        max-width: 95vw;
+        
+    }
+    .tabla th, .tabla td {
+        padding: 12px 10px;
+    
+    }
+
+    .titulo-tabla{
+        margin-top: -100px;
+    }
+}
+
+
 
 
 @media screen and (max-width: 768px){
@@ -210,14 +247,18 @@ h1{
         margin: 2vh 4vw;
         padding-top: 10vh;
         height: auto;
-        margin-top: 10vh;
+        margin-top: 43.6vh;
         flex-direction: column;
         align-items: center;
     }
 
+    .content{
+        max-width: 95vw;
+    }
+
     .nuevo {
         display: inline-block;
-        margin-left: 3vw;
+        margin-left: 4vw;
         padding: 8px 16px;
         margin-bottom: 20px;
         background: transparent;
@@ -236,7 +277,7 @@ h1{
 
     .tabla {
         display: block;
-        max-height: 300px; 
+        max-height: 500px; 
         overflow-y: auto;
         width: 100%;
         border-collapse: collapse;
@@ -248,7 +289,8 @@ h1{
 
     .tabla tbody {
         display: table-row-group; 
-        max-height: none; 
+        max-height: 100vh; 
+        overflow-y: auto;
     }
 
     .tabla thead tr {
@@ -300,12 +342,46 @@ h1{
     h1 {
         font-size: 36px;
     }
-
-   
+    
+    .titulo-tabla{
+        margin-top: 0px;
+    }
 }
 
 
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 425px){
+
+    .container{
+        margin-top: 20vw;
+        width: 111%;
+    }
+
+    .titulo-tabla{
+        font-size: 25px;
+        width: 74%;
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .content{
+        width: 90vw;
+    }
+
+    .tabla{
+        max-height: 700px;
+    }
+
+    .nuevo{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .content{
+        max-width: 85vw;
+    }
 
 }

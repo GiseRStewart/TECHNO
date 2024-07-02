@@ -87,7 +87,7 @@ span{
     height:auto;
     border-radius: 1px;
     background-color: var(--color-fondo-form);
-    margin-top: 178px;
+    margin-top: 328px;
 }
 
 input{
@@ -347,7 +347,7 @@ textarea{
 @media screen and (max-width: 768px){
 
     .contact{
-        margin-top: 21.1vw  ;
+        margin-top: 46.8vw  ;
     }
 
     .titulo-form{
@@ -375,7 +375,7 @@ textarea{
 @media screen and (max-width: 425px) {
 
     .contact{
-        margin-top: 20.3vw;
+        margin-top: 25vw;
         width: 100%;
     }
 
@@ -450,7 +450,7 @@ textarea{
 @media screen and (max-width: 375px) {
 
     .contact{
-        margin-top: 22.7vw;
+        margin-top: 27.9vw;
     }
 
     .titulo-form{
@@ -473,7 +473,7 @@ textarea{
 @media screen and (max-width: 320px){
 
     .contact{
-        margin-top: 25.9vw;
+        margin-top: 32.3vw;
     }
 
     hr{
