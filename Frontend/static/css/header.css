@@ -98,7 +98,7 @@ header{
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px){
     #logo{
-        margin-right: 0px;
+        margin-right: 40px;
     }
     .menu ul li a {
         font-size: 18px;
@@ -134,14 +134,13 @@ header{
     }
 
     #logo{
-        margin-left: 8vw;    
+        margin-left: 4vw;    
         width: 92px;
         height: 130px; 
     }
 
     .menu{
         width: auto;
-        height: 70px;
     }
 
     .hipervinculo{

@@ -13,8 +13,10 @@ main {
     background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
     background-size: contain;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 } 
 
 
@@ -31,12 +33,13 @@ main {
     display: flex;
     align-items: center; 
     margin-top: 24vh;
+    flex-direction: column; 
 }
 
 
 .nuevo {
     display: inline-block;
-    margin-left: 3vw;
+    margin-left: 1vw;
     padding: 10px 20px;
     margin-bottom: 20px;
     background:transparent;
@@ -52,7 +55,6 @@ main {
     background-color: var(--color-fondo-header)
 }
 
-/* Estilos para la sección de error */
 .error {
     color: #721c24;
     background-color: #f8d7da;
@@ -96,9 +98,21 @@ section p {
 .tabla {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 1em;
     font-family: Arial, sans-serif;
+    overflow-x: auto; 
+    display: block; 
+}
+
+.tabla thead {
+    display: table; 
+    width: 100%; 
+}
+
+.tabla tbody {
+    display: block; 
+    max-height: 400px; 
+    overflow-y: auto;
 }
 
 .tabla thead tr {
@@ -111,11 +125,16 @@ section p {
 .tabla th, .tabla td {
     padding: 12px 15px;
     border: 1px solid #dddddd;
+    min-width: 100px; 
 }
 
 .tabla tbody tr {
     border-bottom: 1px solid #dddddd;
+    display: table; 
+    width: 100%; 
+    table-layout: fixed; 
 }
+
 
 .tabla tbody tr:nth-of-type(even) {
     background-color: #f3f3f300;
@@ -162,9 +181,259 @@ img {
     border-radius: 4px;
 }
 
-h1{
+.titulo-tabla{
     text-align: center;
     color: white;
     font-size: 50px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2560px){
+    .container {
+        padding-top: 15vh;
+        margin: 2vh 2vw;
+        height: 45vh;
+        margin-top: 20vh;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .nuevo, .boton, button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+
+    .content, .error, .loading {
+        padding: 20px;
+        font-size: 1.1em;
+    }
+
+    .tabla th, .tabla td {
+        padding: 15px 20px;
+        font-size: 1.1em;
+    }
+
+    img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    .container{
+        margin-top: 13vw;
+        margin: 25vh 2vw;
+        padding-top: 2vh;
+        height: 50vh;
+    }
+    .content{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        margin-top: 30vw;
+        height: 70vh;
+        width: 99vw;
+    }
+
+    .nuevo{
+        margin-left: 4vw;
+    }
+
+    .content{
+        max-width: 95vw;
+        margin: 41px;
+        padding: 0;
+    }
+
+    .tabla{
+        max-width: 95vw;
+        
+    }
+    .tabla th, .tabla td {
+        padding: 12px 10px;
+    
+    }
+
+    .titulo-tabla{
+        margin-top: -100px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .container {
+        margin: 10vh 4vw;
+        padding-top: 10vh;
+        height: auto;
+        margin-top: 45.6vh;
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content{
+        max-width: 95vw;
+    }
+
+    .nuevo {
+        display: inline-block;
+        margin-left: 4vw;
+        padding: 8px 16px;
+        margin-bottom: 20px;
+        background: transparent;
+        border: 2px solid var(--color-primario);
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        
+    }
+
+    .error, .loading, .content {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 0.9em;
+    }
+
+    .tabla {
+        display: block;
+        max-height: 215px; 
+        overflow-y: auto;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .tabla thead {
+        display: table-header-group; 
+    }
+
+    .tabla tbody {
+        display: table-row-group; 
+        max-height: 100vh; 
+        overflow-y: auto;
+    }
+
+    .tabla thead tr {
+        text-align: left;
+    }
+
+    .tabla th, .tabla td {
+        padding: 8px 10px;
+        border: 1px solid #dddddd;
+        min-width: 60px; 
+    }
+
+    .tabla tbody tr {
+        border-bottom: 1px solid #dddddd;
+        display: table-row; 
+        width: 100%; 
+        table-layout: auto; 
+    }
+
+    .tabla tbody tr:nth-of-type(even) {
+        background-color: #f3f3f300;
+    }
+
+    .tabla tbody tr:last-of-type {
+        border-bottom: 2px solid #ffffff;
+    }
+
+    button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        width: auto;
+    }
+
+    .boton {
+        display: inline-block;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        
+    }
+
+
+    img {
+        max-width: 80px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+    
+    .titulo-tabla{
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .container {
+        padding-top: 10vh;
+        margin: 2vh 2vw;
+        height: auto;
+        margin-top: 15vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .nuevo, .boton, button {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    .content, .error, .loading {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    img {
+        max-width: 80px !important;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .container{
+        margin-top: 20vw;
+        width: 111%;
+    }
+
+    .titulo-tabla{
+        font-size: 25px;
+        width: 74%;
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .content{
+        width: 90vw;
+    }
+
+    .tabla{
+        max-height: 700px;
+    }
+
+    .nuevo{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .content{
+        max-width: 85vw;
+    }
+
 }

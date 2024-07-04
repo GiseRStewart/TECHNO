@@ -7,9 +7,9 @@ CREATE TABLE notebook (
     modelo VARCHAR(100),
     precio INT,
     cantidad INT, 
-    descripcion TEXT,
-
+    descripcion TEXT
 );
+
 DROP TABLE notebook;
 
 ALTER TABLE notebook ADD imagen VARCHAR(400);
