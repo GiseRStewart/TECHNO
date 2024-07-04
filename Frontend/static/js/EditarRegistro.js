@@ -21,7 +21,7 @@ function modificar() {
         imagen:imagen_ingresada
     }
     
-    let url = "http://localhost:5000/update/"+id
+    let url = "https://technopower.pythonanywhere.com/update/"+id
     var options = {
         body: JSON.stringify(datos),
         method: 'PUT',

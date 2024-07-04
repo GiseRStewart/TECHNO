@@ -21,7 +21,7 @@ function guardar() {
     }
     console.log(datos);
     
-    let url = "http://localhost:5000/registro"
+    let url = "https://technopower.pythonanywhere.com/registro"
     var options = {
         body: JSON.stringify(datos),
         method: 'POST',

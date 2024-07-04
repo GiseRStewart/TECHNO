@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-        url:"http://127.0.0.1:5000/productos", // Retorna todos los registro de la tabla productos
+        url:"https://technopower.pythonanywhere.com/productos", // Retorna todos los registro de la tabla productos
         notebook:[],
         error:false,
         cargando:true
@@ -31,7 +31,7 @@ createApp({
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             
-            const url = 'http://localhost:5000/delete/'+id;
+            const url = 'https://technopower.pythonanywhere.com/delete/'+id;
             var options = {
                 method: 'DELETE',
                 
