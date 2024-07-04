@@ -32,7 +32,7 @@ function guardar() {
             console.log("creado")
             alert("Grabado")
             // Devuelve el href (URL) de la página actual
-            window.location.href = "/Frontend/tabla_productos.html";  
+            window.location.href = "/tabla_productos.html";  
             
         })
         .catch(err => {

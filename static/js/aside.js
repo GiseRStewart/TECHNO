@@ -27,7 +27,6 @@ var asideContent = `
             </ul>
             <div id="texto-aside">
             <hr>
-             
                 <p> 
                 Cada una de ellas han sido examinada minuciosamente. Ya sea una Chromebook de buen
                 precio o una computadora portátil para juegos de primera línea, todas han sido sometidas a duras
