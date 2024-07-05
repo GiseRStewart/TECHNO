@@ -67,8 +67,6 @@ body {
 } */
 
 .productos {
-    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-    /* min-height: calc(100vh - (altura del nav + altura del footer)); */
     margin: 0;
     margin-top: 5vw;
     margin-bottom: 5vw;
@@ -162,6 +160,7 @@ body {
 .precio {
     font-size: 25px;
     margin-bottom: 10px;
+    color: #323232;
 }
 
 
@@ -179,6 +178,22 @@ h1{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.boton{
+    display: inherit !important;
+    background-color: inherit !important;
+}
+
+img{
+    max-width: inherit !important;
+}
+
+.content{
+    display: flex;
+    gap: 1.5rem;
+    border: inherit !important  ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 
@@ -193,8 +208,7 @@ h1{
     }
     
     .texto_encabezado h2 {
-        font-size: 60px; 
-       
+        font-size: 60px;  
     }
 
     .productos .box-conteiner {
@@ -225,7 +239,7 @@ h1{
 
 @media screen and (min-width: 1367px) and (max-width: 1440px){
     #encabezado{
-        margin-top: 16vh;
+        margin-top: 11.5vw;
         height: 50vh; 
         background-size: cover;
         background-position: center; 
@@ -246,7 +260,6 @@ h1{
         margin-bottom: 20px;
         text-align: right;
         padding-top: 15vh;
-       
     }
 
     .productos .box-conteiner .box .descuentos{
@@ -265,7 +278,7 @@ h1{
 
 @media screen and (max-width: 1024px){
     #encabezado{
-        margin-top: 20;
+        margin-top: 30vw;
         height: 30vh; 
         background-size: cover;
         background-position: center; 
@@ -285,8 +298,7 @@ h1{
         font-size: 29px; 
         margin-bottom: 20px;
         text-align: right;
-        padding-top: 10vh;
-       
+        padding-top: 10vh;    
     }
     
     .productos .box-conteiner .box {
@@ -307,11 +319,20 @@ h1{
         margin-top: 2vh;
     }
 
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos{
+        margin-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 768px){
     #encabezado{
-        margin-top: 13.5vh;
+        margin-top: 43.5vw;
         height: 38vh; 
         background-size: cover;
         background-position: center; 
@@ -331,8 +352,7 @@ h1{
         font-size: 12px; 
         margin-bottom: 20px;
         text-align: right;
-        padding-top: 4vh;
-       
+        padding-top: 4vh;  
     }
     
     .productos .box-conteiner .box {
@@ -353,7 +373,7 @@ h1{
 
 @media screen and (max-width: 480px){ 
     #encabezado{
-        margin-top: 46vh ; 
+        margin-top: 20vw ; 
         
     }
     
@@ -366,7 +386,6 @@ h1{
     .texto_encabezado h2 {
         font-size: 12px; 
         
-       
     }
     
     .productos .box-conteiner .box {
@@ -377,7 +396,7 @@ h1{
     }
 
     .productos .box-conteiner .box .imagen img{
-        height: 35vh;
+        height: 20vh;
         margin-top: 2.5vh;
 
     }
@@ -387,14 +406,11 @@ h1{
     }
 
     .productos .box-conteiner .box .contenido h3 {
-        font-size: 20px;
-      
-        
+        font-size: 20px;        
     }
     
     .productos .box-conteiner .box .contenido p {
         font-size: 16px; 
-      
     }
     
     .precio {
@@ -407,7 +423,7 @@ h1{
 
 @media screen and (max-width: 380px){
     #encabezado{
-        margin-top: 13vh !important;
+        margin-top: 21vw !important;
         height: 20vh; 
     
     }
@@ -417,7 +433,7 @@ h1{
     }
 
     .productos .box-conteiner .box .imagen img{
-        height: 25vh;
+        height: 20vh;
         margin-top: 3vh;
 
     }
@@ -430,7 +446,7 @@ h1{
 
 @media screen and (max-width: 320px){
     #encabezado{
-        margin-top: 16vh;
+        margin-top: 25vw !important;
     }
 
     .texto_encabezado h1{

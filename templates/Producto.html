@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/css/producto.css">
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/tabla_productos.css">
     <title>TECHNO - Producto</title>
 </head>
 
@@ -33,259 +34,30 @@
         <!-- Estrutura productos -->
 
         <section class="productos">
-
-            <div class="box-conteiner">
-
-                <div class="box">
-                    <span class="descuentos">75% off</span>
-                    <div class="imagen">
-                        <img src="../static/img/macbook.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
+            <div class="box-conteiner" id="app">
+                <section v-if="error" class="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando" class="loading">
+                        <p>Cargando .....</p>
+                    </section>
+                    <section v-else class="content">
+                        <div class="box" v-for="notebooks in notebook">
+                            <span class="descuentos">75% off</span>
+                            <div class="imagen">
+                                <img :src="notebooks.imagen" alt="">
+                                <div class="boton">
+                                    <button class="boton-compra">Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h3>{{notebooks.modelo}}</h3>
+                                <div class="precio">${{notebooks.precio}}</div>
+                                <p>{{notebooks.descripcion}}</p>
+                            </div>
                         </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>MacBook Air M2</h3>
-                        <div class="precio"> $2.719.900 <span> $10.879.800</span></div>
-                        <p>CPU:	Apple M2 Chip
-                            RAM:	8GB
-                            GPU:	Apple M2 8-Core
-                            Pantalla:	13.3-pulgadas Retina
-                            Almacenamiento:	256GB SSD
-                            Dimensiones:	11.97 x 8.36 x 0.63 pulgadas </p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">6 cuotas sin interes</span>
-                    <div class="imagen">
-                        <img src="../static/img/NotebookDell13.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Dell XPS 13 9315</h3>
-                        <div class="precio">$3.263.617 <span></span></div>
-                        <p>CPU:	Intel Core i5-1230U
-                            RAM:	8GB
-                            GPU:	Intel Xe Graphics
-                            Pantalla:	13.4-pulgadas 1920 x 1200 IPS
-                            Almacenamiento:	256GB SSD
-                            Dimensiones:	11.63 x 7.85 x 0.55 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">12 cuotas sin interes</span>
-                    <div class="imagen">
-                        <img src="../static/img/razerblade.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Razer Blade 14</h3>
-                        <div class="precio"> $1.255.992 <span> </span></div>
-                        <p>CPU:	AMD Ryzen 9 5900HX
-                            RAM:	16GB
-                            GPU:	Nvidia GeForce RTX 3080
-                            Pantalla:	14-pulgadas QHD 165Hz refresh rate
-                            Almacenamiento:	1TB SSD
-                            Dimensiones:	12.59 x 8.66 x 0.66 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">20% off</span>
-                    <div class="imagen">
-                        <img src="../static/img/AzusZenbook.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Asus ZenBook 14 Oled</h3>
-                        <div class="precio"> $1.462.999 <span> $1.8280.749</span></div>
-                        <p>CPU:	AMD Ryzen 5 7530U
-                            RAM:	8GB
-                            GPU:	AMD Radeon graphics
-                            Pantalla:	14.0 pulgadas OLED
-                            Almacenamiento:	256GB SSD
-                            Dimensiones:	12.34 x 8.68 x 0.67 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">6 cuotas sin interes</span>
-                    <div class="imagen">
-                        <img src="../static/img/thinkpadz13.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Lenovo ThinkPad Z13</h3>
-                        <div class="precio"> $1.689.890 <span></span></div>
-                        <p>CPU:	AMD Ryzen 5 Pro 6650U
-                            RAM:	16GB
-                            GPU:	Integrated AMD Radeon 660M
-                            Pantalla:	13.3-pulgadas IPS
-                            Almacenamiento:	512GB SSD
-                            Dimensiones:	11.59 x 7.85 x 0.55 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">3 cuotas sin interes</span>
-                    <div class="imagen">
-                        <img src="../static/img/microsofSurf.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Microsoft Surface Pro9</h3>
-                        <div class="precio"> $865.495 <span></span></div>
-                        <p>CPU:	Intel Core i5
-                            RAM:	8GB
-                            GPU:	Built-in
-                            Pantalla:	13-pulgadas PixelSense Flow
-                            Almacenamiento:	128GB SSD
-                            Dimensiones:	11.3 x 8.2 x 0.37 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">10% off</span>
-                    <div class="imagen">
-                        <img src="../static/img/HpSpectre.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook HP Spectre x360 13.5</h3>
-                        <div class="precio"> $2.601.000 <span> $2.890.000</span></div>
-                        <p>CPU:	Intel Core i5
-                            RAM:	8GB
-                            GPU:	Built-in
-                            Pantalla:	13-pulgadas PixelSense Flow
-                            Almacenamiento:	128GB SSD
-                            Dimensiones:	11.3 x 8.2 x 0.37 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">17% off</span>
-                    <div class="imagen">
-                        <img src="../static/img/NotebookDell15.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Dell XPS 15 9520</h3>
-                        <div class="precio"> $3.031.896,49 <span> $3.661.913,27 </span></div>
-                        <p>CPU:	Intel Core i5-12500H
-                            RAM:	16GB
-                            GPU:	Intel Iris Xe
-                            Pantalla:	15.6-pulgadas full HD
-                            Almacenamiento:	512GB SSD
-                            Dimensiones:	13.56 x 9.06 x 0.73 pulgadas</p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">30% off</span>
-                    <div class="imagen">
-                        <img src="../static/img/LenovoYoga.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Notebook Lenovo Yoga 9i Gen 8</h3>
-                        <div class="precio"> $2.347.999,00 <span> $3.354.999</span></div>
-                        <p>CPU:	Intel Core i7-1360P
-                            RAM:	16GB
-                            GPU:	Intel Iris Xe
-                            Pantalla:	14.0 pulgadas OLED
-                            Almacenamiento:	512GB SSD
-                            Dimensiones:	12.52 x 9.06 x 0.60 pulgadas </p>
-
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <span class="descuentos">20% off</span>
-                    <div class="imagen">
-                        <img src="../static/img/Chromebook.jpg" alt="">
-                        <div class="boton">
-                            <button class="boton-compra">Comprar ahora</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contenido">
-                        <h3>Lenovo - IdeaPad Duet 3 Chromebook</h3>
-                        <div class="precio"> $299.000 <span>379.000</span></div>
-                        <p>CPU:	Snapdragon 7cG2
-                            RAM:	4GB
-                            GPU:	N/A
-                            Pantalla:	11-pulgadas 2000 x 1200
-                            Almacenamiento:	128GB eMMC
-                            Dimensiones:	10.16 x 6.57 x 0.3 pulgadas</p>
-
-                    </div>
-
-                </div>
+                    </section>
+                </section>
             </div>
-
         </section>
 
 
@@ -320,6 +92,8 @@
             <div class="recuperar"></div>
         </div>
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../static/js/tabla_productos.js"></script>
     <script src="../static/js/header.js"></script>
 </body>
 
