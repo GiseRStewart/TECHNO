@@ -1207,7 +1207,7 @@ h1 {
     #banner {
         width: 100vw;
         height: auto;
-        margin: 5vh 1vw -9vh 1vw;
+        margin: 10vh 1vw -9vh 1vw;
     }
 
     #banner h1 {
@@ -1244,23 +1244,24 @@ h1 {
     }
 
     .contenedor-cards h3 {
-        margin: 0vh 0vw -12vh 18vw;
+        margin: 0vh 0vw -14vh 18vw;
         width: 61vw;
     }
 
     .ppal-content {
         display: grid;
         grid-template-columns: repeat(1, 100vw);
-        grid-template-rows: repeat(1, 710px);
+        grid-template-rows: repeat(1, 658px);
         justify-content: center;
-        padding: 11vw;
-        margin: 2vh 2vw 3vh 2vw;
+        padding: 14vw;
+        margin: 2vh 2vw 2vh 1vw;
+        border-radius: 5px;
     }
 
     .card1 {
         height: 115vh;
         width: 85vw;
-        margin: 9vh 0vw 6vh 7vw;
+        margin: 12vh 0vw 6vh 7vw;
     }
 
     .title-animation1 {
@@ -1297,7 +1298,7 @@ h1 {
     .card2 {
         height: 115vh;
         width: 85vw;
-        margin: 40vh 0vw 6vh 7vw;
+        margin: 20vh 0vw 6vh 7vw;
     }
 
     .title-animation2 {
@@ -1335,7 +1336,7 @@ h1 {
 
         height: 115vh;
         width: 85vw;
-        margin: -10vh 0vw 6vh 7vw;
+        margin: 10vh 0vw 6vh 7vw;
     }
 
     .title-animation3 {
