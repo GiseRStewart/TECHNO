@@ -87,6 +87,7 @@ main {
     background: transparent;
     border: 2px solid  rgb(240, 240, 240);
     backdrop-filter: blur(20px);
+    width: 97vw;
 }
 
 section p {
@@ -98,7 +99,7 @@ section p {
 .tabla {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: Arial, sans-serif;
     overflow-x: auto; 
     display: block; 
@@ -119,11 +120,11 @@ section p {
     background: transparent;
     backdrop-filter: blur(20px);
     color: #ffffff;
-    text-align: left;
+    text-align: center;
 }
 
 .tabla th, .tabla td {
-    padding: 12px 15px;
+    padding: 12px 0px;
     border: 1px solid #dddddd;
     min-width: 100px; 
 }
@@ -192,7 +193,7 @@ img {
     .container {
         padding-top: 15vh;
         margin: 2vh 2vw;
-        height: 45vh;
+        height: 73vh;
         margin-top: 20vh;
     }
 
@@ -223,9 +224,8 @@ img {
 @media screen and (min-width: 1025px) and (max-width: 1440px){
     .container{
         margin-top: 13vw;
-        margin: 25vh 2vw;
         padding-top: 2vh;
-        height: 50vh;
+        height: 43vw;
     }
     .content{
         margin: 0;
@@ -236,7 +236,7 @@ img {
 @media screen and (max-width: 1024px){
     .container{
         margin-top: 30vw;
-        height: 70vh;
+        height: 95vh;
         width: 99vw;
     }
 
@@ -269,10 +269,10 @@ img {
 
 @media screen and (max-width: 768px){
     .container {
-        margin: 10vh 4vw;
+        margin: 16vh 4vw;
         padding-top: 10vh;
         height: auto;
-        margin-top: 45.6vh;
+        margin-top: 61.6vh;
         height: 50vh;
         flex-direction: column;
         align-items: center;
@@ -405,7 +405,7 @@ img {
 @media screen and (max-width: 425px){
 
     .container{
-        margin-top: 20vw;
+        margin-top: 25vw;
         width: 111%;
     }
 

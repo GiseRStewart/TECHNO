@@ -83,11 +83,11 @@ span{
 }
 
 .contact{
-    width: 490px;
+    width: 486px;
     height:auto;
     border-radius: 1px;
     background-color: var(--color-fondo-form);
-    margin-top: 328px;
+    margin-top: 13vw;
 }
 
 input{
@@ -160,7 +160,7 @@ textarea{
     align-items: center;
     justify-content: center;
     margin-left: 26vw;
-    margin-top: 5.6vw;
+    margin-top: 0.6vw;
     height: auto;
 }
 
@@ -185,7 +185,7 @@ textarea{
 }
 
 .info{
-    height: 40vh;
+    height: 48vh;
     width: 34vw;
     background-color:rgba(21, 21, 26, 0.95);
     border-radius: 5px; 

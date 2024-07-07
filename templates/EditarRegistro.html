@@ -10,10 +10,9 @@
         <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
         <!-- estilos -->
         <!-- <link rel="stylesheet" href="../static/css/contacto.css"> -->
-        <link rel="stylesheet" href="../static/css/RegistroNuevo.css">
+        <link rel="stylesheet" href="../static/css/EditarRegistro.css">
         <link rel="stylesheet" href="../static/css/header.css">
         <link rel="stylesheet" href="../static/css/footer.css">
-        <link rel="stylesheet" href="../static/css/EditarRegistro.css">
         <title>TECHNO - Editar Registros</title>
     </head>
     <body>
@@ -23,8 +22,9 @@
         <main>
             <div class="contain">
                 <div class="contact" id="registro">
-                    <h1 class="titulo-form">Formulario de Edición de Registro</h1>
-                        <form class="formulario" action=" " >
+                    <h1 class="titulo-form">Modiciación de producto producto</h1>                             
+
+                        <form class="formulario" action=" ">
 
                             <label class="etiqueta" for="id">ID:</label>
                             <span class="obligatorio">*</span>
@@ -46,19 +46,20 @@
                             
                             <div>
                                 <label for="imagen" class="etiqueta">Ingrese link de la imagen:</label>
-                                <input type="text" name="image" id="imagen" class="file">
+                                <input type="text" name="image" id="imagen" class="file" placeholder="Link de imagen del producto">
                             </div>
 
                             <label class="etiqueta" for="descripcion">Detalle:</label>
                             <span class="obligatorio">*</span>
                             <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del producto">
                             
+
                             <button type="button" name="enviar_formulario" id="enviar" onclick="modificar()">Modificar</button>
                             
                             <div class="leyenda">
                                 <label class="etiqueta" for="nombre">
                                 <span class="obligatorio">*</span> Campos obligatorios
-                                </label>                 
+                                </label>
                             </div>
                         </form>
                 </div>
