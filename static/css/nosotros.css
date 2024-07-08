@@ -30,12 +30,23 @@ main {
     /* flex-wrap: wrap; */
     /* justify-content: center; */
 }
-
-body {
+/* 
+ body {
     border: 3px;
     color: black;
-    min-height: 50px;
+    min-height: 50px; 
+} */
+ 
+
+body {
+    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+
 
 .mision-div {
     width: 100%;
@@ -167,10 +178,11 @@ body {
 
 
 @media screen and (max-width: 1366px) {
+    
     main {
         width: 100vw;
         height: 70vh;
-        margin-top: 48vh ;
+        margin-top: 30vh ;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
         background-size: cover; 
         background-position: center;
@@ -212,8 +224,8 @@ body {
 @media screen and (max-width: 768px) {
     main {
         width: 100vw;
-        height: 75vh;
-        margin-top: 53vh;
+        height: 100vh;
+        margin-top: 50vh;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
         background-size: cover; 
         background-position: center;
