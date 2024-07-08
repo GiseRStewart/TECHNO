@@ -169,34 +169,66 @@ body {
 @media screen and (max-width: 1366px) {
     main {
         width: 100vw;
-        height: 57vh;
-        margin-top: 170px;
+        height: 70vh;
+        margin-top: 48vh ;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: contain;
+        background-size: cover; 
+        background-position: center;
+    }
+    
+     .textos-div {
+       float: left;
+       width: 50%;
+       height: 0vh;
+       line-height: 1.5;
+    }
+    .mision-div {
+        width: 100%;
+        height: 12vh;
+        margin: 10px;
+        line-height: 1;
+    }
+    .vision-div {
+        width: 100%;
+        height: 12vh;
+        margin: 10px;
+        line-height: 1;
+    
+    }
+    
+     .valores-div {
+      width: 100%;
+      height: 12vh;
+      margin: 10px;
+      line-height: 1 !important;
+      padding-top: 2.5vh;
     }
 
+
+
 }
+
 
 @media screen and (max-width: 768px) {
     main {
         width: 100vw;
         height: 75vh;
-        margin-top: 155px;
+        margin-top: 53vh;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: contain;
+        background-size: cover; 
+        background-position: center;
     }
 
-    .mision-div {
+    .mision-div, .vision-div, .valores-div {
         width: 100%;
-        height: 10vh;
-        margin: 10px;
+        height: auto;
+        margin: 8px;
+        padding: 20px;
+        line-height: 1.5;
     }
 
-    .vision-div {
-        width: 100%;
-        height: 15vh;
-        margin: 10px;
-
+    .mision, .vision, .valores {
+        font-size: 2vh;
     }
 
     #imagenAnime {
@@ -214,6 +246,55 @@ body {
     }
 }
 
+@media screen and (max-width: 425px) {
+     main {
+        width: 100vw;
+        height: 90vh;
+        margin-top: 2vh !important;
+        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
+        background-size: cover; 
+        background-position: center;
+    
+    
+    }
+
+    .textos-div {
+        float: left;
+        width: 50%;
+        height: 0vh;
+        line-height: 1.5 ; 
+    }
+
+    .mision-div {
+        width: 100%;
+        height: 12vh;
+        margin: 10px;
+        line-height: 1 ;
+    }
+
+    .vision-div {
+        width: 100%;
+        height: 12vh;
+        margin: 10px;
+        line-height: 1 ;
+    }
+
+    .valores-div {
+        width: 100%;
+        height: 12vh;
+        margin: 10px;
+        line-height: 1 ;
+        padding-top: 2.5vh;
+    }
+
+    #imagenAnime {
+        margin-left: 7vh;
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 375px) {
     main {
@@ -221,7 +302,9 @@ body {
         height: 128vh;
         margin-top: 75px;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: contain;
+        background-size: cover; 
+        background-position: center;
+        padding-top: 50vh;
     }
 
     .mision-div {
@@ -279,25 +362,27 @@ body {
         width: 100vw;
         height: 128vh;
         margin-top: 75px;
+        padding-top: 18vh;
         background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: contain;
+        background-size: cover; 
+        background-position: center;
     }
 
 .mision-div {
     width: 100%;
     height: 14vh;
-    margin: 10px;
+    margin: 8px;
 }
 .vision-div {
     width: 100%;
     height: 23vh;
-    margin: 10px;
+    margin: 8px;
 }
 
 .valores-div {
     width: 100%;
     height: 39vh;
-    margin: 10px;
+    margin: 8px;
 }
 .animacionT {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
