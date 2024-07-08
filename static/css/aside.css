@@ -122,7 +122,7 @@ aside p {
     text-indent: 3em;
     
 }
-/* @media screen and (max-width: 2560px) {
+@media screen and (max-width: 2560px) {
     aside {
         display: flex;
         flex-wrap: wrap;
@@ -172,9 +172,9 @@ aside p {
         height: 32vh;
         margin: -11vh 0vw 10vh 1vw;
     }
-} */
+}
 
-/* @media screen and (max-width: 1520px) {
+/*@media screen and (max-width: 1520px) {
     aside {
         display: flex;
         flex-wrap: wrap;
@@ -225,14 +225,14 @@ aside p {
         height: 30vh;
         margin: 0vh 0vw 10vh 1vw;
     }
-} */
+}*/
 
 @media screen and (max-width: 1440px) {
     aside {
         display:flex;
         height: auto;
         width: 22vw;
-        margin-top: 26vh!important;
+        margin-top: 17vh!important;
     }
 
     aside h1 {
@@ -245,12 +245,12 @@ aside p {
     }
 
     #ppal-animation {
-        margin-left: 1vw;
+        margin-left: 3vw;
     }
     iframe{
-        width: 19vw ;
-        height: 24vh;
-        margin-left: -8vw;
+        width: 21vw;
+        height: 27vh;
+        margin-left: -8.5vw;
     }
     hr {
         width: 16vw;
