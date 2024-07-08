@@ -284,6 +284,8 @@ aside p {
         height: auto;
         width: 24vw;
         margin-left:  1vw;
+        margin-top: 57vh!important;
+        padding-top: 0vh;
     }
 
     aside h1 {
@@ -340,26 +342,26 @@ aside p {
 @media screen and (max-width: 768px) {
     aside {
         display:flex;
-        width: 25vw;
-        margin-left: 3vw;
+        width: 26vw;
+        margin-left: 2vw;
         height: auto;
-        padding-top: 5vh;
-        margin-top: 23vw !important;
+        padding-top: 0vh;
+        margin-top: 46vw !important;
 
     }
 
     aside h1 {
-        margin: 8vh 2vw 8vh 0vw;
-        font-size: 2rem;
+        /* margin: 8vh 2vw 8vh 0vw; */
+        font-size: 2.5rem;
     }
     .padre-h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-left: 2px;
         padding: 10px;
     }
     #ppal-animation {
-        margin-top: 20vh;
-        margin-left: 0vw;
+        margin-top: 12vh;
+        margin-left: -1vw;
     }
     iframe{
         width: 22vw;
@@ -368,11 +370,12 @@ aside p {
     }
     
     hr {
-        width: 20vw!important;
+        width: 22vw!important;
+        margin-left: 1vw;
     
     }
     #aside-list {
-        margin: 0vh -1vw 10vh -3vw;
+        margin: 0vh 2vw 8vh -3vw;
         padding: 2vh 0vw 5vh 0vw;
     }
     #aside-list .hiper-aside {
