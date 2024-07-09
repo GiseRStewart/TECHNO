@@ -1,146 +1,273 @@
 /* Posibles colores,a modificar */
 :root {
-    --color-primario: #1f2979;
-    --color-secundario: #3d478e;
-    --color-terciario: #574695;
-    --color-fondo-header: #b9a7e3;
-    --color-texto-header: #fffdfd;
-    --color-fondo-body: #ffffff;
-    --color-texto-body: #010101;
-    --barra-input-color: #4f31572c;
-    --color-fondo-form: rgba(0, 0, 0, 0.622);
-    --color-fondo-texto: #5BA7CF;
+  --color-primario: #1f2979;
+  --color-secundario: #3d478e;
+  --color-terciario: #574695;
+  --color-fondo-header: #b9a7e3;
+  --color-texto-header: #fffdfd;
+  --color-fondo-body: #ffffff;
+  --color-texto-body: #010101;
+  --barra-input-color: #4f31572c;
+  --color-fondo-form: rgba(0, 0, 0, 0.622);
+  --color-fondo-texto: #5ba7cf;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 main {
-    width: 100vw;
-    height: 64vh;
-    margin-top: 190px;
-    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-    background-size: contain;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
+  width: 100vw;
+  height: auto;
+  margin-top: 190px;
+  background: linear-gradient(
+    250deg,
+    rgb(133, 82, 191),
+    rgb(4, 208, 240),
+    rgb(44, 36, 82),
+    rgb(255, 51, 202)
+  );
+  background-size: contain;
 }
-/* 
- body {
-    border: 3px;
-    color: black;
-    min-height: 50px; 
-} */
- 
 
 body {
-    background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-    margin: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background: linear-gradient(
+    250deg,
+    rgb(133, 82, 191),
+    rgb(4, 208, 240),
+    rgb(44, 36, 82),
+    rgb(255, 51, 202)
+  );
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+.presentacion {
+  width: 100vw;
+  height: auto;
+}
+#titulo-present {
+    margin: -1vh 10vw 23vh 12vw;
+    padding-top: 15vh;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Sedan", serif;
+    font-weight: 700;
+}
 
-
+.imagen-present {
+  width: 100vw;
+  height: auto;
+  float: center;
+  max-width: 100vw;
+  /* width: 78vw;
+  height: 48vh; */
+  box-shadow: transparent 0 0 0 2000px var(--color-fondo-header);
+  border-radius: 10px;
+}
 .mision-div {
-    width: 100%;
-    height: 12vh;
-    margin: 10px;
+    width: 95%;
+    height: 20vh;
+    margin: 5vh;
 }
+
 
 .misionT {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--color-texto-body);
-    text-align: left;
-    font-size: 2vh;
+  font-family: "Sedan", serif;
+  color: var(--color-texto-body);
+  text-align: left;
+  font-size: 3rem;
 }
 
 .mision {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-    color: var(--color-texto-body);
-    text-align: justify;
-    border-radius: 5%;
+  font-family: "Sedan", serif;
+  font-size: 1.5rem;
+  color: var(--color-texto-body);
+  text-align: justify;
 }
 
-
 .vision-div {
-    width: 100%;
-    height: 12vh;
-    margin: 10px;
-
+    width: 95%;
+    height: 20vh;
+    margin: 5vh;
 }
 
 .visionT {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sedan", serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 2vh;
+    font-size: 3rem;
 }
 
 .vision {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+    font-family: "Sedan", serif;
+    font-size: 1.5rem;
     color: var(--color-texto-body);
     text-align: justify;
-    border-radius: 5%;
+    margin-top: 1vh;
 }
 
-
 .valores-div {
-    width: 100%;
-    height: 12vh;
-    margin: 10px;
+    width: 95%;
+    height: auto;
+    margin: 5vh;
 }
 
 .valoresT {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sedan", serif;
     color: var(--color-texto-body);
     text-align: left;
-    font-size: 2vh;
+    font-size: 3rem;
+    margin: 10vh 0vw 5vh 0vw;
 }
 
 .valores {
-    margin-top: 1vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+    font-family: "Sedan", serif;
+    font-size: 1.5rem;
     color: var(--color-texto-body);
     text-align: justify;
+    margin: 2vh 0vw 5vh 0vw;
 }
-
 
 .textos-div {
-    float: left;
-    width: 50%;
-    height: 0vh;
+  float: left;
+  width: 50%;
+  height: auto;
 }
-
 
 .animacion-div {
     float: right;
-    width: 50%;
-    height: 50vh;
-    margin: 10px;
+    width: 45%;
+    height: auto;
+    margin: 5vh;
 }
 
 .animacionT {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sedan", serif;
     color: var(--color-texto-body);
     text-align: center;
-    font-size: 2vh;
-
-
+    font-size: 2.5rem;
+    margin-top: 2vh;
 }
 
 /* animacion */
 #imagenAnime {
-    /* background-image: url("../img/pexels-eli-sommer-3992776.png"); */
+  /* background-image: url("../img/pexels-eli-sommer-3992776.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+  animation-name: cambiarImagen;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+  margin-top: 20vh;
+  margin-left: 20vh;
+}
+
+@keyframes cambiarImagen {
+  0% {
+    background-image: url("../img/Logos/AsusLogo.png");
+  }
+
+  25% {
+    background-image: url("../img/Logos/RogLogo.png");
+  }
+
+  50% {
+    background-image: url("../img/Logos/DellLogo.png");
+  }
+
+  75% {
+    background-image: url("../img/Logos/LenovoLogo.png");
+  }
+
+  100% {
+    background-image: url("../img/Logos/MicrosoftLogo.png");
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  main {
+    width: 100vw;
+    height: 70vh;
+    margin-top: 30vh;
+    background: linear-gradient(
+      250deg,
+      rgb(133, 82, 191),
+      rgb(4, 208, 240),
+      rgb(44, 36, 82),
+      rgb(255, 51, 202)
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  .textos-div {
+    float: left;
+    width: 50%;
+    height: 0vh;
+    line-height: 1.5;
+  }
+  .mision-div {
+    width: 100%;
+    height: 12vh;
+    margin: 10px;
+    line-height: 1;
+  }
+  .vision-div {
+    width: 100%;
+    height: 12vh;
+    margin: 10px;
+    line-height: 1;
+  }
+
+  .valores-div {
+    width: 100%;
+    height: 12vh;
+    margin: 10px;
+    line-height: 1 !important;
+    padding-top: 2.5vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50vh;
+    background: linear-gradient(
+      250deg,
+      rgb(133, 82, 191),
+      rgb(4, 208, 240),
+      rgb(44, 36, 82),
+      rgb(255, 51, 202)
+    );
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mision-div,
+  .vision-div,
+  .valores-div {
+    width: 100%;
+    height: auto;
+    margin: 8px;
+    padding: 20px;
+    line-height: 1.5;
+  }
+
+  .mision,
+  .vision,
+  .valores {
+    font-size: 2vh;
+  }
+
+  #imagenAnime {
     background-repeat: no-repeat;
     background-size: contain;
     height: 30vh;
@@ -150,260 +277,166 @@ body {
     animation-iteration-count: infinite;
     position: relative;
     justify-content: center;
-    margin-top: 15vh;
-    margin-left: 20vh;
-}
-
-@keyframes cambiarImagen {
-    0% {
-        background-image: url("../img/Logos/AsusLogo.png");
-    }
-
-    25% {
-        background-image: url("../img/Logos/RogLogo.png");
-    }
-
-    50% {
-        background-image: url("../img/Logos/DellLogo.png");
-    }
-
-    75% {
-        background-image: url("../img/Logos/LenovoLogo.png");
-    }
-
-    100% {
-        background-image: url("../img/Logos/MicrosoftLogo.png");
-    }
-}
-
-
-@media screen and (max-width: 1366px) {
-    
-    main {
-        width: 100vw;
-        height: 70vh;
-        margin-top: 30vh ;
-        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: cover; 
-        background-position: center;
-    }
-    
-     .textos-div {
-       float: left;
-       width: 50%;
-       height: 0vh;
-       line-height: 1.5;
-    }
-    .mision-div {
-        width: 100%;
-        height: 12vh;
-        margin: 10px;
-        line-height: 1;
-    }
-    .vision-div {
-        width: 100%;
-        height: 12vh;
-        margin: 10px;
-        line-height: 1;
-    
-    }
-    
-     .valores-div {
-      width: 100%;
-      height: 12vh;
-      margin: 10px;
-      line-height: 1 !important;
-      padding-top: 2.5vh;
-    }
-
-
-
-}
-
-
-@media screen and (max-width: 768px) {
-    main {
-        width: 100vw;
-        height: 100vh;
-        margin-top: 50vh;
-        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: cover; 
-        background-position: center;
-    }
-
-    .mision-div, .vision-div, .valores-div {
-        width: 100%;
-        height: auto;
-        margin: 8px;
-        padding: 20px;
-        line-height: 1.5;
-    }
-
-    .mision, .vision, .valores {
-        font-size: 2vh;
-    }
-
-    #imagenAnime {
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 30vh;
-        animation-name: cambiarImagen;
-        animation-duration: 10s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        position: relative;
-        justify-content: center;
-        margin-top: 10vh;
-        margin-left: 5vh;
-    }
+    margin-top: 10vh;
+    margin-left: 5vh;
+  }
 }
 
 @media screen and (max-width: 425px) {
-     main {
-        width: 100vw;
-        height: 90vh;
-        margin-top: 2vh !important;
-        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: cover; 
-        background-position: center;
-    
-    
-    }
+  main {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 2vh !important;
+    background: linear-gradient(
+      250deg,
+      rgb(133, 82, 191),
+      rgb(4, 208, 240),
+      rgb(44, 36, 82),
+      rgb(255, 51, 202)
+    );
+    background-size: cover;
+    background-position: center;
+  }
 
-    .textos-div {
-        float: left;
-        width: 50%;
-        height: 0vh;
-        line-height: 1.5 ; 
-    }
+  .textos-div {
+    float: left;
+    width: 50%;
+    height: 0vh;
+    line-height: 1.5;
+  }
 
-    .mision-div {
-        width: 100%;
-        height: 12vh;
-        margin: 10px;
-        line-height: 1 ;
-    }
+  .mision-div {
+    width: 100%;
+    height: 12vh;
+    margin: 10px;
+    line-height: 1;
+  }
 
-    .vision-div {
-        width: 100%;
-        height: 12vh;
-        margin: 10px;
-        line-height: 1 ;
-    }
+  .vision-div {
+    width: 100%;
+    height: 12vh;
+    margin: 10px;
+    line-height: 1;
+  }
 
-    .valores-div {
-        width: 100%;
-        height: 12vh;
-        margin: 10px;
-        line-height: 1 ;
-        padding-top: 2.5vh;
-    }
+  .valores-div {
+    width: 100%;
+    height: 12vh;
+    margin: 10px;
+    line-height: 1;
+    padding-top: 2.5vh;
+  }
 
-    #imagenAnime {
-        margin-left: 7vh;
-    }
+  #imagenAnime {
+    margin-left: 7vh;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 375px) {
-    main {
-        width: 100vw;
-        height: 128vh;
-        margin-top: 75px;
-        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: cover; 
-        background-position: center;
-        padding-top: 50vh;
-    }
+  main {
+    width: 100vw;
+    height: 128vh;
+    margin-top: 75px;
+    background: linear-gradient(
+      250deg,
+      rgb(133, 82, 191),
+      rgb(4, 208, 240),
+      rgb(44, 36, 82),
+      rgb(255, 51, 202)
+    );
+    background-size: cover;
+    background-position: center;
+    padding-top: 50vh;
+  }
 
-    .mision-div {
-        width: 100%;
-        height: 15vh;
-        margin: 10px;
-    }
+  .mision-div {
+    width: 100%;
+    height: 15vh;
+    margin: 10px;
+  }
 
-    .textos-div {
-        float: left;
-        width: 90%;
-        height: 75vh;
-    }
+  .textos-div {
+    float: left;
+    width: 90%;
+    height: 75vh;
+  }
 
-    .animacion-div {
-        float: left;
-        width: 50%;
-        height: 50vh;
-        margin: 10px;
-    }
+  .animacion-div {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    margin: 10px;
+  }
 
-    .vision-div {
-        width: 100%;
-        height: 20vh;
-        margin: 10px;
-    }
+  .vision-div {
+    width: 100%;
+    height: 20vh;
+    margin: 10px;
+  }
 
-    .animacionT {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: var(--color-texto-body);
-        text-align: left;
-        font-size: 2vh;
-    }
+  .animacionT {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-texto-body);
+    text-align: left;
+    font-size: 2vh;
+  }
 
-
-    #imagenAnime {
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 30vh;
-        animation-name: cambiarImagen;
-        animation-duration: 10s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        position: relative;
-        justify-content: center;
-        margin-top: 10vh;
-        margin-left: 0vh;
-    }
+  #imagenAnime {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vh;
+    animation-name: cambiarImagen;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 0vh;
+  }
 }
 
-
 @media screen and (max-width: 320px) {
+  main {
+    width: 100vw;
+    height: 128vh;
+    margin-top: 75px;
+    padding-top: 18vh;
+    background: linear-gradient(
+      250deg,
+      rgb(133, 82, 191),
+      rgb(4, 208, 240),
+      rgb(44, 36, 82),
+      rgb(255, 51, 202)
+    );
+    background-size: cover;
+    background-position: center;
+  }
 
-    main {
-        width: 100vw;
-        height: 128vh;
-        margin-top: 75px;
-        padding-top: 18vh;
-        background: linear-gradient(250deg, rgb(133, 82, 191), rgb(4, 208, 240), rgb(44, 36, 82), rgb(255, 51, 202));
-        background-size: cover; 
-        background-position: center;
-    }
-
-.mision-div {
+  .mision-div {
     width: 100%;
     height: 14vh;
     margin: 8px;
-}
-.vision-div {
+  }
+  .vision-div {
     width: 100%;
     height: 23vh;
     margin: 8px;
-}
+  }
 
-.valores-div {
+  .valores-div {
     width: 100%;
     height: 39vh;
     margin: 8px;
-}
-.animacionT {
+  }
+  .animacionT {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-texto-body);
     text-align: left;
     margin-top: 5vh;
     font-size: 2vh;
-}
-#imagenAnime {
+  }
+  #imagenAnime {
     background-repeat: no-repeat;
     background-size: contain;
     height: 30vh;
@@ -415,5 +448,5 @@ body {
     justify-content: center;
     margin-top: 5vh;
     margin-left: 10vh;
-}
+  }
 }

@@ -20,12 +20,7 @@ main {
   flex-wrap: wrap;
 }
 
-/* Estilo que se usrá desde js para que al recorrer la página
-el encabezado cambie de color */
-/*
-.scrolled {
-    background-color: var(--color-secundario);
-} */
+
 .contenedor {
   display: flex;
   flex-direction: row;
