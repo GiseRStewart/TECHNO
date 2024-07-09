@@ -29,6 +29,23 @@ class Notebook(db.Model):   # la clase Producto hereda de db.Model
         self.imagen=imagen
 
 
+class user(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    nombre=db.Column(db.String(100))
+    apellido=db.Column(db.String(100))
+    usuario=db.Column(db.String(100))
+    contraseña=db.Column(db.String(100))
+    rol=db.Column(db.String(100), default="usuario")
+    email=db.Column(db.String(100))
+    def __init__(self, nombre, apellido, usuario, contraseña, rol, email):
+        self.nombre=nombre
+        self.apellido=apellido
+        self.usuario=usuario
+        self.contraseña=contraseña
+        self.rol=rol
+        self.email=email
+
+        
 with app.app_context():
     db.create_all() 
 
@@ -93,6 +110,72 @@ def delete(id):
 
 
     data_serializada = [{'id': registro.id, 'modelo': registro.modelo, 'cantidad': registro.cantidad, 'descripcion': registro.descripcion, 'imagen': registro.imagen}]
+
+    return jsonify(data_serializada) 
+
+
+#REGISTRO DE USUARIO
+
+@app.route('/registroUsuario', methods=['POST']) # crea ruta o endpoint
+def registroUsuario():
+    nombre=request.json['nombre']
+    apellido=request.json['apellido']
+    usuario=request.json['usuario']
+    email=request.json['email'] 
+    rol=request.json['rol'] 
+    contraseña=request.json['contraseña']
+
+    new_user = user(nombre=nombre,apellido=apellido,usuario=usuario,email=email,rol=rol,contraseña=contraseña)
+    db.session.add(new_user)
+    db.session.commit()
+
+    return 'Solicitud de post recibida'
+
+@app.route('/usuarios',methods=['GET'])
+def usuarios():
+    all_registros = user.query.all()
+
+    data_serializada = []
+    
+    for objeto in all_registros:
+        data_serializada.append({"id":objeto.id, "nombre":objeto.nombre, "apellido":objeto.apellido, "usuario":objeto.usuario, "email":objeto.email,"rol":objeto.rol, "contraseña":objeto.contraseña})
+
+    return jsonify(data_serializada)
+
+@app.route('/actualizarUsuario/<id>', methods=['PUT'])
+def actualizarUsuario(id):
+    registro = user.query.get(id)
+
+    nombre=request.json['nombre']
+    apellido=request.json['apellido']
+    usuario=request.json['usuario']
+    email=request.json['email']
+    rol=request.json['rol']
+    contraseña=request.json['contraseña']
+
+
+    registro.nombre=nombre
+    registro.apellido=apellido
+    registro.usuario=usuario
+    registro.email=email
+    registro.rol=rol
+    registro.contraseña=contraseña
+
+    db.session.commit()
+
+    data_serializada = [{"id":registro.id, "nombre":registro.nombre, "apellido":registro.apellido, "usuario":registro.usuario, "email":registro.email,"rol":registro.rol, "contraseña":registro.contraseña}]
+
+    return jsonify(data_serializada)
+
+@app.route('/borrarUsuario/<id>',methods=['DELETE'])
+def borrarUsuario(id):
+    registro=user.query.get(id)
+
+    db.session.delete(registro)
+    db.session.commit()
+
+
+    data_serializada = [{"id":registro.id, "nombre":registro.nombre, "apellido":registro.apellido, "usuario":registro.usuario, "email":registro.email,"rol":registro.rol, "contraseña":registro.contraseña}]
 
     return jsonify(data_serializada) 
 

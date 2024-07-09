@@ -32,7 +32,7 @@ function modificar() {
         .then(function () {
             console.log("modificado")
             alert("Registro modificado")
-            window.location.href = "/tabla_productos.html";  
+            window.location.href = "/templates/tabla_productos.html";  
             
         })
         .catch(err => {

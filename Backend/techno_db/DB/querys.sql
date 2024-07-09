@@ -10,6 +10,17 @@ CREATE TABLE notebook (
     descripcion TEXT
 );
 
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    apellido VARCHAR(100),
+    usuario VARCHAR(100),
+    contraseña VARCHAR(100),
+    rol VARCHAR(100)
+    );
+
+ALTER TABLE user ADD email VARCHAR(100);
+
 DROP TABLE notebook;
 
 ALTER TABLE notebook ADD imagen VARCHAR(400);

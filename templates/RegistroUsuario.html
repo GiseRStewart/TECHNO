@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- meta menú hamburger -->
+        <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
+        <!-- Icono -->
+        <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
+        <!-- estilos -->
+        <!-- <link rel="stylesheet" href="../static/css/contacto.css"> -->
+        <link rel="stylesheet" href="../static/css/header.css">
+        <link rel="stylesheet" href="../static/css/footer.css">
+        <link rel="stylesheet" href="../static/css/RegistroNuevo.css">
+        <title>TECHNO - Registro de usuario</title>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header></header>
+
+        <main>
+
+            <div class="contain">
+                <div class="contact" id="registro">
+                    <h1 class="titulo-form">Registro de usuario</h1>                             
+
+                        <form class="formulario" action=" ">
+
+                            <label class="etiqueta" for="nombre">Nombre:</label> 
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                            
+                            <div class="email-s1">
+                                <label class="etiqueta" for="apellido">Apellido:</label>
+                                <span class="obligatorio">*</span>                                
+                                <input type="text" name="apellido" id="apellido" required placeholder="Apellido">
+                            </div>
+                            
+                            <label class="etiqueta" for="usuario">Nombre de usuario:</label>
+                            <span class="obligatorio">*</span>
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                            
+                            <div>
+                                <label for="email" class="etiqueta">Email</label>
+                                <input type="email" name="email" id="email" placeholder="techno@techno.com.ar">
+                            </div>
+
+                            <label class="etiqueta" for="contraseña">Contraseña</label>
+                            <span class="obligatorio">*</span>
+                            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                            
+
+                            <button type="button" name="enviar_formulario" id="enviar" onclick="guardarUsuario()">Registrase</button>
+                            
+                            <div class="leyenda">
+                                <label class="etiqueta" for="nombre">
+                                <span class="obligatorio">*</span> Campos obligatorios
+                                </label>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="pie-pagina">
+            <div>
+                <section class="seccion-pie">
+                    <h1 class="titulo-sitio">Sitio Web</h1>
+                    <p><a class="hiperv" href="../index.html">Home</a></p>
+                    <p><a class="hiperv" href="../templates/Nosotros.html">Nosotros</a></p>
+                    <p><a class="hiperv" href="../templates/Producto.html">Producto</a></p>
+                    <p><a class="hiperv" href="../templates/Contacto.html">Contacto</a></p>
+                </section>
+                <section class="seccion-pie">
+                    <h1 class="titulo-ayuda">Ayuda</h1>
+                    <p><a class="terminos-s1" href="">Términos y condiciones</a></p>
+                    <p><a class="terminos-s1" href="">Preguntas Frecuentes</a></p>
+                    <p><a class="terminos-s1" href="">Ayuda</a></p>
+                </section>
+                <section class="seccion-pie" id="seccion-redes">
+                    <h1 class="titulo-siguenos">Síguenos</h1>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="redes-img"
+                            src="../static/img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="redes-img"
+                            src="../static/img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="../static/img/gorjeo.png"
+                            alt=""></a>
+                    <a class="copy" <small>&copy;Derechos Reservados 2024</small></a>
+                    <a class="copy-2" <small>&copy;  2024</small></a>
+                </section>
+                <div class="recuperar"></div>
+            </div>
+        </footer>
+        <script src="../static/js/header.js"></script>
+        <script src="../static/js/registroUsuario.js"></script>
+    </body>
+    
+</html>

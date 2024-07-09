@@ -78,6 +78,8 @@ main {
 
 input[type="text"],
 input[type="number"],
+input[type="email"],
+input[type="password"],
 textarea,
 .file {
     width: calc(100% - 26px); 

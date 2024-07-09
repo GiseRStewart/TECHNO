@@ -6,9 +6,9 @@
         <!-- meta menú hamburger -->
     <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
         <!-- Icono -->
-    <link rel="stylesheet" href="./static/css/header.css">
-    <link rel="stylesheet" href="./static/css/footer.css">
-    <link rel="stylesheet" href="./static/css/tabla_productos.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/tabla_productos.css">
     <title>TECHNO - Tabla de Productos</title>
 </head>
 <body>
@@ -56,7 +56,7 @@
                                             <button type="button"  v-on:click="eliminar(notebooks.id)">Eliminar</button>
                                         </td>
                                         <td>
-                                            <a class="boton" :href="'templates/EditarRegistro.html?id=' + notebooks.id + '&modelo=' + notebooks.modelo + '&precio=' + notebooks.precio + '&cantidad=' + notebooks.cantidad + '&descripcion=' + notebooks.descripcion + '&imagen=' + notebooks.imagen">Editar</a>
+                                            <a class="boton" :href="'/templates/EditarRegistro.html?id=' + notebooks.id + '&modelo=' + notebooks.modelo + '&precio=' + notebooks.precio + '&cantidad=' + notebooks.cantidad + '&descripcion=' + notebooks.descripcion + '&imagen=' + notebooks.imagen">Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -100,7 +100,7 @@
     </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./static/js/tabla_productos.js"></script>
-    <script src="./static/js/header.js"></script>
+    <script src="/static/js/tabla_productos.js"></script>
+    <script src="/static/js/header.js"></script>
 </body>
 </html>
