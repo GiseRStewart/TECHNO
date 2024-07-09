@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta menú hamburger -->
+    <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
+        <!-- Icono -->
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/tabla_productos.css">
+    <title>TECHNO - Tabla de Productos</title>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <section class="container">
+            <div id="app" >
+                <!-- Botón Nuevo -->
+
+                <h1 class="titulo-tabla">Tabla de usuarios</h1>
+                <a class="nuevo" href="/templates/RegistroUsuario.html">Nuevo</a>
+                <section v-if="error" class="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando" class="loading">
+                        <p>Cargando .....</p>
+                    </section>
+                    <section v-else class="content">
+                        <div >
+                            <table class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Usuario</th>
+                                        <th>Email</th>
+                                        <th>Rol</th>
+                                        <th>Contraseña</th>
+                                        <th>Acciones</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="usuario in usuarios">
+                                        <td>{{usuario.id}}</td>
+                                        <td>{{usuario.nombre}}</td>
+                                        <td>${{usuario.apellido}}</td>
+                                        <td>{{usuario.usuario}}</td>
+                                        <td>{{usuario.email}}</td>
+                                        <td>{{usuario.rol}}</td>
+                                        <td>{{usuario.contraseña}}</td>
+
+                                        <td>
+                                            <button type="button"  v-on:click="eliminar(usuario.id)">Eliminar</button>
+                                        </td>
+                                        <td>
+                                            <a class="boton" :href="'/templates/EditarRegistro.html?id=' + usuario.id + '&nombre=' + usuario.nombre + '&apellido=' + usuario.apellido + '&usuario=' + usuario.usuario + '&email=' + usuario.email + '&rol=' + usuario.rol + '&contraseña=' + usuario.contraseña">Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div>
+            <section class="seccion-pie">
+                <h1 class="titulo-sitio">Sitio Web</h1>
+                <p><a class="hiperv" href="../index.html">Home</a></p>
+                <p><a class="hiperv" href="../templates/Nosotros.html">Nosotros</a></p>
+                <p><a class="hiperv" href="../templates/Producto.html">Producto</a></p>
+                <p><a class="hiperv" href="../templates/Contacto.html">Contacto</a></p>
+            </section>
+            <section class="seccion-pie">
+                <h1 class="titulo-ayuda">Ayuda</h1>
+                <p><a class="terminos-s1" href="">Términos y condiciones</a></p>
+                <p><a class="terminos-s1" href="">Preguntas Frecuentes</a></p>
+                <p><a class="terminos-s1" href="">Ayuda</a></p>
+            </section>
+            <section class="seccion-pie" id="seccion-redes">
+                <h1 class="titulo-siguenos">Síguenos</h1>
+                <a href="https://www.facebook.com/" target="_blank"><img class="redes-img"
+                        src="./static/img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="redes-img"
+                        src="./static/img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img class="redes-img" src="./static/img/gorjeo.png"
+                        alt=""></a>
+                <a class="copy" <small>&copy;Derechos Reservados 2024</small></a>
+                <a class="copy-2" <small>&copy;  2024</small></a>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/static/js/tabla_usuarios.js"></script>
+    <script src="/static/js/header.js"></script>
+</body>
+</html>
