@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else if (userRole !== 'admin' && window.location.pathname.includes("panelusuarioadmin")) {
         // Si el usuario no es admin y está tratando de acceder a la página de admin, redirige
         window.location.href = "/templates/panelUsuarioUser.html";
-    } else if (userRole !== 'admin' && window.location.pathname.includes("tabla_usuarios")){
+    } else if (userRole !== 'admin' && window.location.pathname.includes("tabla_usuarios.html")){
         window.location.href = "/templates/panelUsuarioUser.html";
     } else if (userRole !== 'admin' && window.location.pathname.includes('editarusuario')){
         window.location.href = "/templates/panelUsuarioUser.html";
