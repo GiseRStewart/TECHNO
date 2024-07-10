@@ -23,9 +23,6 @@ if (!validarContraseña(contraseña_ingresada)) {
     return;
 }
 
-
-
-
 let usuario = {
     nombre : nombre_ingresado,
     apellido : apellido_ingresado,
@@ -33,6 +30,8 @@ let usuario = {
     email : email_ingresado,
     contraseña : contraseña_ingresada
 }
+
+console.log(usuario)
 
 let url = "https://technopower.pythonanywhere.com/registroUsuario"
 var options = {
@@ -42,11 +41,11 @@ var options = {
 }
 
 fetch(url, options)
-.then(function () {
-    console.log("creado")
-    alert("Grabado")
-    // Devuelve el href (URL) de la página actual
-    window.location.href = "/templates/Login.html";  
+    .then(function () {
+        console.log("creado")
+        alert("Grabado")
+        // Devuelve el href (URL) de la página actual
+        window.location.href = "/templates/Login.html";  
     
 })
 .catch(err => {

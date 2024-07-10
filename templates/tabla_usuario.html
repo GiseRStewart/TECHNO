@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- meta menú hamburger -->
     <script src="https://kit.fontawesome.com/a763bf316a.js" crossorigin="anonymous"></script>
-        <!-- Icono -->
+    <!-- Icono -->
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/footer.css">
     <link rel="stylesheet" href="/static/css/tabla_productos.css">
@@ -47,7 +48,7 @@
                                     <tr v-for="usuario in usuarios">
                                         <td>{{usuario.id}}</td>
                                         <td>{{usuario.nombre}}</td>
-                                        <td>${{usuario.apellido}}</td>
+                                        <td>{{usuario.apellido}}</td>
                                         <td>{{usuario.usuario}}</td>
                                         <td>{{usuario.email}}</td>
                                         <td>{{usuario.rol}}</td>
@@ -57,7 +58,7 @@
                                             <button type="button"  v-on:click="eliminar(usuario.id)">Eliminar</button>
                                         </td>
                                         <td>
-                                            <a class="boton" :href="'/templates/EditarRegistro.html?id=' + usuario.id + '&nombre=' + usuario.nombre + '&apellido=' + usuario.apellido + '&usuario=' + usuario.usuario + '&email=' + usuario.email + '&rol=' + usuario.rol + '&contraseña=' + usuario.contraseña">Editar</a>
+                                            <a class="boton" :href="'/templates/EditarUsuario.html?id=' + usuario.id + '&nombre=' + usuario.nombre + '&apellido=' + usuario.apellido + '&usuario=' + usuario.usuario + '&email=' + usuario.email + '&rol=' + usuario.rol + '&contraseña=' + usuario.contraseña">Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>

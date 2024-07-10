@@ -121,11 +121,11 @@ def registroUsuario():
     nombre=request.json['nombre']
     apellido=request.json['apellido']
     usuario=request.json['usuario']
-    email=request.json['email'] 
-    rol=request.json['rol'] 
+    email=request.json['email']
+    rol = request.json.get('rol', 'usuario')
     contraseña=request.json['contraseña']
 
-    new_user = user(nombre=nombre,apellido=apellido,usuario=usuario,email=email,rol=rol,contraseña=contraseña)
+    new_user = user(nombre=nombre,apellido=apellido,usuario=usuario,email=email,rol=rol, contraseña=contraseña)
     db.session.add(new_user)
     db.session.commit()
 
