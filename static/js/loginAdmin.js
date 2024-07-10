@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!userRole) {
         // Si no hay información de usuario, redirige a la página de inicio de sesión
         window.location.href = "/templates/Login.html";
-    } else if (userRole !== 'admin' && window.location.pathname.includes("panelUsuarioAdmin")) {
+    } else if (userRole !== 'admin' && window.location.pathname.includes("panelusuarioadmin")) {
         // Si el usuario no es admin y está tratando de acceder a la página de admin, redirige
         window.location.href = "/templates/panelUsuarioUser.html";
     } else if (userRole !== 'admin' && window.location.pathname.includes("tabla_usuarios")){
         window.location.href = "/templates/panelUsuarioUser.html";
-    } else if (userRole !== 'admin' && window.location.pathname.includes('EditarUsuario')){
+    } else if (userRole !== 'admin' && window.location.pathname.includes('editarusuario')){
         window.location.href = "/templates/panelUsuarioUser.html";
     }
     // Puedes añadir más verificaciones de rol para otras páginas aquí
@@ -21,5 +21,5 @@ function logout() {
     localStorage.clear();
 
     // Redirige al usuario a la página de inicio de sesión
-    window.location.href = "login.html";
+    window.location.href = "/templates/login.html";
 }
