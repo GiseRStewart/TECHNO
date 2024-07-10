@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!userRole) {
         // Si no hay información de usuario, redirige a la página de inicio de sesión
         window.location.href = "/templates/Login.html";
-    } else if (userRole !== 'admin' && window.location.pathname.includes("panelUsuarioAdmin.html")) {
+    } else if (userRole !== 'admin' && window.location.pathname.includes("panelUsuarioAdmin")) {
         // Si el usuario no es admin y está tratando de acceder a la página de admin, redirige
         window.location.href = "/templates/panelUsuarioUser.html";
-    } else if (userRole !== 'admin' && window.location.pathname.includes("tabla_usuarios.html")){
+    } else if (userRole !== 'admin' && window.location.pathname.includes("tabla_usuarios")){
         window.location.href = "/templates/panelUsuarioUser.html";
-    } else if (userRole !== 'admin' && window.location.pathname.includes('EditarUsuario.html')){
+    } else if (userRole !== 'admin' && window.location.pathname.includes('EditarUsuario')){
         window.location.href = "/templates/panelUsuarioUser.html";
     }
     // Puedes añadir más verificaciones de rol para otras páginas aquí
