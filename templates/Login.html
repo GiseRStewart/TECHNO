@@ -36,7 +36,11 @@
                             <span class="obligatorio">*</span>                                
                             <input type="password" name="contraseña" id="contraseña" required placeholder="Contraseña">
                         </div>
-                        <button type="button" name="enviar_formulario" id="enviar" onclick="">Iniciar sesión</button>
+                        <button type="button" name="enviar_formulario" id="enviar" onclick="validarLogin()">Iniciar sesión</button>
+
+                        <div id="loginError" style="color:red; display:none;">
+                            Usuario o contraseña incorrectos.
+                        </div>
                         
                         <div class="leyenda">
                             <label class="etiqueta" for="nombre">
@@ -78,7 +82,7 @@
             </div>
         </footer>
         <script src="../static/js/header.js"></script>
-        <script src="../static/js/ingresar_producto.js"></script>
+        <script src="../static/js/login.js"></script>
     </body>
     
     </html>

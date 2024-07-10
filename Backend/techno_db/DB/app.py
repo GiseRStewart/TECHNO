@@ -35,7 +35,7 @@ class user(db.Model):
     apellido=db.Column(db.String(100))
     usuario=db.Column(db.String(100))
     contraseña=db.Column(db.String(100))
-    rol=db.Column(db.String(100), default="usuario")
+    rol=db.Column(db.String(100), default='')
     email=db.Column(db.String(100))
     def __init__(self, nombre, apellido, usuario, contraseña, rol, email):
         self.nombre=nombre
@@ -122,7 +122,7 @@ def registroUsuario():
     apellido=request.json['apellido']
     usuario=request.json['usuario']
     email=request.json['email']
-    rol = request.json.get('rol', 'usuario')
+    rol = request.json.get('rol', '')
     contraseña=request.json['contraseña']
 
     new_user = user(nombre=nombre,apellido=apellido,usuario=usuario,email=email,rol=rol, contraseña=contraseña)
@@ -178,6 +178,28 @@ def borrarUsuario(id):
     data_serializada = [{"id":registro.id, "nombre":registro.nombre, "apellido":registro.apellido, "usuario":registro.usuario, "email":registro.email,"rol":registro.rol, "contraseña":registro.contraseña}]
 
     return jsonify(data_serializada) 
+
+@app.route('/login', methods=['POST'])
+def login():
+    usuario = request.json.get('usuario')
+    contraseña = request.json.get('contraseña')
+
+    user = user.query.filter_by(usuario=usuario, contraseña=contraseña).first()
+    if user:
+        return jsonify({
+            "status": "success",
+            "message": "Login exitoso",
+            "data": {
+                "id": user.id,
+                "usuario": user.usuario,
+                "rol": user.rol
+            }
+        }), 200
+    else:
+        return jsonify({
+            "status": "error",
+            "message": "Usuario o contraseña incorrectos"
+        }), 401
 
 
 if __name__=='__main__':  
