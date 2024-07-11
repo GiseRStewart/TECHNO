@@ -34,7 +34,7 @@ main {
     background-size: cover;
     background-position: center; 
     height: auto; 
-    min-height: 80vh;
+    min-height: 50vw;
     background-color: #f0f0f0; 
     padding: 10vh; 
     max-width: 1200px;
@@ -56,7 +56,7 @@ main {
     border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 2vw;
-    height: 41vw;
+    height: 45vw;
     align-content: center;
     font-size: 20px;
 }
@@ -119,7 +119,7 @@ input[type="file"] {
     background: transparent;
     box-shadow: 0 0 20px #ffffff;
      /* transform: scale(1.05);  */
-     border-color: #ffffff;
+    border-color: #ffffff;
 }
 
 
@@ -133,6 +133,12 @@ input[type="file"] {
 .contact{
 
     width: 30vw;
+}
+
+#loginError{
+    color: #ffd713;
+    display: block;
+    margin: 1vw 5vw;
 }
 
 
@@ -165,13 +171,13 @@ input[type="file"] {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
     .contain {
-        margin-top: 12.5vw;
+        margin-top: 13.1vw;
     }
 
     .formulario {
         max-width: 100vw;
         margin-left: -1vw; 
-        height: 36vw;
+        height: 47vw;
     }
 
     .titulo-form {
@@ -187,6 +193,7 @@ input[type="file"] {
 
     .contain{
         margin-top: 31.2vw;
+        height: 63vw;
     }
 
     .formulario{

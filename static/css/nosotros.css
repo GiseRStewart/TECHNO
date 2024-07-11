@@ -98,6 +98,7 @@ body {
   color: var(--color-texto-body);
   text-align: left;
   font-size: 3rem;
+  margin-top: 36px;
 }
 
 .vision {
@@ -229,7 +230,7 @@ body {
   .textos-div {
     float: left;
     width: 50%;
-    height: 0vh;
+    height: 110vh;
     line-height: 1.5;
   }
   .mision-div {

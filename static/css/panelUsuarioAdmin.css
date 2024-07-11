@@ -20,7 +20,6 @@ main {
 } 
 
 .p-container {
-    margin: 5vh 5vw;
     padding-top: 18vh;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -100,14 +99,10 @@ main {
 
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
-    .p-container {
-        margin: 3vh 3vw; 
-        padding-top: 12vh; 
-    }
 
     .p-content {
         padding: 15px; 
-        margin: 15px 0; 
+        margin: 8vw 0; 
         width: 95vw; 
     }
 

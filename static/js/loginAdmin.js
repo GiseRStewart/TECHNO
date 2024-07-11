@@ -13,7 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
     } else if (userRole !== 'admin' && window.location.pathname.includes('editarusuario')){
         window.location.href = "/templates/panelUsuarioUser.html";
     }
-    // Puedes añadir más verificaciones de rol para otras páginas aquí
+
+    const scriptElement = document.createElement('script');
+
+    if (userRole){
+        scriptElement.src = '../static/js/headerlog.js';
+    } else {
+        scriptElement.src = '../static/js/header.js';
+    }
+
+    document.head.appendChild(scriptElement);
 });
 
 function logout() {

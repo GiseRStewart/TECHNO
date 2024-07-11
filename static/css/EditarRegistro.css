@@ -38,7 +38,7 @@ main {
     background-color: #f0f0f0; 
     padding: 10vh; 
     max-width: 1200px;
-    height: 80vh;  
+    height: 110vh;  
     margin-top: 7.8vw;
     margin-left: 28vw;
     
@@ -160,7 +160,7 @@ input[type="file"] {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
     .contain {
-        margin-top: 12.5vw;
+        margin-top: 13vw;
     }
 
     .formulario {
