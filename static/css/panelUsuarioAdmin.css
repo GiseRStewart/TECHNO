@@ -57,15 +57,17 @@ main {
     display: inline-block;
     padding: 12px 25px; 
     margin: 15px 0;
-    border-radius: 50px; 
     text-decoration: none;
+    border-radius: 20px;
     color: #ffffff; 
     background:transparent;
-    border: 2px solid var(--color-primario);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #ffffff;
+    transition: all 0.6s ease;
 }
 
 .vinculo:hover {
-    background-color:  var(--color-fondo-header);
-    transform: scale(1.05); 
-}
+    background: transparent;
+    box-shadow: 0 0 20px #ffffff;
+     /* transform: scale(1.05);  */
+     border-color: #ffffff;
+} 
