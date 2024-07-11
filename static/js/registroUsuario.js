@@ -4,6 +4,8 @@ function guardarUsuario() {
     let usuario_ingresado = document.getElementById('usuario').value
     let email_ingresado = document.getElementById('email').value
     let contraseña_ingresada = document.getElementById('contraseña').value
+    let registroError = document.getElementById('registroError');  // Elemento para mostrar el error
+
 
 
     
@@ -33,25 +35,26 @@ let usuario = {
 
 console.log(usuario)
 
-let url = "https://technopower.pythonanywhere.com/registroUsuario"
+let url = "https://technopower.pythonanywhere.com/registroUsuario";
 var options = {
     body: JSON.stringify(usuario),
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-}
+    headers: { 'Content-Type': 'application/json' }
+};
 
 fetch(url, options)
-    .then(function () {
-        console.log("creado")
-        alert("Grabado")
-        // Devuelve el href (URL) de la página actual
-        window.location.href = "/templates/Login.html";  
-    
+.then(response => response.json())
+.then(data => {
+    if (data.status === "success") {
+        alert("Usuario registrado exitosamente.");
+        window.location.href = "/templates/Login.html";
+    } else {
+        registroError.textContent = data.message;
+        registroError.style.display = 'block';
+    }
 })
 .catch(err => {
-    //this.errored = true
-    alert("Error al grabar" )
+    alert("Error al registrar usuario");
     console.error(err);
-
-})
+});
 }
