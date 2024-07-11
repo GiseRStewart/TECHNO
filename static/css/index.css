@@ -902,10 +902,10 @@ h1 {
   }
 
   #banner h2 {
-    margin: 0vh 0vw 16vh 3vw;
-    padding: 0vh;
-    font-size: 2rem;
-    color: var(--color-texto-header);
+        margin: 0vh 0vw 2vh 3vw;
+        font-size: 2rem;
+        text-align: left;
+        color: var(--color-texto-header);
   }
 
   #texto-banner {
@@ -935,7 +935,7 @@ h1 {
   }
 
   .card1 {
-    height: 140vh;
+    height: 142vh;
     width: 32vw;
   }
 
@@ -970,7 +970,7 @@ h1 {
   }
 
   .card2 {
-    height: 140vh;
+    height: 142vh;
     width: 32vw;
   }
 

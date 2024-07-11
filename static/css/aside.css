@@ -290,7 +290,7 @@ aside p {
 
     aside h1 {
 
-        margin: 0vh 2vw 15vh 0vw !important;
+        margin: -30vh 2vw 15vh 0vw !important;
         font-size: 2.3rem;
     }
 
