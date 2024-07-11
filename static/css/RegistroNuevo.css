@@ -137,7 +137,7 @@ input[type="file"] {
 
 #loginError{
     color: #ffd713;
-    display: block;
+    display: none;
     margin: 1vw 5vw;
 }
 
