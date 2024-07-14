@@ -24,24 +24,24 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     background-image: url(../img/283818.jpg);
-    height: 100vh;
+    height: 44vh;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    margin-top: 24vh;
+    margin-top: 19vh;
     flex-direction: column;
+    width: 54vw;
 }
 
 .p-content {
     color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    margin: 20px 0;
     text-align: center;
     /* background: rgba(0, 0, 0, 0.8); */
     backdrop-filter: blur(15px); 
-    width: 90vw; 
+    width: 19vw; 
 }
 
 .paragraph {
@@ -67,21 +67,15 @@ main {
 .vinculo:hover {
     background: transparent;
     box-shadow: 0 0 20px #ffffff;
-     /* transform: scale(1.05);  */
-     border-color: #ffffff;
+    border-color: #ffffff;
 } 
 
 
 @media screen and (min-width: 1600px) and (max-width: 2360px){ 
-    .p-container {
-        margin: 3vh 3vw; 
-        padding-top: 15vh; 
-    }
 
     .p-content {
-        padding: 30px; 
-        margin: 30px 0; 
-        width: 80vw; 
+        margin-top: -5vw;
+        width: 25vw; 
     }
 
     .paragraph {
@@ -100,10 +94,16 @@ main {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
 
+    .p-container {
+        height: 34vh;
+        margin-top: 20vh;
+
+    }
+
     .p-content {
         padding: 15px; 
-        margin: 8vw 0; 
-        width: 95vw; 
+        margin: -4vw 0; 
+        width: 27vw; 
     }
 
     .paragraph {
@@ -121,14 +121,13 @@ main {
 
 @media screen and (max-width: 1024px){
     .p-container {
-        margin: 4vh 4vw; 
-        padding-top: 10vh; 
+        margin-top: 37vh;
     }
 
     .p-content {
         padding: 10px; 
         margin: 10px 0; 
-        width: 95vw; 
+        width: 30vw; 
     }
 
     .paragraph {
@@ -146,14 +145,16 @@ main {
 
 @media screen and (max-width: 768px){
     .p-container {
-        margin: 4vh 2vw; 
+        margin-top: 42vh; 
+        margin-bottom: 0;
         padding-top: 8vh; 
+        width: 100vw;
     }
 
     .p-content {
         padding: 10px; 
-        margin: 10px 0; 
-        width: 100vw; 
+        margin: 63px 0; 
+        width: 47vw; 
     }
 
     .paragraph {
@@ -167,3 +168,32 @@ main {
         border-radius: 10px; 
     }
 }
+
+@media screen and (max-width: 425px){
+    .p-container {
+        margin-top: 11vh; 
+        margin-bottom: 0;
+        padding-top: 8vh; 
+        width: 100vw;
+        height: 61vh;
+    }
+
+    .p-content {
+        padding: 10px; 
+        margin: 125px 0; 
+        width: 47vw; 
+    }
+
+    .paragraph {
+        margin: 5px 0; 
+        letter-spacing: 0.3px; 
+    }
+
+    .vinculo {
+        padding: 5px 10px; 
+        margin: 5px 0; 
+        border-radius: 10px; 
+    }
+}
+
+

@@ -172,7 +172,7 @@ input[type="file"] {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
     .contain {
-        margin-top: 12.5vw;
+        margin-top: 13vw;
         margin-left: 33vw;
     }
 
